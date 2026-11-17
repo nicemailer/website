@@ -1,0 +1,201 @@
+---
+// A page of the user guide, or (id null) the list of its pages.
+import { render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { t, href, ISSUES, type Lang } from '../i18n';
+import { docsOf, slugOf } from '../docs';
+
+interface Props {
+  lang: Lang;
+  id: string | null;
+}
+const { lang, id } = Astro.props;
+const s = t(lang);
+const list = await docsOf(lang);
+const index = list.findIndex((e) => e.id === id);
+const entry = index >= 0 ? list[index] : null;
+const { Content } = entry ? await render(entry) : { Content: null };
+const prev = index > 0 ? list[index - 1] : null;
+const next = index >= 0 && index < list.length - 1 ? list[index + 1] : null;
+const link = (e: (typeof list)[number]) => href(lang, `/docs/${slugOf(e)}/`);
+const title = entry ? `${entry.data.title} – NiceMailer` : `${s.docs.title} – NiceMailer`;
+const description = entry ? entry.data.description : s.meta.description;
+---
+
+<Base lang={lang} title={title} description={description}>
+  <div class="wrap docs">
+    <aside>
+      <p class="aside-title"><a href={href(lang, '/docs/')}>{s.docs.title}</a></p>
+      <ol>
+        {
+          list.map((e) => (
+            <li>
+              <a href={link(e)} aria-current={e.id === id ? 'page' : undefined}>
+                {e.data.title}
+              </a>
+            </li>
+          ))
+        }
+      </ol>
+    </aside>
+    <article>
+      {
+        entry && Content ? (
+          <>
+            <h1>{entry.data.title}</h1>
+            <p class="doc-lead">{entry.data.description}</p>
+            <div class="prose">
+              <Content />
+            </div>
+            <nav class="pager" aria-label={s.docs.onThisPage}>
+              {prev ? (
+                <a href={link(prev)}>
+                  <small>{s.docs.prev}</small>
+                  {prev.data.title}
+                </a>
+              ) : (
+                <span />
+              )}
+              {next && (
+                <a class="next" href={link(next)}>
+                  <small>{s.docs.next}</small>
+                  {next.data.title}
+                </a>
+              )}
+            </nav>
+          </>
+        ) : (
+          <>
+            <h1>{s.docs.title}</h1>
+            <ol class="index">
+              {list.map((e) => (
+                <li>
+                  <a href={link(e)}>{e.data.title}</a>
+                  <p>{e.data.description}</p>
+                </li>
+              ))}
+            </ol>
+          </>
+        )
+      }
+      <p class="issue"><a href={ISSUES}>{s.docs.edit}</a></p>
+    </article>
+  </div>
+</Base>
+
+<style>
+  .docs {
+    display: grid;
+    grid-template-columns: 15rem minmax(0, 1fr);
+    gap: 3.5rem;
+    padding-top: 2.5rem;
+  }
+  aside {
+    position: sticky;
+    top: 1.5rem;
+    align-self: start;
+    font-size: 1rem;
+  }
+  .aside-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+  }
+  .aside-title a {
+    color: var(--ink);
+    text-decoration: none;
+  }
+  aside ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.15rem;
+    border-left: 1px solid var(--line);
+  }
+  aside li a {
+    display: block;
+    padding: 0.3rem 0 0.3rem 0.9rem;
+    margin-left: -1px;
+    border-left: 2px solid transparent;
+    color: var(--ink-2);
+    text-decoration: none;
+  }
+  aside li a:hover {
+    color: var(--ink);
+  }
+  aside li a[aria-current='page'] {
+    color: var(--ink);
+    border-left-color: var(--leaf);
+  }
+  h1 {
+    font-size: clamp(2rem, 4.5vw, 2.8rem);
+    letter-spacing: -0.03em;
+  }
+  .doc-lead {
+    margin-top: 0.8rem;
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    color: var(--ink-2);
+    max-width: var(--measure);
+  }
+  .index {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0 0;
+    display: grid;
+    gap: 1.5rem;
+    max-width: var(--measure);
+  }
+  .index a {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  .index p {
+    margin-top: 0.25rem;
+    color: var(--ink-2);
+  }
+  .pager {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 3.5rem;
+    max-width: var(--measure);
+    border-top: 1px solid var(--line);
+    padding-top: 1.2rem;
+  }
+  .pager a {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-display);
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .pager small {
+    font-family: var(--font-body);
+    font-weight: 400;
+    color: var(--ink-2);
+  }
+  .pager .next {
+    text-align: right;
+    margin-left: auto;
+  }
+  .issue {
+    margin-top: 2.5rem;
+    font-size: 0.95rem;
+  }
+  .issue a {
+    color: var(--ink-2);
+  }
+  @media (max-width: 50rem) {
+    .docs {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 1.5rem;
+      padding-top: 1rem;
+    }
+    aside {
+      position: static;
+    }
+  }
+</style>

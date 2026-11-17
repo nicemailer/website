@@ -1,0 +1,17 @@
+{
+  "name": "nicemailer-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "sync-changelog": "node scripts/sync-changelog.mjs"
+  },
+  "dependencies": {
+    "@fontsource/source-sans-3": "5.3.1",
+    "@fontsource/space-grotesk": "5.3.0",
+    "astro": "7.4.12",
+    "sharp": "0.35.5"
+  }
+}

@@ -1,0 +1,43 @@
+---
+// The download button, with what the visitor must know before clicking:
+// the version, the Macs it runs on, the license.
+import { t, type Lang } from '../i18n';
+import { latestRelease } from '../release';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const s = t(lang);
+const release = await latestRelease();
+---
+
+<div class="download">
+  <a class="button" href={release.url}>
+    <svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M10 3v10M5.5 8.5 10 13l4.5-4.5M4 16.5h12"></path>
+    </svg>
+    {s.download.button}
+  </a>
+  <p class="meta">
+    {release.version && <span>{s.download.version(release.version)}</span>}
+    <span>{s.download.requirements}</span>
+    <span>{s.download.license}</span>
+  </p>
+</div>
+
+<style>
+  .download {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem 1.4rem;
+  }
+  .meta {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: var(--ink-2);
+  }
+</style>

@@ -1,0 +1,202 @@
+---
+// The frame of every page: <head>, header, footer. No script, no cookie,
+// no request to another site: everything the page needs is served by it.
+import '../styles/global.css';
+import { t, href, switchLang, REPO, ISSUES, type Lang } from '../i18n';
+import { latestRelease } from '../release';
+
+interface Props {
+  lang: Lang;
+  title: string;
+  description: string;
+}
+
+const { lang, title, description } = Astro.props;
+const s = t(lang);
+const release = await latestRelease();
+const path = Astro.url.pathname;
+const other = switchLang(lang, path);
+const otherLang: Lang = lang === 'en' ? 'fr' : 'en';
+const canonical = new URL(path, Astro.site);
+const nav = [
+  { label: s.nav.features, to: href(lang, '/features/') },
+  { label: s.nav.docs, to: href(lang, '/docs/') },
+  { label: s.nav.changelog, to: href(lang, '/changelog/') },
+  { label: s.nav.privacy, to: href(lang, '/privacy/') },
+];
+const current = (to: string) => path === to || (to.endsWith('/docs/') && path.startsWith(to));
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang={lang} href={canonical} />
+    <link rel="alternate" hreflang={otherLang} href={new URL(other, Astro.site)} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f2f5ef" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#111813" media="(prefers-color-scheme: dark)" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={new URL('/og.png', Astro.site)} />
+    <meta property="og:locale" content={lang === 'fr' ? 'fr_FR' : 'en_US'} />
+  </head>
+  <body>
+    <a class="skip" href="#content">{s.nav.skip}</a>
+    <header class="site-header wrap">
+      <a class="brand" href={href(lang, '/')}>
+        <img src="/icon.svg" alt="" width="34" height="34" />
+        <span>NiceMailer</span>
+      </a>
+      <nav aria-label="Main">
+        <ul>
+          {
+            nav.map((item) => (
+              <li>
+                <a href={item.to} aria-current={current(item.to) ? 'page' : undefined}>
+                  {item.label}
+                </a>
+              </li>
+            ))
+          }
+          <li><a href={REPO}>{s.nav.source}</a></li>
+          <li><a href={other} hreflang={otherLang} lang={otherLang}>{s.nav.otherLanguage}</a></li>
+        </ul>
+      </nav>
+      <a class="header-download" href={release.url}>{s.nav.download}</a>
+    </header>
+    <main id="content">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <div class="footer-brand">
+          <img src="/icon.svg" alt="" width="28" height="28" />
+          <p>
+            {s.footer.license}<br />
+            {s.footer.noTracking}
+          </p>
+        </div>
+        <ul>
+          {nav.map((item) => <li><a href={item.to}>{item.label}</a></li>)}
+          <li><a href={REPO}>{s.nav.source}</a></li>
+          <li><a href={ISSUES}>{s.footer.issues}</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  .site-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-block: 1.1rem;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    text-decoration: none;
+    margin-right: auto;
+  }
+  .brand img {
+    /* The icon has a transparent margin of 100/1024 around its square. */
+    margin: -3px;
+  }
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem 1.3rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+  }
+  nav a {
+    color: var(--ink-2);
+    text-decoration: none;
+  }
+  nav a:hover,
+  nav a[aria-current='page'] {
+    color: var(--ink);
+  }
+  nav a[aria-current='page'] {
+    text-decoration: underline;
+    text-decoration-color: var(--leaf);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.35em;
+  }
+  .header-download {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 0.45rem 0.9rem;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    color: var(--ink);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .header-download:hover {
+    border-color: var(--leaf);
+  }
+  @media (max-width: 52rem) {
+    .site-header {
+      flex-wrap: wrap;
+      row-gap: 0.6rem;
+    }
+    nav {
+      order: 3;
+      width: 100%;
+    }
+  }
+
+  .site-footer {
+    margin-top: 6rem;
+    border-top: 1px solid var(--line);
+    padding-block: 2.5rem 3rem;
+    font-size: 0.95rem;
+    color: var(--ink-2);
+  }
+  .footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  .footer-brand {
+    display: flex;
+    gap: 0.8rem;
+    align-items: flex-start;
+    max-width: 30rem;
+  }
+  .footer-brand img {
+    flex: none;
+    margin-top: 0.1rem;
+  }
+  .site-footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 0.35rem 2.5rem;
+  }
+  .site-footer a {
+    color: var(--ink-2);
+  }
+</style>

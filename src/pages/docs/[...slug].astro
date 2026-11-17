@@ -1,0 +1,11 @@
+---
+import DocPage from '../../components/DocPage.astro';
+import { docPaths } from '../../docs';
+
+// One page per Markdown file of src/content/docs/en/; the first one
+// (order 1) is also /docs/ itself.
+export const getStaticPaths = () => docPaths('en');
+const { id } = Astro.props;
+---
+
+<DocPage lang="en" id={id} />

@@ -1,0 +1,59 @@
+---
+// The release notes of the app, copied from its CHANGELOG.md by
+// `npm run sync-changelog`. They are written in English only.
+import Base from '../layouts/Base.astro';
+import { Content } from '../changelog.md';
+import { t, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const s = t(lang);
+---
+
+<Base lang={lang} title={`${s.changelog.title} – NiceMailer`} description={s.changelog.description}>
+  <article class="wrap page">
+    <h1>{s.changelog.title}</h1>
+    <p class="page-lead">{s.changelog.lead}</p>
+    {s.changelog.englishOnly && <p class="note">{s.changelog.englishOnly}</p>}
+    <div class="prose changelog" lang="en">
+      <Content />
+    </div>
+  </article>
+</Base>
+
+<style>
+  .page {
+    padding-top: 2.5rem;
+  }
+  h1 {
+    font-size: clamp(2.4rem, 6vw, 3.8rem);
+    letter-spacing: -0.03em;
+  }
+  .page-lead {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    color: var(--ink-2);
+    max-width: var(--measure);
+  }
+  .note {
+    margin-top: 0.6rem;
+    color: var(--ink-2);
+    font-style: italic;
+  }
+  .changelog {
+    margin-top: 2.5rem;
+    max-width: 46rem;
+  }
+  .changelog :global(h2) {
+    font-size: 1.9rem;
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+  }
+  .changelog :global(h3) {
+    font-size: 1.1rem;
+    color: var(--ink-2);
+  }
+</style>

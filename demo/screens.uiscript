@@ -1,0 +1,54 @@
+# The screenshots of the website, played by the app in UI script mode on the
+# demo mailbox (demo/make-screens.sh). Each `snap` becomes
+# src/assets/screens/<lang>/<name>.png. Same keys in English and French.
+resize 1280x800
+appearance light
+expect folder = Inbox
+expect thread_count > 8
+wait 1500
+
+# Hero: the Inbox, the newest conversation open (Sam's, with its quotes,
+# signature and "Sent from my iPhone" folded away).
+snap inbox-light
+appearance dark
+wait 500
+snap inbox-dark
+
+# Speed: the filter panel.
+appearance light
+key f
+wait 500
+snap filters-light
+appearance dark
+wait 500
+snap filters-dark
+key esc
+wait 300
+
+# Calm: Quarantine, on the email of a person who wrote for the first time
+# (the newest row is the forged bank alert, the next one is Hannah's).
+key ;
+key q
+expect folder = Quarantine
+wait 1000
+key j
+wait 800
+appearance light
+wait 300
+snap quarantine-light
+appearance dark
+wait 500
+snap quarantine-dark
+
+# Trust: a newsletter, its tracking pixel removed and its one-click
+# unsubscribe on the title line.
+key ;
+key n
+expect folder = Newsletter
+wait 1000
+appearance light
+wait 300
+snap thread-light
+appearance dark
+wait 500
+snap thread-dark

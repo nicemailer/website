@@ -1,0 +1,52 @@
+---
+// A long page written in Markdown: src/content/pages/<lang>/<slug>.md.
+import { getEntry, render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import Download from './Download.astro';
+import type { Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+  slug: string;
+}
+const { lang, slug } = Astro.props;
+const entry = await getEntry('pages', `${lang}/${slug}`);
+if (!entry) throw new Error(`Missing page src/content/pages/${lang}/${slug}.md`);
+const { Content } = await render(entry);
+---
+
+<Base lang={lang} title={`${entry.data.title} – NiceMailer`} description={entry.data.description}>
+  <article class="wrap page">
+    <h1>{entry.data.title}</h1>
+    <p class="page-lead">{entry.data.description}</p>
+    <div class="prose">
+      <Content />
+    </div>
+    {slug === 'features' && <div class="end"><Download lang={lang} /></div>}
+  </article>
+</Base>
+
+<style>
+  .page {
+    padding-top: 2.5rem;
+  }
+  h1 {
+    font-size: clamp(2.4rem, 6vw, 3.8rem);
+    letter-spacing: -0.03em;
+  }
+  .page-lead {
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    font-size: 1.3rem;
+    color: var(--ink-2);
+    max-width: var(--measure);
+  }
+  .page :global(.prose h2) {
+    font-size: clamp(1.9rem, 4vw, 2.6rem);
+    margin-top: 4rem;
+    letter-spacing: -0.03em;
+  }
+  .end {
+    margin-top: 4rem;
+  }
+</style>
