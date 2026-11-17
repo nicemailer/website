@@ -23,9 +23,9 @@ export default {
     license: 'Free and open source, AGPLv3',
   },
   hero: {
-    title: 'Email that keeps up with you.',
+    title: 'Fast to use. Calm to live with. Yours to keep.',
     lead:
-      'NiceMailer is a fast, calm and trustworthy email client for the Mac. It stays instant with hundreds of thousands of emails, keeps the noise out of your way, and keeps every conversation on your Mac for decades.',
+      'NiceMailer is an email client for the Mac. It stays instant with hundreds of thousands of emails, lets into your inbox only the people you chose, and keeps your mail on your Mac for decades, with your privacy intact.',
     shotAlt: 'The NiceMailer window: the list of conversations on the left, an open email on the right.',
     caption: 'A conversation of four messages. Earlier ones fold into a line each, and the latest shows only what it adds: its signature and 28 quoted lines are one key away.',
   },

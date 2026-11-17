@@ -24,9 +24,9 @@ const fr: Strings = {
     license: 'Libre et gratuit, AGPLv3',
   },
   hero: {
-    title: 'Le mail qui suit votre rythme.',
+    title: 'Rapide. Reposant. Bien à vous.',
     lead:
-      'NiceMailer est un client mail rapide, calme et digne de confiance pour le Mac. Il reste instantané avec des centaines de milliers de mails, écarte le bruit de votre chemin et garde chaque conversation sur votre Mac pour des décennies.',
+      'NiceMailer est un client de messagerie pour Mac. Tout y est instantané, même avec des centaines de milliers de mails. Seules les personnes que vous avez choisies atteignent votre Inbox, et votre courrier reste sur votre Mac pour des décennies, sans rien sacrifier de votre vie privée.',
     shotAlt: 'La fenêtre de NiceMailer : la liste des conversations à gauche, un mail ouvert à droite.',
     caption: 'Une conversation de quatre messages. Les précédents tiennent chacun sur une ligne, et le dernier ne montre que ce qu’il apporte : sa signature et ses 28 lignes citées sont à une touche.',
   },
