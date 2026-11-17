@@ -188,6 +188,8 @@ export default {
     edit: 'Something unclear or wrong? Open an issue.',
     prev: 'Previous',
     next: 'Next',
+    contents: 'Pages of the guide',
+    lead: 'How to install NiceMailer, bring your mail into it, and use it every day.',
   },
   changelog: {
     title: 'Changelog',

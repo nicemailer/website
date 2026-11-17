@@ -109,7 +109,7 @@ Every change to your mailbox is recorded: what you filed today, who banned that 
 
 ### Open source, so you can check
 
-NiceMailer is free software under the GNU AGPLv3. You don't have to take any claim on this page on trust: how your email is stored, what is sent to the AI and what an AI agent may do are all in the [source code](https://github.com/nicemailer/nicemailer).
+NiceMailer is free software under the GNU AGPLv3. You don't have to take any claim on this page on trust: how your email is stored, what is sent to the AI and what an AI agent may do are all in the [source code](https://github.com/nicemailer/nicemailer). Not a developer? Send your AI agent to read it for you: it never gets bored.
 
 ### Built to last
 

@@ -3,12 +3,12 @@ import type { Strings } from './index';
 // Toutes les chaînes du site en français, avec la même forme que en.ts.
 const fr: Strings = {
   meta: {
-    title: 'NiceMailer : un client mail rapide, calme et digne de confiance pour le Mac',
+    title: 'NiceMailer : un client mail rapide, reposant et sécurisant pour le Mac',
     description:
       'NiceMailer est un client mail libre et gratuit pour macOS. Instantané avec des centaines de milliers de mails, pensé pour le clavier, local d’abord, avec une IA facultative.',
   },
   nav: {
-    features: 'Fonctions',
+    features: 'Fonctionnalités',
     docs: 'Documentation',
     changelog: 'Nouveautés',
     privacy: 'Confidentialité',
@@ -24,7 +24,7 @@ const fr: Strings = {
     license: 'Libre et gratuit, AGPLv3',
   },
   hero: {
-    title: 'Rapide. Reposant. Bien à vous.',
+    title: 'Rapide. Reposant. Sécurisant.',
     lead:
       'NiceMailer est un client de messagerie pour Mac. Tout y est instantané, même avec des centaines de milliers de mails. Seules les personnes que vous avez choisies atteignent votre Inbox, et votre courrier reste sur votre Mac pour des décennies, sans rien sacrifier de votre vie privée.',
     shotAlt: 'La fenêtre de NiceMailer : la liste des conversations à gauche, un mail ouvert à droite.',
@@ -68,7 +68,7 @@ const fr: Strings = {
     },
     {
       id: 'calm',
-      title: 'Calme',
+      title: 'Reposant',
       lead: 'Seules les personnes que vous avez choisies arrivent dans votre boîte. Les autres attendent une décision que vous ne prenez qu’une fois.',
       shot: 'quarantine',
       shotAlt: 'Le dossier Quarantine : les mails des expéditeurs inconnus, avec une touche par destination dans la barre d’état.',
@@ -94,7 +94,7 @@ const fr: Strings = {
     },
     {
       id: 'trust',
-      title: 'Fiable',
+      title: 'Sécurisant',
       lead: 'Votre courrier est la mémoire de votre vie. NiceMailer le protège, et vous protège de ce qui y arrive.',
       shot: 'thread',
       shotAlt: 'Une newsletter dans NiceMailer, avec son bouton de désabonnement et le nombre de pixels espions retirés.',
@@ -119,7 +119,7 @@ const fr: Strings = {
       ],
     },
   ],
-  pillarMore: 'Toutes les fonctions',
+  pillarMore: 'Toutes les fonctionnalités',
   tryIt: {
     title: 'Essayez sans rien changer',
     text: 'Ajoutez votre compte et choisissez « Seulement regarder pour l’instant » : NiceMailer affiche votre courrier sans modifier un seul octet sur le serveur. Avant d’aller plus loin, il vous montre exactement les dossiers qu’il va créer. Quand vous êtes prêt, un clic met le workflow en place, sans retélécharger votre courrier.',
@@ -139,7 +139,7 @@ const fr: Strings = {
     title: 'Pourquoi NiceMailer existe',
     text: [
       'Je cherche le bon client mail depuis des décennies. Aucun n’était assez rapide avec une grosse boîte, aucun ne se pilotait au clavier, aucun ne gardait mon courrier en sécurité sur mon propre ordinateur.',
-      'Alors je le construis, comme je construis depuis plus de vingt ans des applications complexes et critiques. NiceMailer est un projet jeune, mais ce n’est pas une expérience d’un week-end : son modèle de données et ses spécifications ont été écrits avant la première ligne de code, et je m’en sers des heures chaque jour.',
+      'Alors je l’ai construit, comme je construis depuis plus de vingt ans des applications complexes et critiques. NiceMailer est un projet jeune, mais ce n’est pas une expérience d’un week-end : son modèle de données et ses spécifications ont été écrits avant la première ligne de code, et je m’en sers des heures chaque jour.',
     ],
   },
   faq: {
@@ -163,7 +163,7 @@ const fr: Strings = {
       },
       {
         q: 'Faut-il utiliser l’IA ?',
-        a: 'Non. L’IA est désactivée tant que vous ne l’activez pas, et toutes les fonctions de l’application marchent sans elle.',
+        a: 'Non. L’IA est désactivée tant que vous ne l’activez pas, et toutes les fonctionnalités de l’application marchent sans elle.',
       },
       {
         q: 'Va-t-il modifier ma boîte sur le serveur ?',
@@ -189,6 +189,8 @@ const fr: Strings = {
     edit: 'Quelque chose n’est pas clair ou est faux ? Ouvrez une issue.',
     prev: 'Précédent',
     next: 'Suivant',
+    contents: 'Pages du guide',
+    lead: 'Installer NiceMailer, y faire venir votre courrier et l’utiliser au quotidien.',
   },
   changelog: {
     title: 'Nouveautés',

@@ -4,7 +4,7 @@ description: Activer l'assistant IA, voir ce qu'il sait faire, et brancher Claud
 order: 8
 ---
 
-L'IA est facultative dans NiceMailer. Elle est désactivée tant que vous ne l'activez pas, et toutes les fonctions de l'application marchent sans elle.
+L'IA est facultative dans NiceMailer. Elle est désactivée tant que vous ne l'activez pas, et toutes les fonctionnalités de l'application marchent sans elle.
 
 ## Trois règles
 

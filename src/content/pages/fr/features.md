@@ -1,6 +1,6 @@
 ---
-title: Fonctions
-description: Tout ce que fait NiceMailer pour que votre courrier reste rapide, calme et en sécurité.
+title: Fonctionnalités
+description: Tout ce qui rend NiceMailer rapide, reposant et sécurisant.
 ---
 
 ## Rapide
@@ -27,7 +27,7 @@ Une touche, <kbd>l</kbd>, liste tout ce que contient un mail : ses liens, ses pi
 
 Chaque mail a un lien stable, comme `[Objet du mail](nicemailer://m/399955)`, copié depuis le mail en deux touches. Collez-le dans Obsidian, Notion ou n'importe quelle application de notes, et revenez au mail d'un clic, des années plus tard.
 
-## Calme
+## Reposant
 
 ### Les inconnus attendent en Quarantine
 
@@ -67,7 +67,7 @@ Les longues conversations sont un mur de citations répétées, de signatures et
 
 Certains clients mail finissent par ressembler à des sapins de Noël. NiceMailer a une interface sobre et calme : sa force tient à la vitesse avec laquelle il vous laisse trouver, lire, répondre et ranger. Et un vrai mode sombre assombrit même le fond blanc de votre newsletter préférée.
 
-## Fiable
+## Sécurisant
 
 ### Le phishing reste dehors
 
@@ -109,8 +109,8 @@ Chaque changement dans votre boîte est consigné : ce que vous avez rangé aujo
 
 ### Libre, pour que vous puissiez vérifier
 
-NiceMailer est un logiciel libre, sous licence GNU AGPLv3. Vous n'avez à croire aucune affirmation de cette page sur parole : la façon dont votre courrier est stocké, ce qui est envoyé à l'IA et ce qu'un agent IA a le droit de faire sont dans le [code source](https://github.com/nicemailer/nicemailer).
+NiceMailer est un logiciel libre, sous licence GNU AGPLv3. Vous n'avez à croire aucune affirmation de cette page sur parole : la façon dont votre courrier est stocké, ce qui est envoyé à l'IA et ce qu'un agent IA a le droit de faire sont dans le [code source](https://github.com/nicemailer/nicemailer). Vous n'êtes pas développeur ? Envoyez votre agent IA le lire à votre place : lui, il ne s'ennuie jamais.
 
 ### Construit pour durer
 
-Le modèle de données et les spécifications de NiceMailer ont été conçus bien avant la première ligne de code. Son cœur, écrit en Rust, continue de tourner en arrière-plan quand l'application est fermée : le courrier continue d'arriver et d'être trié, et les envois en attente partent. Chacune de vos actions survit à un plantage et parvient au serveur dès que la connexion revient. Avant chaque mise à jour, votre boîte est copiée, et remise en place automatiquement en cas de problème. Une suite de tests complète protège chaque fonction.
+Le modèle de données et les spécifications de NiceMailer ont été conçus bien avant la première ligne de code. Son cœur, écrit en Rust, continue de tourner en arrière-plan quand l'application est fermée : le courrier continue d'arriver et d'être trié, et les envois en attente partent. Chacune de vos actions survit à un plantage et parvient au serveur dès que la connexion revient. Avant chaque mise à jour, votre boîte est copiée, et remise en place automatiquement en cas de problème. Une suite de tests complète protège chaque fonctionnalité.

@@ -25,6 +25,15 @@ const description = entry ? entry.data.description : s.meta.description;
 <Base lang={lang} title={title} description={description}>
   <div class="wrap docs">
     <aside>
+      {/* The pages of the guide. On a phone they would push the text a
+          screen down, so they fold into one line there (closed by the script
+          below); on a wider screen the line is hidden and the list always
+          shown. Without JavaScript, the list stays open. */}
+      <details class="toc" open>
+        <summary>
+          <span>{s.docs.contents}</span>
+          {entry && <span class="here">{entry.data.title}</span>}
+        </summary>
       <p class="aside-title"><a href={href(lang, '/docs/')}>{s.docs.title}</a></p>
       <ol>
         {
@@ -37,6 +46,20 @@ const description = entry ? entry.data.description : s.meta.description;
           ))
         }
       </ol>
+      </details>
+      <script is:inline>
+        (function () {
+          var toc = document.querySelector('.toc');
+          var phone = matchMedia('(max-width: 50rem)');
+          if (!toc) return;
+          // Folded on a phone; always open on a wider screen, also when the
+          // window is made wider after it was folded.
+          if (phone.matches) toc.removeAttribute('open');
+          phone.addEventListener('change', function () {
+            if (!phone.matches) toc.setAttribute('open', '');
+          });
+        })();
+      </script>
     </aside>
     <article>
       {
@@ -67,6 +90,7 @@ const description = entry ? entry.data.description : s.meta.description;
         ) : (
           <>
             <h1>{s.docs.title}</h1>
+            <p class="doc-lead">{s.docs.lead}</p>
             <ol class="index">
               {list.map((e) => (
                 <li>
@@ -84,17 +108,27 @@ const description = entry ? entry.data.description : s.meta.description;
 </Base>
 
 <style>
+  /* The text on the left, where it is on every other page; the list of
+     pages on the right. On a phone the list comes first, above the text. */
   .docs {
     display: grid;
-    grid-template-columns: 15rem minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr) 15rem;
+    grid-template-areas: 'main side';
     gap: 3.5rem;
     padding-top: 2.5rem;
   }
+  article {
+    grid-area: main;
+  }
   aside {
+    grid-area: side;
     position: sticky;
     top: 1.5rem;
     align-self: start;
     font-size: 1rem;
+  }
+  .toc summary {
+    display: none;
   }
   .aside-title {
     font-family: var(--font-display);
@@ -128,21 +162,22 @@ const description = entry ? entry.data.description : s.meta.description;
     color: var(--ink);
     border-left-color: var(--leaf);
   }
+  /* The title and its lead as on the other pages (ContentPage.astro). */
   h1 {
-    font-size: clamp(2rem, 4.5vw, 2.8rem);
+    font-size: clamp(2.4rem, 6vw, 3.8rem);
     letter-spacing: -0.03em;
   }
   .doc-lead {
-    margin-top: 0.8rem;
-    margin-bottom: 2rem;
-    font-size: 1.25rem;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    font-size: 1.3rem;
     color: var(--ink-2);
     max-width: var(--measure);
   }
   .index {
     list-style: none;
     padding: 0;
-    margin: 2rem 0 0;
+    margin: 0;
     display: grid;
     gap: 1.5rem;
     max-width: var(--measure);
@@ -191,11 +226,58 @@ const description = entry ? entry.data.description : s.meta.description;
   @media (max-width: 50rem) {
     .docs {
       grid-template-columns: minmax(0, 1fr);
+      grid-template-areas: 'side' 'main';
       gap: 1.5rem;
       padding-top: 1rem;
     }
     aside {
       position: static;
+    }
+    .toc {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 0 1rem;
+    }
+    .toc summary {
+      display: flex;
+      align-items: baseline;
+      gap: 0.6rem;
+      padding: 0.8rem 0;
+      cursor: pointer;
+      list-style: none;
+      font-family: var(--font-display);
+      font-weight: 700;
+    }
+    .toc summary::-webkit-details-marker {
+      display: none;
+    }
+    /* A chevron that points down when folded, up when open. */
+    .toc summary::after {
+      content: '';
+      margin-left: auto;
+      align-self: center;
+      width: 0.5rem;
+      height: 0.5rem;
+      border-right: 2px solid var(--ink-2);
+      border-bottom: 2px solid var(--ink-2);
+      transform: translateY(-25%) rotate(45deg);
+    }
+    .toc[open] summary::after {
+      transform: translateY(25%) rotate(-135deg);
+    }
+    .here {
+      font-family: var(--font-body);
+      font-weight: 400;
+      color: var(--ink-2);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .toc .aside-title {
+      display: none;
+    }
+    .toc ol {
+      margin-bottom: 1rem;
     }
   }
 </style>
