@@ -39,6 +39,8 @@ If you connect an AI app such as Claude Desktop to NiceMailer, that app can read
 
 nicemailer.org is a static site hosted by GitHub Pages. It has no cookies, no analytics, no tracking scripts and no fonts or images loaded from other sites. GitHub, as the host, receives the usual request information (such as your IP address) to serve the pages; see [GitHub's privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
 
+The home page opens in French when your browser prefers French. If you pick a language with the link at the top of the page, your browser remembers it (in its local storage, which is never sent to the site), so that the home page keeps opening in that language.
+
 ## Questions
 
 If something on this page is unclear, or if you find the app doing something it doesn't say, please [open an issue](https://github.com/nicemailer/nicemailer/issues).

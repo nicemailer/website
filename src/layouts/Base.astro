@@ -1,6 +1,13 @@
 ---
-// The frame of every page: <head>, header, footer. No script, no cookie,
-// no request to another site: everything the page needs is served by it.
+// The frame of every page: <head>, header, footer. No cookie, no request
+// to another site: everything the page needs is served by it.
+//
+// Language: GitHub Pages serves files and cannot read the visitor's
+// languages, so the English home page sends a visitor whose browser prefers
+// French to /fr/ itself, with a few lines run before the page is drawn. The
+// language link remembers a choice made by hand (in the browser only,
+// `localStorage`, never sent anywhere): a French speaker who picks English
+// is not sent back to French.
 import '../styles/global.css';
 import { t, href, switchLang, REPO, ISSUES, type Lang } from '../i18n';
 import { latestRelease } from '../release';
@@ -47,6 +54,27 @@ const current = (to: string) => path === to || (to.endsWith('/docs/') && path.st
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={new URL('/og.png', Astro.site)} />
     <meta property="og:locale" content={lang === 'fr' ? 'fr_FR' : 'en_US'} />
+    {
+      lang === 'en' && path === '/' && (
+        <script is:inline>
+          (function () {
+            var chosen = null;
+            try {
+              chosen = localStorage.getItem('lang');
+            } catch (e) {}
+            if (chosen === 'en') return;
+            // The first of the browser's languages that the site has.
+            var prefs = navigator.languages || [navigator.language || ''];
+            var first = null;
+            for (var i = 0; i < prefs.length && !first; i++) {
+              var code = String(prefs[i]).toLowerCase().slice(0, 2);
+              if (code === 'fr' || code === 'en') first = code;
+            }
+            if (chosen === 'fr' || first === 'fr') location.replace('/fr/' + location.search + location.hash);
+          })();
+        </script>
+      )
+    }
   </head>
   <body>
     <a class="skip" href="#content">{s.nav.skip}</a>
@@ -67,7 +95,9 @@ const current = (to: string) => path === to || (to.endsWith('/docs/') && path.st
             ))
           }
           <li><a href={REPO}>{s.nav.source}</a></li>
-          <li><a href={other} hreflang={otherLang} lang={otherLang}>{s.nav.otherLanguage}</a></li>
+          <li>
+            <a href={other} hreflang={otherLang} lang={otherLang} data-choose-lang={otherLang}>{s.nav.otherLanguage}</a>
+          </li>
         </ul>
       </nav>
       <a class="header-download" href={release.url}>{s.nav.download}</a>
@@ -91,6 +121,16 @@ const current = (to: string) => path === to || (to.endsWith('/docs/') && path.st
         </ul>
       </div>
     </footer>
+    <script is:inline>
+      // Remember the language chosen with the language link.
+      document.querySelectorAll('[data-choose-lang]').forEach(function (link) {
+        link.addEventListener('click', function () {
+          try {
+            localStorage.setItem('lang', link.getAttribute('data-choose-lang'));
+          } catch (e) {}
+        });
+      });
+    </script>
   </body>
 </html>
 

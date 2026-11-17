@@ -18,10 +18,10 @@ An old work address, a provider you left: if you have an **mbox** file of it, Ni
 
 | From | How to get the mbox file |
 | --- | --- |
-| HEY | Export your email from your HEY account settings |
-| Gmail | [Google Takeout](https://takeout.google.com), Mail only: you get an `.mbox` file |
 | Apple Mail | Select a mailbox, **Mailbox › Export Mailbox…**: the file is named `mbox`, inside the exported folder |
+| Gmail | [Google Takeout](https://takeout.google.com), Mail only: you get an `.mbox` file |
 | Thunderbird | Each local folder is an mbox file; the ImportExportTools NG add-on exports others |
+| HEY | Export your email from your HEY account settings |
 
 Then, in Terminal (NiceMailer must be running):
 

@@ -16,9 +16,13 @@ interface Props {
   name: string;
   alt: string;
   eager?: boolean;
+  /** A line under the screenshot, saying what it shows for the reader. */
+  caption?: string;
+  /** Puts the caption on the right, out of the reading flow of the page. */
+  captionEnd?: boolean;
 }
 
-const { lang, name, alt, eager = false } = Astro.props;
+const { lang, name, alt, eager = false, caption, captionEnd = false } = Astro.props;
 
 // TypeScript note: `import.meta.glob` is resolved by the bundler: it lists
 // the matching files at build time and imports them; `eager` imports them
@@ -31,6 +35,9 @@ const darkSrc = find(lang, 'dark') ?? find('en', 'dark');
 // The page is at most about 1,150 CSS pixels wide; the widths cover phones
 // up to large Retina screens.
 const sizes = '(min-width: 74rem) 70rem, 94vw';
+// The large view fills the screen, so the browser picks a bigger file.
+const bigSizes = '96vw';
+const s = t(lang).shot;
 const options = { format: 'webp' as const, quality: 82, widths: [640, 1024, 1440, 1920, 2560] };
 const light = lightSrc ? await getImage({ src: lightSrc, ...options }) : null;
 const dark = darkSrc ? await getImage({ src: darkSrc, ...options }) : null;
@@ -44,34 +51,136 @@ const height = probe ? Math.round(probe.height / 2) : 800;
 <figure class="shot">
   {
     main ? (
-      <picture>
-        {light && dark && <source type="image/webp" media="(prefers-color-scheme: dark)" srcset={dark.srcSet.attribute} sizes={sizes} />}
-        <img
-          src={main.src}
-          srcset={main.srcSet.attribute}
-          sizes={sizes}
-          alt={alt}
-          width={width}
-          height={height}
-          loading={eager ? 'eager' : 'lazy'}
-          fetchpriority={eager ? 'high' : undefined}
-          decoding="async"
-        />
-      </picture>
+      <>
+        <button type="button" class="zoom" aria-label={`${s.zoom}: ${alt}`} aria-haspopup="dialog">
+          <picture>
+            {light && dark && <source type="image/webp" media="(prefers-color-scheme: dark)" srcset={dark.srcSet.attribute} sizes={sizes} />}
+            <img
+              src={main.src}
+              srcset={main.srcSet.attribute}
+              sizes={sizes}
+              alt={alt}
+              width={width}
+              height={height}
+              loading={eager ? 'eager' : 'lazy'}
+              fetchpriority={eager ? 'high' : undefined}
+              decoding="async"
+            />
+          </picture>
+        </button>
+        {/* The large view. A closed dialog is not displayed, so its lazy
+            image is only downloaded when the visitor opens it. */}
+        <dialog class="viewer" aria-label={alt}>
+          <picture>
+            {light && dark && <source type="image/webp" media="(prefers-color-scheme: dark)" srcset={dark.srcSet.attribute} sizes={bigSizes} />}
+            <img src={main.src} srcset={main.srcSet.attribute} sizes={bigSizes} alt={alt} width={width} height={height} loading="lazy" decoding="async" />
+          </picture>
+          <span class="hint">{s.close}</span>
+        </dialog>
+      </>
     ) : (
       <div class="pending" role="img" aria-label={alt}>
-        <span>{t(lang).shot.pending}</span>
+        <span>{s.pending}</span>
         <small>{alt}</small>
       </div>
     )
   }
+  {caption && <figcaption class:list={{ end: captionEnd }}>{caption}</figcaption>}
 </figure>
+
+<script>
+  // TypeScript note: Astro bundles this script once for the page, however
+  // many screenshots there are, so it wires every one of them.
+  //
+  // A click on a screenshot opens its large view in a modal <dialog>: the
+  // browser then closes it on Escape by itself, keeps the keyboard inside,
+  // and gives the focus back to the screenshot. A click anywhere in the
+  // large view closes it too.
+  for (const figure of document.querySelectorAll<HTMLElement>('.shot')) {
+    const button = figure.querySelector<HTMLButtonElement>('.zoom');
+    const viewer = figure.querySelector<HTMLDialogElement>('.viewer');
+    if (!button || !viewer) continue;
+    button.addEventListener('click', () => viewer.showModal());
+    viewer.addEventListener('click', () => viewer.close());
+  }
+</script>
 
 <style>
   .shot {
     margin: 0;
   }
-  .shot img,
+  figcaption {
+    margin: 0.9rem 0.25rem 0;
+    max-width: 44rem;
+    color: var(--ink-2);
+    font-size: 0.95rem;
+    line-height: 1.45;
+  }
+  figcaption.end {
+    margin-left: auto;
+    text-align: right;
+  }
+  /* The screenshot is a button that opens the large view. */
+  .zoom {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: zoom-in;
+    border-radius: 12px;
+  }
+  .zoom:focus-visible {
+    outline: 3px solid var(--accent, currentColor);
+    outline-offset: 4px;
+  }
+  .viewer {
+    max-width: none;
+    max-height: none;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 2vh 2vw;
+    border: 0;
+    background: transparent;
+    cursor: zoom-out;
+  }
+  .viewer[open] {
+    display: grid;
+    place-items: center;
+  }
+  .viewer::backdrop {
+    background: rgba(12, 20, 14, 0.88);
+  }
+  .viewer img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 96vw;
+    max-height: 92vh;
+    border-radius: 10px;
+  }
+  .hint {
+    position: fixed;
+    top: 0.8rem;
+    right: 1rem;
+    color: #f2f5ef;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .viewer[open] img {
+      animation: grow 160ms ease-out;
+    }
+    @keyframes grow {
+      from {
+        transform: scale(0.96);
+        opacity: 0.6;
+      }
+    }
+  }
+  .zoom img,
   .pending {
     width: 100%;
     height: auto;

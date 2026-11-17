@@ -27,6 +27,7 @@ export default {
     lead:
       'NiceMailer is a fast, calm and trustworthy email client for the Mac. It stays instant with hundreds of thousands of emails, keeps the noise out of your way, and keeps every conversation on your Mac for decades.',
     shotAlt: 'The NiceMailer window: the list of conversations on the left, an open email on the right.',
+    caption: 'A conversation of four messages. Earlier ones fold into a line each, and the latest shows only what it adds: its signature and 28 quoted lines are one key away.',
   },
   measures: {
     title: 'Measured, not promised',
@@ -35,7 +36,7 @@ export default {
       { value: '2 ms', label: 'to keep only the emails written by people, among 400,000' },
       { value: '36 s', label: 'to import a 10 GB archive of 46,000 emails' },
     ],
-    note: 'Measured on a MacBook with real and generated mailboxes. The method is in the documentation of the source code.',
+    note: 'Measured on a MacBook with an M1 chip, with real and generated mailboxes. The method is in the documentation of the source code.',
   },
   pillars: [
     {
@@ -44,6 +45,7 @@ export default {
       lead: 'Every action answers at once, and every action has a key.',
       shot: 'filters',
       shotAlt: 'The filter panel open over the list, with Unread, Flagged, From… and other filters.',
+      caption: 'Press f to filter by unread, sender, person or robot, attachments… Every filter answers at once, even across hundreds of thousands of emails.',
       points: [
         {
           title: 'Keyboard first',
@@ -55,7 +57,7 @@ export default {
         },
         {
           title: 'Everything in an email, one key away',
-          text: 'Press L to see the links, attachments, phone numbers and confirmation code of an email. Copy the code, open the file or call the sender through your iPhone.',
+          text: 'Press l to see the links, attachments, phone numbers and confirmation code of an email. Copy the code, open the file or call the sender through your iPhone.',
         },
         {
           title: 'A link to every email',
@@ -69,6 +71,7 @@ export default {
       lead: 'Only the people you chose reach your inbox. The rest waits for a decision you make once.',
       shot: 'quarantine',
       shotAlt: 'The Quarantine folder: emails from unknown senders, with one key per destination in the status bar.',
+      caption: 'Unknown senders wait in Quarantine. One key decides where a sender belongs, for every email they will ever send you.',
       points: [
         {
           title: 'Unknown senders wait in Quarantine',
@@ -93,7 +96,8 @@ export default {
       title: 'Trust',
       lead: 'Your email is the record of your life. NiceMailer protects it, and protects you from what arrives in it.',
       shot: 'thread',
-      shotAlt: 'An open conversation in NiceMailer: quotes and signatures folded away.',
+      shotAlt: 'A newsletter in NiceMailer, with its unsubscribe button and the count of tracking pixels removed.',
+      caption: 'The tracking pixel of this newsletter was removed when it arrived (the crossed-out eye), so the sender never knows you read it. Unsubscribing takes one click.',
       points: [
         {
           title: 'Phishing stays out',
@@ -122,7 +126,7 @@ export default {
   },
   migration: {
     title: 'Bring all your email with you',
-    text: 'Add your accounts and NiceMailer downloads all their mail. Archives of closed accounts come in too: an mbox export from HEY, Gmail, Thunderbird or Apple Mail is imported in minutes, and running it again only adds what is missing.',
+    text: 'Add your accounts and NiceMailer downloads all their mail. Archives of closed accounts come in too: an mbox export from Apple Mail, Gmail, Thunderbird or HEY is imported in minutes, and running it again only adds what is missing.',
     link: 'Moving to NiceMailer',
   },
   openSource: {
@@ -134,7 +138,7 @@ export default {
     title: 'Why NiceMailer exists',
     text: [
       'I have been looking for the right email client for decades. None was fast enough with a large mailbox, none let me work from the keyboard, and none kept my email safe on my own computer.',
-      'So I am building it. NiceMailer is a young project, but it is not a weekend experiment: its data model and specifications were written before the first line of code, and I use it for hours every day.',
+      'So I am building it, as I have built complex, mission-critical software for more than twenty years. NiceMailer is a young project, but it is not a weekend experiment: its data model and specifications were written before the first line of code, and I use it for hours every day.',
     ],
   },
   faq: {
@@ -193,5 +197,7 @@ export default {
   },
   shot: {
     pending: 'Screenshot coming soon',
+    zoom: 'Show this screenshot larger',
+    close: 'Close (Escape)',
   },
 };

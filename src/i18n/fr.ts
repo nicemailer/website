@@ -28,6 +28,7 @@ const fr: Strings = {
     lead:
       'NiceMailer est un client mail rapide, calme et digne de confiance pour le Mac. Il reste instantané avec des centaines de milliers de mails, écarte le bruit de votre chemin et garde chaque conversation sur votre Mac pour des décennies.',
     shotAlt: 'La fenêtre de NiceMailer : la liste des conversations à gauche, un mail ouvert à droite.',
+    caption: 'Une conversation de quatre messages. Les précédents tiennent chacun sur une ligne, et le dernier ne montre que ce qu’il apporte : sa signature et ses 28 lignes citées sont à une touche.',
   },
   measures: {
     title: 'Mesuré, pas promis',
@@ -36,7 +37,7 @@ const fr: Strings = {
       { value: '2 ms', label: 'pour ne garder que les mails écrits par des personnes, parmi 400 000' },
       { value: '36 s', label: 'pour importer une archive de 10 Go et 46 000 mails' },
     ],
-    note: 'Mesures faites sur un MacBook, avec des boîtes réelles et générées. La méthode est décrite dans la documentation du code source.',
+    note: 'Mesures faites sur un MacBook M1, avec des boîtes réelles et générées. La méthode est décrite dans la documentation du code source.',
   },
   pillars: [
     {
@@ -45,6 +46,7 @@ const fr: Strings = {
       lead: 'Chaque action répond tout de suite, et chaque action a sa touche.',
       shot: 'filters',
       shotAlt: 'Le panneau des filtres ouvert sur la liste : Non lus, Drapeau, De… et les autres.',
+      caption: 'La touche f filtre par non lus, expéditeur, personne ou robot, pièces jointes… Chaque filtre répond à l’instant, même sur des centaines de milliers de mails.',
       points: [
         {
           title: 'Le clavier d’abord',
@@ -56,7 +58,7 @@ const fr: Strings = {
         },
         {
           title: 'Tout ce que contient un mail, à une touche',
-          text: 'La touche L montre les liens, les pièces jointes, les numéros de téléphone et le code de confirmation d’un mail. Copiez le code, ouvrez le fichier ou appelez l’expéditeur avec votre iPhone.',
+          text: 'La touche l montre les liens, les pièces jointes, les numéros de téléphone et le code de confirmation d’un mail. Copiez le code, ouvrez le fichier ou appelez l’expéditeur avec votre iPhone.',
         },
         {
           title: 'Un lien vers chaque mail',
@@ -70,6 +72,7 @@ const fr: Strings = {
       lead: 'Seules les personnes que vous avez choisies arrivent dans votre boîte. Les autres attendent une décision que vous ne prenez qu’une fois.',
       shot: 'quarantine',
       shotAlt: 'Le dossier Quarantine : les mails des expéditeurs inconnus, avec une touche par destination dans la barre d’état.',
+      caption: 'Les inconnus attendent en Quarantine. Une touche décide où va un expéditeur, pour tous les mails qu’il vous enverra.',
       points: [
         {
           title: 'Les inconnus attendent en Quarantine',
@@ -94,7 +97,8 @@ const fr: Strings = {
       title: 'Fiable',
       lead: 'Votre courrier est la mémoire de votre vie. NiceMailer le protège, et vous protège de ce qui y arrive.',
       shot: 'thread',
-      shotAlt: 'Une conversation ouverte dans NiceMailer : citations et signatures repliées.',
+      shotAlt: 'Une newsletter dans NiceMailer, avec son bouton de désabonnement et le nombre de pixels espions retirés.',
+      caption: 'Le pixel espion de cette newsletter a été retiré à son arrivée (l’œil barré) : l’expéditeur ne sait jamais que vous l’avez lue. Le désabonnement tient en un clic.',
       points: [
         {
           title: 'Le phishing reste dehors',
@@ -123,7 +127,7 @@ const fr: Strings = {
   },
   migration: {
     title: 'Emportez tout votre courrier',
-    text: 'Ajoutez vos comptes : NiceMailer télécharge tout leur courrier. Les archives des comptes fermés suivent aussi : un export mbox de HEY, Gmail, Thunderbird ou Apple Mail s’importe en quelques minutes, et le relancer n’ajoute que ce qui manque.',
+    text: 'Ajoutez vos comptes : NiceMailer télécharge tout leur courrier. Les archives des comptes fermés suivent aussi : un export mbox d’Apple Mail, Gmail, Thunderbird ou HEY s’importe en quelques minutes, et le relancer n’ajoute que ce qui manque.',
     link: 'Passer à NiceMailer',
   },
   openSource: {
@@ -135,7 +139,7 @@ const fr: Strings = {
     title: 'Pourquoi NiceMailer existe',
     text: [
       'Je cherche le bon client mail depuis des décennies. Aucun n’était assez rapide avec une grosse boîte, aucun ne se pilotait au clavier, aucun ne gardait mon courrier en sécurité sur mon propre ordinateur.',
-      'Alors je le construis. NiceMailer est un projet jeune, mais ce n’est pas une expérience d’un week-end : son modèle de données et ses spécifications ont été écrits avant la première ligne de code, et je m’en sers des heures chaque jour.',
+      'Alors je le construis, comme je construis depuis plus de vingt ans des applications complexes et critiques. NiceMailer est un projet jeune, mais ce n’est pas une expérience d’un week-end : son modèle de données et ses spécifications ont été écrits avant la première ligne de code, et je m’en sers des heures chaque jour.',
     ],
   },
   faq: {
@@ -194,6 +198,8 @@ const fr: Strings = {
   },
   shot: {
     pending: 'Capture d’écran à venir',
+    zoom: 'Agrandir cette capture',
+    close: 'Fermer (Échap)',
   },
 };
 

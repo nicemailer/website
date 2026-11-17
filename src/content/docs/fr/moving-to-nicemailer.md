@@ -18,10 +18,10 @@ Une ancienne adresse professionnelle, un fournisseur que vous avez quitté : si 
 
 | Depuis | Comment obtenir le fichier mbox |
 | --- | --- |
-| HEY | Exportez votre courrier depuis les réglages de votre compte HEY |
-| Gmail | [Google Takeout](https://takeout.google.com), Mail seulement : vous obtenez un fichier `.mbox` |
 | Apple Mail | Sélectionnez une boîte, **Boîte aux lettres › Exporter la boîte aux lettres…** : le fichier s'appelle `mbox`, dans le dossier exporté |
+| Gmail | [Google Takeout](https://takeout.google.com), Mail seulement : vous obtenez un fichier `.mbox` |
 | Thunderbird | Chaque dossier local est un fichier mbox ; le module ImportExportTools NG exporte les autres |
+| HEY | Exportez votre courrier depuis les réglages de votre compte HEY |
 
 Puis, dans le Terminal (NiceMailer doit être lancé) :
 

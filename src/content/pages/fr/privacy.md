@@ -39,6 +39,8 @@ Si vous branchez une application d'IA comme Claude Desktop sur NiceMailer, cette
 
 nicemailer.org est un site statique hébergé par GitHub Pages. Il n'a ni cookie, ni statistiques, ni script de pistage, et ne charge ni police ni image depuis d'autres sites. GitHub, en tant qu'hébergeur, reçoit les informations habituelles d'une requête (comme votre adresse IP) pour servir les pages ; voir la [déclaration de confidentialité de GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
 
+La page d'accueil s'ouvre en français quand votre navigateur préfère le français. Si vous choisissez une langue avec le lien en haut de la page, votre navigateur s'en souvient (dans son stockage local, qui n'est jamais envoyé au site), pour que l'accueil continue de s'ouvrir dans cette langue.
+
 ## Questions
 
 Si quelque chose n'est pas clair sur cette page, ou si vous voyez l'application faire quelque chose qu'elle ne dit pas, [ouvrez une issue](https://github.com/nicemailer/nicemailer/issues).

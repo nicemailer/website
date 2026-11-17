@@ -26,6 +26,29 @@ The first time, macOS says that a background item was added. That is the core. I
 
 Then open **NiceMailer › Settings…** (<kbd>⌘</kbd> <kbd>,</kbd>) to [add your first account](/docs/add-an-account/).
 
+## System permissions
+
+NiceMailer works fully without any access to the rest of your Mac. Two permissions add features, and you can grant them, refuse them or withdraw them at any time in **System Settings › Privacy & Security**.
+
+### Contacts
+
+With access to your contacts, NiceMailer recognizes the people who are in your address book. A small icon at the end of each message says whether its sender has a card, and <kbd>ctrl</kbd> <kbd>c</kbd> opens that card. The phone numbers of the card also appear among the links of the email (<kbd>l</kbd>), ready to call with your iPhone.
+
+macOS asks for it the first time you use one of these features, never at launch. The cards are read when they are needed and are never copied into NiceMailer's database. If you refuse, everything else works the same, and the links panel shows the links of the email only.
+
+### Accessibility
+
+When you call a number from an email, macOS doesn't call at once: it shows a notification with a green button, and you have to click it. A notification never takes the keyboard, so <kbd>Return</kbd> can't press it.
+
+With the Accessibility permission, NiceMailer presses that button for you, so you call a sender straight from their email without touching the mouse. As this permission is broad (it lets an app operate the interface of other apps), the feature is off by default. To turn it on, add this to `~/.config/nicemailer/config.toml`:
+
+```toml
+[ui]
+auto_confirm_calls = true
+```
+
+At the first call, macOS asks you to allow NiceMailer in **System Settings › Privacy & Security › Accessibility**. Until you do, calls work as before, with the click.
+
 ## Updates
 
 NiceMailer updates itself. At the second launch it asks whether it may check for new versions; if you agree, it looks once a day. You can also choose **NiceMailer › Check for Updates…** at any time.
