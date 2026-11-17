@@ -4,7 +4,7 @@ export default {
   meta: {
     title: 'NiceMailer: a fast, calm and trustworthy email client for the Mac',
     description:
-      'NiceMailer is a free and open-source email client for macOS. Instant with hundreds of thousands of emails, keyboard first, local first, with optional AI.',
+      'NiceMailer is a free and open-source email client for the Mac. Instant even with hundreds of thousands of emails. Everything stays on your Mac. Your own AI built in, if you want it.',
   },
   nav: {
     features: 'Features',
@@ -33,7 +33,7 @@ export default {
     title: 'Measured, not promised',
     items: [
       { value: '2 ms', label: 'to show a folder, even while new mail is downloading' },
-      { value: '2 ms', label: 'to keep only the emails written by people, among 400,000' },
+      { value: '2 ms', label: 'to show only emails from real people, among 400,000' },
       { value: '36 s', label: 'to import a 10 GB archive of 45,000 emails' },
     ],
     note: 'Measured on a MacBook Pro M1, with real and generated mailboxes. The method is in the documentation of the source code.',
@@ -42,33 +42,33 @@ export default {
     {
       id: 'speed',
       title: 'Speed',
-      lead: 'Every action answers at once, and every action has a key.',
+      lead: 'Every action is instant, and has its own keyboard shortcut.',
       shot: 'filters',
       shotAlt: 'The filter panel open over the list, with Unread, Flagged, From… and other filters.',
-      caption: 'Press f to filter by unread, sender, person or robot, attachments… Every filter answers at once, even across hundreds of thousands of emails.',
+      caption: 'Press f to open the filters: unread, sender, person or robot, attachments… Every filter responds instantly, even across hundreds of thousands of emails.',
       points: [
         {
-          title: 'Keyboard first',
-          text: 'Read, reply, file, tag and search without touching the mouse, with keys inspired by Vim. Prefer the mouse? Everything works with it too.',
+          title: 'Do everything from the keyboard',
+          text: 'Read, reply, file, tag and search without touching the mouse, with shortcuts inspired by Vim.\nPrefer the mouse? Everything works with it too, of course.',
         },
         {
           title: "Don't search. Find.",
-          text: 'Full-text search across every account, combined with filters: date, sender, unread, flagged, attachments, your reply, person or robot, tag, group. Every filter can be inverted.',
+          text: 'Filter all your email instantly, across every account. Combine any criteria: full text, date, sender, attributes (unread, flagged, attachments, your reply, person or robot), tag, group. Every filter can be inverted.\nSay goodbye to scrolling, fast as it is…',
         },
         {
           title: 'Everything in an email, one key away',
           text: 'Press l to see the links, attachments, phone numbers and confirmation code of an email. Copy the code, open the file or call the sender through your iPhone.',
         },
         {
-          title: 'A link to every email',
-          text: 'Copy a stable link to any email in two keystrokes and paste it into Obsidian, Notion or your notes. One click brings you back to it, years later.',
+          title: 'A deep link to every email',
+          text: 'Copy a permanent link to any email in two keystrokes and paste it into Obsidian, Notion or Apple Notes. One click brings you back to it, years later.',
         },
       ],
     },
     {
       id: 'calm',
       title: 'Calm',
-      lead: 'Only the people you chose reach your inbox. The rest waits for a decision you make once.',
+      lead: 'Only the people you chose reach your inbox. The rest wait in Quarantine for a decision you make only once.',
       shot: 'quarantine',
       shotAlt: 'The Quarantine folder: emails from unknown senders, with one key per destination in the status bar.',
       caption: 'Unknown senders wait in Quarantine. One key decides where a sender belongs, for every email they will ever send you.',
@@ -82,8 +82,8 @@ export default {
           text: 'Your decision applies to the sender, not to one email: everything they sent you before, in every account, is filed with it, and so is everything they will send.',
         },
         {
-          title: 'An inbox that empties itself',
-          text: 'Out of your inbox, an email goes to Archive, Todo or Waiting. A conversation in Waiting comes back on its own when the answer arrives.',
+          title: 'Your Inbox holds only what you want to see',
+          text: 'One key sends an email to Archive, Todo or Waiting. A conversation in Waiting comes back on its own when the answer arrives, so nothing important gets lost.',
         },
         {
           title: 'Conversations you can read',
@@ -109,11 +109,11 @@ export default {
         },
         {
           title: 'Your email, on your Mac, for good',
-          text: 'Every email is kept on your Mac exactly as it was received, in files that never change. Back them up with Time Machine or any copy tool.',
+          text: 'Every email is kept on your Mac exactly as it was received, in files that never change, so backing them up, with Time Machine or anything else, is quick and easy.',
         },
         {
           title: 'AI that asks first',
-          text: 'Off until you turn it on. It summarizes, translates, drafts replies and suggests where an email belongs, and applies nothing until you accept it.',
+          text: 'Your AI is built in, but off by default. It summarizes, translates, drafts replies and suggests where an email belongs, and applies nothing until you accept it.',
         },
       ],
     },
@@ -137,7 +137,7 @@ export default {
   author: {
     title: 'Why NiceMailer exists',
     text: [
-      'I have been looking for the right email client for decades. None was fast enough with a large mailbox, none let me work from the keyboard, and none kept my email safe on my own computer.',
+      'I have been looking for the perfect email client for decades. None was fast and uncluttered, could be driven entirely from the keyboard, and kept my email on my own Mac.',
       'So I built it, as I have built complex, mission-critical software for more than twenty years. NiceMailer is a young project, but it is not a weekend experiment: its data model and specifications were written before the first line of code. It is built to last.',
     ],
   },
@@ -150,7 +150,7 @@ export default {
       },
       {
         q: 'Which email providers work?',
-        a: 'Any provider that offers IMAP with a password: Gmail, iCloud, Fastmail, your company’s server and most others. Some providers ask for an app password when two-factor authentication is on. Outlook.com, which only allows OAuth sign-in, is not supported yet.',
+        a: 'Any provider that offers IMAP with a password: Gmail, iCloud, Fastmail, Infomaniak, most European providers, your company’s server and most others. Some ask for an app password when two-factor authentication is on (Gmail, for example). Outlook.com, which only allows OAuth sign-in, is not supported.',
       },
       {
         q: 'How much does it cost?',
@@ -179,7 +179,7 @@ export default {
   },
   footer: {
     issues: 'Report a problem',
-    license: 'NiceMailer is created in France, licensed under the GNU AGPLv3.',
+    license: 'Made in France. Free software under the GNU AGPLv3.',
     noTracking: 'This site has no cookies, no analytics and no tracking.',
   },
   docs: {

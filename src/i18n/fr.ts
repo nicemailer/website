@@ -54,7 +54,7 @@ const fr: Strings = {
         },
         {
           title: 'Ne cherchez plus. Trouvez.',
-          text: 'Filtrez instantanément tous vos mails, sur tous vos comptes. Combinez tous les critères : texte intégral, date, expéditeur, attributs (non lus, drapeau, pièces jointes, personne ou robot), tag, groupe. Chaque filtre peut être inversé.\nBannissez le scroll, pourtant si rapide…',
+          text: 'Filtrez instantanément tous vos mails, sur tous vos comptes. Combinez tous les critères : texte intégral, date, expéditeur, attributs (non lus, drapeau, pièces jointes, votre réponse, personne ou robot), tag, groupe. Chaque filtre peut être inversé.\nBannissez le scroll, pourtant si rapide…',
         },
         {
           title: 'Tout ce que contient un mail, accessible à une touche',
@@ -84,11 +84,11 @@ const fr: Strings = {
         },
         {
           title: 'L’Inbox ne contient que ce que vous voulez y voir',
-          text: 'En une touche, envoyez un mail dans Archive, Todo ou Waiting. Un workflow simple et puissant vous aide à garder votre Inbox propre, et à ne jamais perdre un mail important.',
+          text: 'En une touche, envoyez un mail dans Archive, Todo ou Waiting. Une conversation en Waiting revient d’elle-même quand la réponse arrive : aucun mail important ne se perd.',
         },
         {
           title: 'Des conversations lisibles',
-          text: 'Dans les conversations, l’historique cité et les signatures répétées sont automatiquement masqués. Chaque message ne montre que ce qu’il apporte, le reste se révèle d’une touche.',
+          text: 'Dans les conversations, l’historique cité, les signatures répétées et les « Envoyé de mon iPhone » sont automatiquement masqués. Chaque message ne montre que ce qu’il apporte, le reste se révèle d’une touche.',
         },
       ],
     },
