@@ -35,7 +35,7 @@ Puis, dans le Terminal (NiceMailer doit être lancé) :
 
 À quoi vous attendre :
 
-- **C'est rapide.** Un export de 10 Go et 46 000 mails prend une quarantaine de secondes.
+- **C'est rapide.** Un export de 10 Go et 45 000 mails prend une quarantaine de secondes.
 - **Rien ne se perd.** Chaque mail est gardé exactement tel qu'il était, et les conversations sont reconstituées.
 - **On peut l'arrêter et le relancer.** Relancer la même commande n'ajoute que ce qui manque : les mails déjà importés sont ignorés.
 - **Tout reste sur votre Mac.** Un compte d'archive n'a pas de serveur : rien n'est envoyé nulle part, et ranger ses mails ne change que votre Mac.

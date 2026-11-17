@@ -34,9 +34,9 @@ export default {
     items: [
       { value: '2 ms', label: 'to show a folder, even while new mail is downloading' },
       { value: '2 ms', label: 'to keep only the emails written by people, among 400,000' },
-      { value: '36 s', label: 'to import a 10 GB archive of 46,000 emails' },
+      { value: '36 s', label: 'to import a 10 GB archive of 45,000 emails' },
     ],
-    note: 'Measured on a MacBook with an M1 chip, with real and generated mailboxes. The method is in the documentation of the source code.',
+    note: 'Measured on a MacBook Pro M1, with real and generated mailboxes. The method is in the documentation of the source code.',
   },
   pillars: [
     {
@@ -138,7 +138,7 @@ export default {
     title: 'Why NiceMailer exists',
     text: [
       'I have been looking for the right email client for decades. None was fast enough with a large mailbox, none let me work from the keyboard, and none kept my email safe on my own computer.',
-      'So I am building it, as I have built complex, mission-critical software for more than twenty years. NiceMailer is a young project, but it is not a weekend experiment: its data model and specifications were written before the first line of code, and I use it for hours every day.',
+      'So I built it, as I have built complex, mission-critical software for more than twenty years. NiceMailer is a young project, but it is not a weekend experiment: its data model and specifications were written before the first line of code. It is built to last.',
     ],
   },
   faq: {
@@ -179,7 +179,7 @@ export default {
   },
   footer: {
     issues: 'Report a problem',
-    license: 'NiceMailer is free software, licensed under the GNU AGPLv3.',
+    license: 'NiceMailer is created in France, licensed under the GNU AGPLv3.',
     noTracking: 'This site has no cookies, no analytics and no tracking.',
   },
   docs: {

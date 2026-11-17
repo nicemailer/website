@@ -211,6 +211,8 @@ const s = t(lang);
   .points dd {
     margin: 0.3rem 0 0;
     color: var(--ink-2);
+    /* A "\n" in the text starts a new line. */
+    white-space: pre-line;
   }
   @media (max-width: 56rem) {
     .pillar-body,

@@ -87,7 +87,7 @@ Your email holds the record of your entire personal and professional life. Your 
 
 ### Bring your past with you
 
-Import a whole mailbox from an mbox file: a 10 GB export of 46,000 emails takes about 40 seconds. Moving from Apple Mail? NiceMailer can bring your entire Apple Mail library, including accounts whose server no longer exists. See [Moving to NiceMailer](/docs/moving-to-nicemailer/).
+Import a whole mailbox from an mbox file: a 10 GB export of 45,000 emails takes about 40 seconds. Moving from Apple Mail? NiceMailer can bring your entire Apple Mail library, including accounts whose server no longer exists. See [Moving to NiceMailer](/docs/moving-to-nicemailer/).
 
 ### AI that works for you, and only when you ask
 

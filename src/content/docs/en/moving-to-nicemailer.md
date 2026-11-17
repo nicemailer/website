@@ -35,7 +35,7 @@ Then, in Terminal (NiceMailer must be running):
 
 What to expect:
 
-- **It is fast.** A 10 GB export of 46,000 emails takes about 40 seconds.
+- **It is fast.** A 10 GB export of 45,000 emails takes about 40 seconds.
 - **Nothing is lost.** Each email is kept exactly as it was, and conversations are rebuilt.
 - **It can be stopped and run again.** Running the same command again only adds what is missing: emails already imported are skipped.
 - **It stays on your Mac.** An archive account has no server: nothing is sent anywhere, and filing its emails only changes your Mac.

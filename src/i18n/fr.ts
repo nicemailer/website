@@ -3,9 +3,9 @@ import type { Strings } from './index';
 // Toutes les chaînes du site en français, avec la même forme que en.ts.
 const fr: Strings = {
   meta: {
-    title: 'NiceMailer : un client mail rapide, reposant et sécurisant pour le Mac',
+    title: 'NiceMailer : un client mail hyper rapide, reposant et sécurisant pour Mac',
     description:
-      'NiceMailer est un client mail libre et gratuit pour macOS. Instantané avec des centaines de milliers de mails, pensé pour le clavier, local d’abord, avec une IA facultative.',
+      'Client mail libre pour Mac. Hyper rapide, même avec énormément de mails. Tout reste en local. Votre IA intégrée, si vous le voulez.',
   },
   nav: {
     features: 'Fonctionnalités',
@@ -26,56 +26,56 @@ const fr: Strings = {
   hero: {
     title: 'Rapide. Reposant. Sécurisant.',
     lead:
-      'NiceMailer est un client de messagerie pour Mac. Tout y est instantané, même avec des centaines de milliers de mails. Seules les personnes que vous avez choisies atteignent votre Inbox, et votre courrier reste sur votre Mac pour des décennies, sans rien sacrifier de votre vie privée.',
+      'NiceMailer est un client mail pour Mac. Tout y est instantané, même avec des centaines de milliers de mails. Seules les personnes que vous avez choisies vont dans votre Inbox, et votre courrier reste sur votre Mac : pour des décennies, sans rien sacrifier de votre vie privée.',
     shotAlt: 'La fenêtre de NiceMailer : la liste des conversations à gauche, un mail ouvert à droite.',
-    caption: 'Une conversation de quatre messages. Les précédents tiennent chacun sur une ligne, et le dernier ne montre que ce qu’il apporte : sa signature et ses 28 lignes citées sont à une touche.',
+    caption: 'Vue d’une conversation. Les messages précédents tiennent chacun sur une ligne, et le dernier ne montre que ce qu’il apporte, sans sa signature ni ses 28 lignes citées, qu’une touche rend visibles.',
   },
   measures: {
     title: 'Mesuré, pas promis',
     items: [
       { value: '2 ms', label: 'pour afficher un dossier, même pendant le téléchargement du courrier' },
-      { value: '2 ms', label: 'pour ne garder que les mails écrits par des personnes, parmi 400 000' },
-      { value: '36 s', label: 'pour importer une archive de 10 Go et 46 000 mails' },
+      { value: '2 ms', label: 'pour afficher uniquement les vraies personnes, parmi 400 000 mails' },
+      { value: '36 s', label: 'pour importer une archive de 10 Go et 45 000 mails' },
     ],
-    note: 'Mesures faites sur un MacBook M1, avec des boîtes réelles et générées. La méthode est décrite dans la documentation du code source.',
+    note: 'Mesures faites sur un MacBook Pro M1, avec des boîtes réelles et générées. La méthode est décrite dans la documentation du code source.',
   },
   pillars: [
     {
       id: 'speed',
       title: 'Rapide',
-      lead: 'Chaque action répond tout de suite, et chaque action a sa touche.',
+      lead: 'Chaque action est immédiate et dispose de son raccourci clavier.',
       shot: 'filters',
       shotAlt: 'Le panneau des filtres ouvert sur la liste : Non lus, Drapeau, De… et les autres.',
-      caption: 'La touche f filtre par non lus, expéditeur, personne ou robot, pièces jointes… Chaque filtre répond à l’instant, même sur des centaines de milliers de mails.',
+      caption: 'La touche f affiche les filtres : par non lus, expéditeur, personne ou robot, pièces jointes… Chaque filtre répond immédiatement, même sur des centaines de milliers de mails.',
       points: [
         {
-          title: 'Le clavier d’abord',
-          text: 'Lisez, répondez, rangez, étiquetez et cherchez sans toucher la souris, avec des touches inspirées de Vim. Vous préférez la souris ? Tout fonctionne aussi avec elle.',
+          title: 'Tout peut se faire au clavier',
+          text: 'Lisez, répondez, rangez, étiquetez et cherchez sans toucher la souris, avec des raccourcis inspirés de Vim.\nVous préférez la souris ? Tout fonctionne aussi, bien sûr.',
         },
         {
           title: 'Ne cherchez plus. Trouvez.',
-          text: 'Recherche dans le texte de tous vos comptes, combinée à des filtres : date, expéditeur, non lus, drapeau, pièces jointes, votre réponse, personne ou robot, tag, groupe. Chaque filtre peut être inversé.',
+          text: 'Filtrez instantanément tous vos mails, sur tous vos comptes. Combinez tous les critères : texte intégral, date, expéditeur, attributs (non lus, drapeau, pièces jointes, personne ou robot), tag, groupe. Chaque filtre peut être inversé.\nBannissez le scroll, pourtant si rapide…',
         },
         {
-          title: 'Tout ce que contient un mail, à une touche',
+          title: 'Tout ce que contient un mail, accessible à une touche',
           text: 'La touche l montre les liens, les pièces jointes, les numéros de téléphone et le code de confirmation d’un mail. Copiez le code, ouvrez le fichier ou appelez l’expéditeur avec votre iPhone.',
         },
         {
-          title: 'Un lien vers chaque mail',
-          text: 'Copiez en deux touches un lien stable vers n’importe quel mail, et collez-le dans Obsidian, Notion ou vos notes. Un clic vous y ramène, des années plus tard.',
+          title: 'Un lien (deeplink) vers chaque mail',
+          text: 'Copiez en deux touches un lien permanent vers n’importe quel mail, et collez-le dans Obsidian, Notion ou Apple Notes. Un clic vous y ramène, des années plus tard.',
         },
       ],
     },
     {
       id: 'calm',
       title: 'Reposant',
-      lead: 'Seules les personnes que vous avez choisies arrivent dans votre boîte. Les autres attendent une décision que vous ne prenez qu’une fois.',
+      lead: 'Seules les personnes que vous avez choisies arrivent dans votre Inbox. Les autres attendent en quarantaine une décision que vous ne prenez qu’une fois.',
       shot: 'quarantine',
-      shotAlt: 'Le dossier Quarantine : les mails des expéditeurs inconnus, avec une touche par destination dans la barre d’état.',
-      caption: 'Les inconnus attendent en Quarantine. Une touche décide où va un expéditeur, pour tous les mails qu’il vous enverra.',
+      shotAlt: 'Les mails des expéditeurs inconnus, en quarantaine, avec une touche par destination dans la barre d’état.',
+      caption: 'Les inconnus attendent en quarantaine. Une touche décide où va un expéditeur, pour tous les mails qu’il vous enverra.',
       points: [
         {
-          title: 'Les inconnus attendent en Quarantine',
+          title: 'Les inconnus attendent en quarantaine',
           text: 'Le mail d’un nouvel expéditeur reste hors de votre Inbox. Une touche l’envoie dans l’Inbox, Paperwork ou Newsletter, ou bannit l’expéditeur pour de bon.',
         },
         {
@@ -83,50 +83,50 @@ const fr: Strings = {
           text: 'Votre décision porte sur l’expéditeur, pas sur un mail : tout ce qu’il vous a envoyé, dans tous vos comptes, est rangé avec, et tout ce qu’il enverra aussi.',
         },
         {
-          title: 'Une boîte qui se vide',
-          text: 'En quittant l’Inbox, un mail va dans Archive, Todo ou Waiting. Une conversation en Waiting revient d’elle-même quand la réponse arrive.',
+          title: 'L’Inbox ne contient que ce que vous voulez y voir',
+          text: 'En une touche, envoyez un mail dans Archive, Todo ou Waiting. Un workflow simple et puissant vous aide à garder votre Inbox propre, et à ne jamais perdre un mail important.',
         },
         {
           title: 'Des conversations lisibles',
-          text: 'L’historique cité, les signatures répétées et les « Envoyé de mon iPhone » sont repliés. Chaque message montre ce qu’il apporte, le reste est à une touche.',
+          text: 'Dans les conversations, l’historique cité et les signatures répétées sont automatiquement masqués. Chaque message ne montre que ce qu’il apporte, le reste se révèle d’une touche.',
         },
       ],
     },
     {
       id: 'trust',
       title: 'Sécurisant',
-      lead: 'Votre courrier est la mémoire de votre vie. NiceMailer le protège, et vous protège de ce qui y arrive.',
+      lead: 'NiceMailer vous protège, vous et votre courrier, qui est la mémoire de votre vie.',
       shot: 'thread',
       shotAlt: 'Une newsletter dans NiceMailer, avec son bouton de désabonnement et le nombre de pixels espions retirés.',
-      caption: 'Le pixel espion de cette newsletter a été retiré à son arrivée (l’œil barré) : l’expéditeur ne sait jamais que vous l’avez lue. Le désabonnement tient en un clic.',
+      caption: 'Le pixel espion de cette newsletter a été retiré à son arrivée (l’œil barré) : l’expéditeur ne sait jamais que vous l’avez lue. On se désabonne en un clic.',
       points: [
         {
-          title: 'Le phishing reste dehors',
-          text: 'NiceMailer vérifie que chaque mail vient bien de qui il prétend venir. Un message qui emprunte le nom de votre banque ne sort pas de la Quarantine.',
+          title: 'Le phishing est filtré',
+          text: 'NiceMailer vérifie que chaque mail vient bien de qui il prétend venir. Un message qui emprunte le nom de votre banque ne sort pas de la quarantaine.',
         },
         {
-          title: 'Personne ne sait quand vous lisez',
+          title: 'Personne ne suit vos lectures',
           text: 'Les pixels espions sont retirés à l’arrivée, les images distantes ne se chargent qu’à votre demande, et le désabonnement se fait en un clic.',
         },
         {
-          title: 'Votre courrier, sur votre Mac, pour de bon',
-          text: 'Chaque mail est gardé sur votre Mac tel qu’il a été reçu, dans des fichiers qui ne changent jamais. Sauvegardez-les avec Time Machine ou n’importe quel outil de copie.',
+          title: 'Vos mails sont sur votre Mac, pour toujours',
+          text: 'Chaque mail est gardé sur votre Mac tel qu’il a été reçu, dans des fichiers qui ne changent jamais. Les sauvegardes (avec Time Machine ou autre) sont donc faciles et rapides.',
         },
         {
           title: 'Une IA qui demande d’abord',
-          text: 'Désactivée tant que vous ne l’activez pas. Elle résume, traduit, rédige et suggère où ranger un mail, sans rien appliquer avant votre accord.',
+          text: 'Votre IA est nativement intégrée, mais désactivée par défaut. Elle résume, traduit, rédige et suggère où ranger un mail, sans rien appliquer avant votre accord.',
         },
       ],
     },
   ],
   pillarMore: 'Toutes les fonctionnalités',
   tryIt: {
-    title: 'Essayez sans rien changer',
-    text: 'Ajoutez votre compte et choisissez « Seulement regarder pour l’instant » : NiceMailer affiche votre courrier sans modifier un seul octet sur le serveur. Avant d’aller plus loin, il vous montre exactement les dossiers qu’il va créer. Quand vous êtes prêt, un clic met le workflow en place, sans retélécharger votre courrier.',
+    title: 'Essayez sans risque',
+    text: 'Ajoutez votre compte et choisissez « Seulement regarder pour l’instant » : NiceMailer récupère et affiche votre courrier, mais ne modifie rien sur le serveur. Quand vous êtes prêt, il vous montre exactement les dossiers qu’il va créer, puis un clic met le workflow en place, sans retélécharger votre courrier.',
     link: 'Ajouter votre compte',
   },
   migration: {
-    title: 'Emportez tout votre courrier',
+    title: 'Gardez tout votre historique',
     text: 'Ajoutez vos comptes : NiceMailer télécharge tout leur courrier. Les archives des comptes fermés suivent aussi : un export mbox d’Apple Mail, Gmail, Thunderbird ou HEY s’importe en quelques minutes, et le relancer n’ajoute que ce qui manque.',
     link: 'Passer à NiceMailer',
   },
@@ -138,8 +138,8 @@ const fr: Strings = {
   author: {
     title: 'Pourquoi NiceMailer existe',
     text: [
-      'Je cherche le bon client mail depuis des décennies. Aucun n’était assez rapide avec une grosse boîte, aucun ne se pilotait au clavier, aucun ne gardait mon courrier en sécurité sur mon propre ordinateur.',
-      'Alors je l’ai construit, comme je construis depuis plus de vingt ans des applications complexes et critiques. NiceMailer est un projet jeune, mais ce n’est pas une expérience d’un week-end : son modèle de données et ses spécifications ont été écrits avant la première ligne de code, et je m’en sers des heures chaque jour.',
+      'Je cherche le client mail parfait depuis des décennies. Mais rien n’existait d’assez rapide et sobre, pilotable entièrement au clavier, et stockant mes mails en local.',
+      'Alors je l’ai créé, comme je construis depuis plus de vingt ans des applications complexes et critiques. NiceMailer est un projet jeune, mais ce n’est pas une expérience d’un week-end : son modèle de données et ses spécifications ont été écrits avant la première ligne de code. Il est conçu pour durer.',
     ],
   },
   faq: {
@@ -151,7 +151,7 @@ const fr: Strings = {
       },
       {
         q: 'Quels fournisseurs de mail sont pris en charge ?',
-        a: 'Tout fournisseur qui propose l’IMAP avec un mot de passe : Gmail, iCloud, Fastmail, le serveur de votre entreprise et la plupart des autres. Certains demandent un mot de passe d’application quand la double authentification est active. Outlook.com, qui n’accepte que la connexion OAuth, n’est pas encore pris en charge.',
+        a: 'Tout fournisseur qui propose l’IMAP avec un mot de passe : les grands opérateurs français ou européens, Infomaniak, le serveur de votre entreprise, bien sûr Gmail, iCloud, Fastmail, et la plupart des autres. Certains demandent un mot de passe d’application quand la double authentification est activée (Gmail par exemple). Outlook.com, qui n’accepte que la connexion OAuth, n’est pas pris en charge.',
       },
       {
         q: 'Combien ça coûte ?',
@@ -176,11 +176,11 @@ const fr: Strings = {
     ],
   },
   final: {
-    title: 'Offrez à votre courrier le client qu’il mérite.',
+    title: 'Offrez à vos mails le client qu’ils méritent.',
   },
   footer: {
     issues: 'Signaler un problème',
-    license: 'NiceMailer est un logiciel libre, sous licence GNU AGPLv3.',
+    license: 'NiceMailer est créé en France, sous licence libre GNU AGPLv3.',
     noTracking: 'Ce site n’a ni cookie, ni statistiques, ni pisteur.',
   },
   docs: {

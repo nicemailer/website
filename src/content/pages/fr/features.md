@@ -87,7 +87,7 @@ Votre courrier est la mémoire de toute votre vie personnelle et professionnelle
 
 ### Emportez votre passé
 
-Importez une boîte entière depuis un fichier mbox : un export de 10 Go et 46 000 mails prend une quarantaine de secondes. Vous quittez Apple Mail ? NiceMailer peut reprendre toute votre bibliothèque Apple Mail, y compris les comptes dont le serveur n'existe plus. Voir [Passer à NiceMailer](/fr/docs/moving-to-nicemailer/).
+Importez une boîte entière depuis un fichier mbox : un export de 10 Go et 45 000 mails prend une quarantaine de secondes. Vous quittez Apple Mail ? NiceMailer peut reprendre toute votre bibliothèque Apple Mail, y compris les comptes dont le serveur n'existe plus. Voir [Passer à NiceMailer](/fr/docs/moving-to-nicemailer/).
 
 ### Une IA qui travaille pour vous, et seulement quand vous le demandez
 
