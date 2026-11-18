@@ -51,7 +51,7 @@ Appuyez sur <kbd>a</kbd> sur un mail, ou <kbd>⌃</kbd> <kbd>I</kbd> pendant que
 
 **Sur plusieurs mails**
 
-- En Quarantine, suggérer une destination pour chaque mail ; chaque ligne affiche alors la suggestion, et une touche l'applique.
+- En Quarantaine, suggérer une destination pour chaque mail ; chaque ligne affiche alors la suggestion, et une touche l'applique.
 - Ailleurs, suggérer un dossier pour les mails marqués.
 
 Chaque appel est gardé sur votre Mac pendant 30 jours, avec ce qui a été envoyé et ce qui est revenu.

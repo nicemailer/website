@@ -15,7 +15,7 @@ Certaines touches sont un **préfixe** : <kbd>;</kbd>, <kbd>m</kbd>, <kbd>s</kbd
 | <kbd>j</kbd> <kbd>k</kbd>, ou <kbd>↓</kbd> <kbd>↑</kbd> | Conversation suivante, précédente |
 | <kbd>⌃</kbd> <kbd>d</kbd> <kbd>⌃</kbd> <kbd>u</kbd> | Une demi-page plus bas, plus haut |
 | <kbd>⌃</kbd> <kbd>j</kbd> <kbd>⌃</kbd> <kbd>k</kbd> | Message suivant, précédent de la conversation |
-| <kbd>;</kbd> puis une lettre | Aller à un dossier : <kbd>i</kbd> Inbox, <kbd>q</kbd> Quarantine, <kbd>t</kbd> Todo, <kbd>w</kbd> Waiting, <kbd>a</kbd> Archive, <kbd>o</kbd> Travail, <kbd>m</kbd> All Mail… |
+| <kbd>;</kbd> puis une lettre | Aller à un dossier : <kbd>i</kbd> Inbox, <kbd>q</kbd> Quarantaine, <kbd>t</kbd> Todo, <kbd>w</kbd> Waiting, <kbd>a</kbd> Archive, <kbd>o</kbd> Travail, <kbd>m</kbd> All Mail… |
 | <kbd>@</kbd> | Choisir un compte, ou tous |
 | <kbd>Échap</kbd> | Revenir, fermer un panneau, effacer les marques |
 
@@ -26,7 +26,7 @@ Les actions s'appliquent aux conversations marquées s'il y en a, sinon à celle
 | Touche | Action |
 | --- | --- |
 | <kbd>J</kbd> <kbd>K</kbd> | Marquer cette conversation et avancer, pour agir sur plusieurs à la fois |
-| <kbd>d</kbd> | Fait : archiver (en Quarantine : supprimer) |
+| <kbd>d</kbd> | Fait : archiver (en Quarantaine : supprimer) |
 | <kbd>m</kbd> puis une lettre | Déplacer : <kbd>t</kbd> Todo, <kbd>w</kbd> Waiting, <kbd>n</kbd> Newsletter, <kbd>p</kbd> Paperwork… |
 | <kbd>Suppr</kbd> | Mettre dans Deleted |
 | <kbd>z</kbd> | Annuler le dernier déplacement ou la dernière décision |

@@ -21,7 +21,7 @@ NiceMailer trouve seul les serveurs de votre adresse, et ne demande davantage qu
 
 ## Regarder d'abord, décider ensuite
 
-Avant d'écrire quoi que ce soit sur votre serveur, NiceMailer vous montre ce qu'il changerait : les dossiers qu'il créerait (Todo, Waiting, Quarantine, Paperwork, Newsletter…) et le dossier qu'il utiliserait pour chaque rôle. Si votre serveur a déjà un dossier pour un rôle, vous pouvez le choisir à la place.
+Avant d'écrire quoi que ce soit sur votre serveur, NiceMailer vous montre ce qu'il changerait : les dossiers qu'il créerait (Todo, Waiting, Quarantaine, Paperwork, Newsletter…) et le dossier qu'il utiliserait pour chaque rôle. Si votre serveur a déjà un dossier pour un rôle, vous pouvez le choisir à la place.
 
 Vous pouvez alors choisir **Seulement regarder pour l'instant : ne rien changer sur le serveur**. NiceMailer télécharge et affiche votre courrier, la recherche et les filtres fonctionnent, et pas un octet ne change sur le serveur : aucun dossier n'est créé, aucun mail n'est déplacé.
 
@@ -31,9 +31,9 @@ Quand vous êtes prêt, sélectionnez le compte dans les Réglages et cliquez su
 
 Si votre Inbox contient beaucoup de mails, NiceMailer propose d'archiver les anciens au moment d'organiser le compte : les mails lus antérieurs à une date, et les non lus antérieurs à une autre. Il affiche le nombre exact de mails concernés par chaque choix, et vous pouvez décocher l'un ou l'autre. Vous démarrez avec une Inbox qui ne contient que le récent.
 
-## Les gens que vous connaissez évitent la Quarantine
+## Les gens que vous connaissez évitent la Quarantaine
 
-Une fois le compte organisé, le courrier des expéditeurs inconnus va en [Quarantine](/fr/docs/workflow/). Pour que vos amis et collègues n'y finissent pas, NiceMailer accepte d'emblée tous ceux à qui vous avez écrit : leurs prochains mails arrivent directement dans votre Inbox. Vous pouvez le désactiver sur le même écran.
+Une fois le compte organisé, le courrier des expéditeurs inconnus va en [Quarantaine](/fr/docs/workflow/). Pour que vos amis et collègues n'y finissent pas, NiceMailer accepte d'emblée tous ceux à qui vous avez écrit : leurs prochains mails arrivent directement dans votre Inbox. Vous pouvez le désactiver sur le même écran.
 
 ## Votre téléphone voit la même chose
 

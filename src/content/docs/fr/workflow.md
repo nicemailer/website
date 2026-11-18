@@ -1,6 +1,6 @@
 ---
 title: Le workflow
-description: Où va le courrier, et pourquoi. Quarantine, Inbox, Archive, Todo, Waiting, et une décision par expéditeur.
+description: Où va le courrier, et pourquoi. Quarantaine, Inbox, Archive, Todo, Waiting, et une décision par expéditeur.
 order: 4
 ---
 
@@ -11,7 +11,7 @@ Le workflow commence une fois votre compte [organisé](/fr/docs/add-an-account/)
 | Dossier | Ce qu'il contient |
 | --- | --- |
 | **Inbox** | Le courrier des personnes acceptées, pas encore traité |
-| **Quarantine** | Le courrier des expéditeurs sur lesquels vous n'avez pas encore décidé |
+| **Quarantaine** | Le courrier des expéditeurs sur lesquels vous n'avez pas encore décidé |
 | **Todo** | Les conversations où vous avez quelque chose à faire |
 | **Waiting** | Les conversations qui attendent une réponse, la vôtre ou celle de quelqu'un d'autre |
 | **Archive** | Les conversations où il n'y a plus rien à faire |
@@ -23,9 +23,9 @@ Le workflow commence une fois votre compte [organisé](/fr/docs/add-an-account/)
 
 Trois vues réunissent plusieurs dossiers : **Travail** (<kbd>;</kbd> <kbd>o</kbd>) montre Inbox, Todo et Waiting ensemble, tout ce qui reste à traiter ; **All Mail** (<kbd>;</kbd> <kbd>m</kbd>) tout sauf Deleted, Junk et Banned, ce que veulent la plupart des recherches ; **Everything** (<kbd>;</kbd> <kbd>e</kbd>) vraiment tout.
 
-## Quarantine : une décision par expéditeur
+## Quarantaine : une décision par expéditeur
 
-Quand quelqu'un vous écrit pour la première fois, son mail va en Quarantine. Là, une seule touche décide où va l'expéditeur :
+Quand quelqu'un vous écrit pour la première fois, son mail va en Quarantaine. Là, une seule touche décide où va l'expéditeur :
 
 | Touche | Destination | Et ses prochains mails |
 | --- | --- | --- |
@@ -33,20 +33,20 @@ Quand quelqu'un vous écrit pour la première fois, son mail va en Quarantine. L
 | <kbd>n</kbd> | Newsletter | Vont dans Newsletter |
 | <kbd>p</kbd> | Paperwork | Vont dans Paperwork |
 | <kbd>b</kbd> | Banned | Vont dans Banned |
-| <kbd>x</kbd> | Junk | Restent en Quarantine : le spam change d'adresse à chaque fois |
-| <kbd>d</kbd> | Deleted | Restent en Quarantine |
+| <kbd>x</kbd> | Junk | Restent en Quarantaine : le spam change d'adresse à chaque fois |
+| <kbd>d</kbd> | Deleted | Restent en Quarantaine |
 
 Une décision porte sur l'expéditeur, pas sur un mail : tout ce qu'il vous a envoyé avant, dans tous vos comptes, est rangé avec, comme tout ce qu'il enverra. La barre d'état le dit : « déplacé dans Newsletter, les prochains mails de news@boutique.fr aussi, 12 autres mails rangés ».
 
 La même décision peut se prendre plus tard depuis n'importe quel dossier : déplacer une conversation dans Newsletter, Paperwork ou Banned décide aussi pour son expéditeur. L'écran **Contacts** (<kbd>;</kbd> <kbd>c</kbd>) liste chaque expéditeur avec sa décision, que vous pouvez y changer.
 
-Devant chaque nom en Quarantine, une silhouette indique qu'une personne a écrit le mail, un engrenage qu'une machine l'a fait. C'est en général la personne qui mérite votre Inbox.
+Devant chaque nom en Quarantaine, une silhouette indique qu'une personne a écrit le mail, un engrenage qu'une machine l'a fait. C'est en général la personne qui mérite votre Inbox.
 
 ## Les expéditeurs falsifiés
 
 N'importe qui peut écrire n'importe quel nom et adresse dans le « De » d'un mail. NiceMailer vérifie, avec le verdict de votre serveur de mail (SPF, DKIM, DMARC), que chaque mail vient bien du domaine qu'il annonce.
 
-- Un mail qui échoue à cette vérification reste en Quarantine, même si vous avez accepté l'expéditeur dont il prend l'apparence.
+- Un mail qui échoue à cette vérification reste en Quarantaine, même si vous avez accepté l'expéditeur dont il prend l'apparence.
 - Si vous essayez d'accepter un expéditeur dont le mail semble falsifié, NiceMailer vous demande d'abord. Certains expéditeurs légitimes utilisent des outils mal configurés : vous pouvez alors accepter leurs mails non vérifiés à l'avenir.
 - Bannir un mail falsifié ne bannit que ce mail, jamais le vrai expéditeur dont le nom a été emprunté.
 

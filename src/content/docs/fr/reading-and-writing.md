@@ -39,7 +39,7 @@ La première ligne de <kbd>l</kbd> copie un lien vers le mail, comme `[Facture d
 
 ## Se désabonner
 
-Quand une newsletter indique comment se désabonner, un bouton apparaît sur sa ligne de titre (<kbd>⌘</kbd> <kbd>U</kbd>). Quand la liste le permet, un clic suffit, sans ouvrir aucune page. NiceMailer ne le propose jamais en Quarantine ni dans Junk : se désabonner d'un spam ne fait que confirmer votre adresse au spammeur.
+Quand une newsletter indique comment se désabonner, un bouton apparaît sur sa ligne de titre (<kbd>⌘</kbd> <kbd>U</kbd>). Quand la liste le permet, un clic suffit, sans ouvrir aucune page. NiceMailer ne le propose jamais en Quarantaine ni dans Junk : se désabonner d'un spam ne fait que confirmer votre adresse au spammeur.
 
 ## Écrire et envoyer
 

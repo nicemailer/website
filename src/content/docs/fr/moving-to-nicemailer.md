@@ -39,7 +39,7 @@ Puis, dans le Terminal (NiceMailer doit être lancé) :
 - **Rien ne se perd.** Chaque mail est gardé exactement tel qu'il était, et les conversations sont reconstituées.
 - **On peut l'arrêter et le relancer.** Relancer la même commande n'ajoute que ce qui manque : les mails déjà importés sont ignorés.
 - **Tout reste sur votre Mac.** Un compte d'archive n'a pas de serveur : rien n'est envoyé nulle part, et ranger ses mails ne change que votre Mac.
-- **Les gens à qui vous avez écrit sont retenus.** Leurs prochains mails, sur n'importe quel compte, arrivent directement dans votre Inbox au lieu de la Quarantine.
+- **Les gens à qui vous avez écrit sont retenus.** Leurs prochains mails, sur n'importe quel compte, arrivent directement dans votre Inbox au lieu de la Quarantaine.
 
 ## Toute votre bibliothèque Apple Mail
 

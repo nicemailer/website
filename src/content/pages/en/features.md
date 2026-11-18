@@ -13,11 +13,11 @@ Opening a folder takes a couple of milliseconds, even while new mail is being do
 
 Never used a keyboard shortcut? No problem: everything works with the mouse.
 
-But if you love shortcuts, you will be delighted. Keys inspired by Vim let you read, reply, file, tag and search without lifting your hands from the keyboard: <kbd>j</kbd> and <kbd>k</kbd> to move, <kbd>d</kbd> to archive, <kbd>r</kbd> to reply, <kbd>/</kbd> to search, <kbd>z</kbd> to undo. Press <kbd>?</kbd> at any time to see every key.
+But if you love keyboard shortcuts, you've come to the right place. Keys inspired by Vim to read, reply, file, tag and search without lifting your hands from the keyboard: <kbd>j</kbd> and <kbd>k</kbd> to move, <kbd>d</kbd> to archive, <kbd>r</kbd> to reply, <kbd>/</kbd> to search, <kbd>z</kbd> to undo. Press <kbd>?</kbd> at any time to see every key.
 
 ### Don't search. Find.
 
-Full-text search across all your accounts, combined with filters: date, sender, recipient, unread, flagged, with attachments, with your reply, person or robot, tag, contact group. Every filter can be inverted ("not from @shop.com"), dates can be typed the way you think of them ("after 1/10/2026", "older than 6 months"), and everything stays instant.
+Filter all your email instantly, across all your accounts. Combine every criterion: full text, date, sender, recipient, unread, flagged, with attachments, with your reply, sender is a person or a robot, tag, contact group. Every filter can be inverted ("not from @shop.com"), dates can be typed the way you think of them ("after 1/10/2026", "older than 6 months"), and everything stays instant.
 
 ### Everything in an email, one key away
 
@@ -25,27 +25,29 @@ One key, <kbd>l</kbd>, lists everything an email holds: its links, its attachmen
 
 ### Deep links to your notes
 
-Every email has a stable link, like `[Email subject](nicemailer://m/399955)`, copied from the email in two keystrokes. Paste it into Obsidian, Notion or any note-taking app, and come back to the email in one click, years later.
+Every email has a permanent link, such as `[Email subject](nicemailer://m/399955)`, copied from the email in two keystrokes. Paste it into Obsidian, Notion or any note-taking app, and come back to the email in one click, years later.
 
 ## Calm
 
 ### Unknown senders wait in Quarantine
 
-Email from people you have never heard from stays out of your inbox, in Quarantine. There, one key decides where each sender belongs: your Inbox, Paperwork, Newsletters, or banned for good. Everything runs on your Mac and works with your existing IMAP account.
+Email from people you have never heard from stays out of your inbox, in Quarantine. There, one key decides where each sender belongs: your Inbox, Paperwork, Newsletters, or banned for good. Everything runs on your Mac and works with your existing IMAP account, so you find the same result on your phone.
+
+Paperwork holds the admin (invoices and the like) that you don't read but need to keep. Newsletters holds the newsletters you will be glad to read when you have the time.
 
 ### Decide once per sender. Forever.
 
 Your decision applies to the sender, not to one email. Send a shop to Newsletters, and every email it has ever sent you, in every account, goes there too, along with every one it will send. You can even decide for a whole domain at once.
 
-### A workflow that keeps your inbox empty
+### A workflow that keeps your inbox clean
 
-Once an email leaves your inbox, it goes to one of three places:
+Each email in your inbox only needs to be seen, read and dealt with once. Then you decide where it goes:
 
 - **Archive**: nothing left to do;
-- **Todo**: you need to act on it;
-- **Waiting**: you are waiting for an answer, and the conversation comes back to your inbox by itself when the reply arrives.
+- **Todo**: action is needed;
+- **Waiting**: emails you will need to follow up on soon. An email from someone promising to "get back to you very soon"; the email you sent to a prospect, whose reply you are waiting for. The conversation comes back to your inbox by itself when the reply arrives.
 
-A small arrow in the list ("→ Alice") tells you at a glance who is waiting for whom. And everything still to deal with is in one place, Work: Inbox, Todo and Waiting together.
+Inbox, Todo and Waiting come together in "Work" to give you the full picture. A small arrow in the list ("→ Alice") tells you at a glance who is waiting for whom.
 
 ### Go fast, without fear
 
@@ -55,7 +57,7 @@ Every move and every decision can be undone with one key. Every email you send w
 
 Not sure this workflow is for you? Add your account and choose "Only look for now": NiceMailer shows your mail and doesn't change a single byte on the server. Before you go further, it shows you exactly which folders it will create. When you are ready, one click puts the workflow in place, without downloading your mail again.
 
-### People and robots, told apart
+### Tell humans from robots
 
 Most of the email we receive is written by machines. NiceMailer tells them apart, so that in a single keystroke you see only the conversations with real people, even in years of archives.
 
@@ -81,11 +83,11 @@ Tracking pixels, the invisible images that tell a sender when and where you open
 
 NiceMailer doesn't count you, doesn't profile you and doesn't report on you: no analytics, no crash reporter phoning home, no account to create. The same goes for this site, which has no cookies and no statistics. What the app sends, and to whom, is listed on the [Privacy](/privacy/) page.
 
-### Your email, on your Mac, for good
+### Your email, on your Mac, forever
 
 Your email holds the record of your entire personal and professional life. Your provider could shut down, or your organization could close your account at any time. NiceMailer keeps every email on your Mac, exactly as it was received, in files that are never modified afterwards. Back them up with Time Machine or any copy tool: each backup only adds the new emails. Everything else NiceMailer stores can be rebuilt from these files.
 
-### Bring your past with you
+### Keep your history
 
 Import a whole mailbox from an mbox file: a 10 GB export of 45,000 emails takes about 40 seconds. Moving from Apple Mail? NiceMailer can bring your entire Apple Mail library, including accounts whose server no longer exists. See [Moving to NiceMailer](/docs/moving-to-nicemailer/).
 
@@ -101,7 +103,7 @@ NiceMailer uses your existing Claude subscription and stores no credentials. Eve
 
 ### Your AI assistant, connected to your mailbox
 
-Thanks to NiceMailer's MCP server, Claude Desktop, Claude Code or a similar app can search your email, read conversations and attachments, answer "what am I waiting for?", and prepare replies. It cannot send, move or delete anything: that rule is enforced by NiceMailer itself, not left to the AI. You review every draft and send it yourself.
+Thanks to NiceMailer's MCP server, Claude Desktop, Claude Code or a similar app can search your email, read conversations and attachments, answer "which urgent or important emails should I deal with first?", and prepare replies. It cannot send, move or delete anything: that rule is enforced by NiceMailer itself, not left to the AI. You review every draft and send it yourself.
 
 ### See who did what
 
@@ -109,7 +111,7 @@ Every change to your mailbox is recorded: what you filed today, who banned that 
 
 ### Open source, so you can check
 
-NiceMailer is free software under the GNU AGPLv3. You don't have to take any claim on this page on trust: how your email is stored, what is sent to the AI and what an AI agent may do are all in the [source code](https://github.com/nicemailer/nicemailer). Not a developer? Send your AI agent to read it for you: it never gets bored.
+NiceMailer is free software under the GNU AGPLv3. You don't have to take any claim on this page on trust: how your email is stored, what is sent to the AI and what an AI agent may do are all in the [source code](https://github.com/nicemailer/nicemailer). Not a developer? Send your AI agent to read it for you: it will be delighted.
 
 ### Built to last
 
