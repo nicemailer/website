@@ -12,4 +12,10 @@ export default defineConfig({
     routing: { prefixDefaultLocale: false },
   },
   build: { format: 'directory' },
+  markdown: {
+    // Code blocks follow the light or dark mode of the page (global.css).
+    shikiConfig: {
+      themes: { light: 'github-light-high-contrast', dark: 'github-dark' },
+    },
+  },
 });

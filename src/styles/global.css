@@ -172,6 +172,14 @@ pre code {
   padding: 0;
   font-size: inherit;
 }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .astro-code span {
+    color: var(--shiki-dark) !important;
+  }
+}
+:root[data-theme='dark'] .astro-code span {
+  color: var(--shiki-dark) !important;
+}
 
 .wrap {
   max-width: var(--page);
