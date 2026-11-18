@@ -8,10 +8,10 @@ const fr: Strings = {
       'Client mail libre pour Mac. Hyper rapide, même avec énormément de mails. Tout reste en local. Votre IA intégrée, si vous le voulez.',
   },
   nav: {
-    features: 'Fonctionnalités',
+    features: 'En détail',
     docs: 'Documentation',
     changelog: 'Nouveautés',
-    privacy: 'Confidentialité',
+    privacy: 'Vie privée',
     source: 'Code source',
     download: 'Télécharger',
     otherLanguage: 'English',
