@@ -4,37 +4,40 @@ description: Où va le courrier, et pourquoi. Quarantaine, Inbox, Archive, Todo,
 order: 4
 ---
 
-Le workflow commence une fois votre compte [organisé](/fr/docs/add-an-account/). Jusque-là, NiceMailer montre vos dossiers tels qu'ils sont.
+Le workflow commence une fois votre compte est [activé](/fr/docs/add-an-account/) sans l'option "**Seulement regarder**".
 
 ## Les dossiers
 
-| Dossier | Ce qu'il contient |
-| --- | --- |
-| **Inbox** | Le courrier des personnes acceptées, pas encore traité |
-| **Quarantaine** | Le courrier des expéditeurs sur lesquels vous n'avez pas encore décidé |
-| **Todo** | Les conversations où vous avez quelque chose à faire |
-| **Waiting** | Les conversations qui attendent une réponse, la vôtre ou celle de quelqu'un d'autre |
-| **Archive** | Les conversations où il n'y a plus rien à faire |
-| **Paperwork** | Factures, reçus, relevés : du courrier à garder, pas à lire à l'arrivée |
-| **Newsletter** | Newsletters, promotions, notifications |
-| **Junk** | Le spam |
-| **Banned** | Les expéditeurs dont vous ne voulez plus jamais entendre parler |
-| **Deleted** | La corbeille |
+| Dossier         | Ce qu'il contient                                                                                                              |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| **Inbox**       | Le courrier des personnes acceptées, pas encore traité                                                                         |
+| **Todo**        | Les conversations où vous avez quelque chose à produire                                                                        |
+| **Waiting**     | Les conversations à relancer : un expéditeur qui a promis de "revenir vers vous" ; un mail que vous avez envoyé à un prospect. |
+| **Quarantaine** | Le courrier des inconnus sur lesquels vous n'avez pas encore décidé                                                            |
+| **Archive**     | Les conversations où il n'y a plus rien à faire                                                                                |
+| **Paperwork**   | Factures, reçus, relevés : du courrier à garder, pas à lire à l'arrivée                                                        |
+| **Newsletter**  | Newsletters, promotions, notifications                                                                                         |
+| **Junk**        | Le spam                                                                                                                        |
+| **Banned**      | Les expéditeurs dont vous ne voulez plus jamais entendre parler                                                                |
+| **Deleted**     | La corbeille                                                                                                                   |
 
-Trois vues réunissent plusieurs dossiers : **Travail** (<kbd>;</kbd> <kbd>o</kbd>) montre Inbox, Todo et Waiting ensemble, tout ce qui reste à traiter ; **All Mail** (<kbd>;</kbd> <kbd>m</kbd>) tout sauf Deleted, Junk et Banned, ce que veulent la plupart des recherches ; **Everything** (<kbd>;</kbd> <kbd>e</kbd>) vraiment tout.
+Trois vues regroupent plusieurs dossiers : 
+- **Work** (<kbd>;</kbd> <kbd>o</kbd>) avec tout ce qui est à traiter : Inbox, Todo et Waiting ensemble ; 
+- **All Mail** (<kbd>;</kbd> <kbd>m</kbd>) tout sauf Deleted, Junk et Banned, idéal pour la plupart des recherches ; 
+- **Everything** (<kbd>;</kbd> <kbd>e</kbd>) vraiment tout.
 
 ## Quarantaine : une décision par expéditeur
 
 Quand quelqu'un vous écrit pour la première fois, son mail va en Quarantaine. Là, une seule touche décide où va l'expéditeur :
 
-| Touche | Destination | Et ses prochains mails |
-| --- | --- | --- |
-| <kbd>i</kbd> | Inbox | Vont dans l'Inbox |
-| <kbd>n</kbd> | Newsletter | Vont dans Newsletter |
-| <kbd>p</kbd> | Paperwork | Vont dans Paperwork |
-| <kbd>b</kbd> | Banned | Vont dans Banned |
-| <kbd>x</kbd> | Junk | Restent en Quarantaine : le spam change d'adresse à chaque fois |
-| <kbd>d</kbd> | Deleted | Restent en Quarantaine |
+| Touche       | Destination | Et ses prochains mails                                          |
+| ------------ | ----------- | --------------------------------------------------------------- |
+| <kbd>i</kbd> | Inbox       | Vont dans l'Inbox                                               |
+| <kbd>n</kbd> | Newsletter  | Vont dans Newsletter                                            |
+| <kbd>p</kbd> | Paperwork   | Vont dans Paperwork                                             |
+| <kbd>b</kbd> | Banned      | Vont dans Banned                                                |
+| <kbd>x</kbd> | Junk        | Restent en Quarantaine : le spam change d'adresse à chaque fois |
+| <kbd>d</kbd> | Deleted     | Restent en Quarantaine                                          |
 
 Une décision porte sur l'expéditeur, pas sur un mail : tout ce qu'il vous a envoyé avant, dans tous vos comptes, est rangé avec, comme tout ce qu'il enverra. La barre d'état le dit : « déplacé dans Newsletter, les prochains mails de news@boutique.fr aussi, 12 autres mails rangés ».
 
@@ -52,12 +55,14 @@ N'importe qui peut écrire n'importe quel nom et adresse dans le « De » d'un m
 
 ## Sortir de l'Inbox
 
-| Touche | Destination | Quand |
-| --- | --- | --- |
-| <kbd>d</kbd> | Archive | Il n'y a plus rien à faire |
-| <kbd>m</kbd> <kbd>t</kbd> | Todo | Vous avez quelque chose à faire |
-| <kbd>m</kbd> <kbd>w</kbd> | Waiting | Vous attendez une réponse |
-| <kbd>Suppr</kbd> | Deleted | Vous n'en voulez pas |
+| Touche                    | Destination | Quand                                       |
+| ------------------------- | ----------- | ------------------------------------------- |
+| <kbd>d</kbd>              | Archive     | Il n'y a plus rien à faire                  |
+| <kbd>m</kbd> <kbd>t</kbd> | Todo        | Vous avez quelque chose à faire             |
+| <kbd>m</kbd> <kbd>w</kbd> | Waiting     | Vous attendez une réponse ou devez relancer |
+| <kbd>Suppr</kbd>          | Deleted     | Vous n'en voulez pas                        |
+
+Et bien sûr, répondre à un mail le sort de l'Inbox.
 
 <kbd>m</kbd> ouvre un menu de toutes les destinations permises depuis le dossier courant. Une conversation en **Waiting** revient d'elle-même dans l'Inbox quand quelqu'un répond. Quand vous répondez, <kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>↩</kbd> envoie et range la conversation d'un coup, par exemple dans Waiting.
 
