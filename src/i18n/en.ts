@@ -71,7 +71,7 @@ export default {
       lead: 'Only the people you chose reach your inbox. The rest wait in Quarantine for a decision you make only once.',
       shot: 'quarantine',
       shotAlt: 'The Quarantine folder: emails from unknown senders, with one key per destination in the status bar.',
-      caption: 'Unknown senders wait in Quarantine. One key decides where a sender belongs, for every email they will ever send you.',
+      caption: 'Unknown senders wait in Quarantine. The icon to the left of the name shows whether the sender is a person or a robot. One key decides where a sender belongs, for every email they will ever send you.',
       points: [
         {
           title: 'Unknown senders wait in Quarantine',

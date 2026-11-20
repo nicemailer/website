@@ -72,7 +72,7 @@ const fr: Strings = {
       lead: 'Seules les personnes que vous avez choisies arrivent dans votre Inbox. Les autres attendent en quarantaine une décision que vous ne prenez qu’une fois.',
       shot: 'quarantine',
       shotAlt: 'Les mails des expéditeurs inconnus, en quarantaine, avec une touche par destination dans la barre d’état.',
-      caption: 'Les inconnus attendent en quarantaine. Une touche décide où va un expéditeur, pour tous les mails qu’il vous enverra.',
+      caption: 'Les inconnus attendent en quarantaine. L’icône à gauche du nom indique si l’expéditeur est une personne ou un robot. Une touche décide où va un expéditeur, pour tous les mails qu’il vous enverra.',
       points: [
         {
           title: 'Les inconnus attendent en quarantaine',
