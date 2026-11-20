@@ -4,7 +4,7 @@ description: Where email goes, and why. Quarantine, Inbox, Archive, Todo, Waitin
 order: 4
 ---
 
-The workflow starts once your account is [activated](/docs/add-an-account/) without the "**Only look**" option.
+The workflow starts once your account is [activated](/docs/add-an-account/) without the **Only look for now** option.
 
 ## The folders
 
@@ -12,7 +12,7 @@ The workflow starts once your account is [activated](/docs/add-an-account/) with
 | -------------- | ----------------------------------------------------------------------------------------------------------- |
 | **Inbox**      | Email from the people you accepted, not dealt with yet                                                      |
 | **Todo**       | Conversations where you have something to produce                                                           |
-| **Waiting**    | Conversations to follow up on: a sender who promised to "get back to you"; an email you sent to a prospect. |
+| **Waiting**    | Conversations to follow up on: a sender who promised to "get back to you"; an email you sent to a prospect  |
 | **Quarantine** | Email from strangers you haven't decided on yet                                                             |
 | **Archive**    | Conversations with nothing left to do                                                                       |
 | **Paperwork**  | Invoices, receipts, statements: email you keep, but don't read as it arrives                                |

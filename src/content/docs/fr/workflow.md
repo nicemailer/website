@@ -4,7 +4,7 @@ description: Où va le courrier, et pourquoi. Quarantaine, Inbox, Archive, Todo,
 order: 4
 ---
 
-Le workflow commence une fois votre compte est [activé](/fr/docs/add-an-account/) sans l'option "**Seulement regarder**".
+Le workflow commence une fois votre compte [activé](/fr/docs/add-an-account/) sans l'option **Seulement regarder pour l'instant**.
 
 ## Les dossiers
 
@@ -12,7 +12,7 @@ Le workflow commence une fois votre compte est [activé](/fr/docs/add-an-account
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | **Inbox**       | Le courrier des personnes acceptées, pas encore traité                                                                         |
 | **Todo**        | Les conversations où vous avez quelque chose à produire                                                                        |
-| **Waiting**     | Les conversations à relancer : un expéditeur qui a promis de "revenir vers vous" ; un mail que vous avez envoyé à un prospect. |
+| **Waiting**     | Les conversations à relancer : un expéditeur qui a promis de "revenir vers vous" ; un mail que vous avez envoyé à un prospect  |
 | **Quarantaine** | Le courrier des inconnus sur lesquels vous n'avez pas encore décidé                                                            |
 | **Archive**     | Les conversations où il n'y a plus rien à faire                                                                                |
 | **Paperwork**   | Factures, reçus, relevés : du courrier à garder, pas à lire à l'arrivée                                                        |
