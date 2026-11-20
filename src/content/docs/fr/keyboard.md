@@ -1,5 +1,5 @@
 ---
-title: Les touches
+title: Les raccourcis clavier
 description: Les touches de tous les jours. Appuyez sur ? dans l'application pour les voir toutes.
 order: 5
 ---
@@ -13,9 +13,10 @@ Certaines touches sont un **préfixe** : <kbd>;</kbd>, <kbd>m</kbd>, <kbd>s</kbd
 | Touche | Action |
 | --- | --- |
 | <kbd>j</kbd> <kbd>k</kbd>, ou <kbd>↓</kbd> <kbd>↑</kbd> | Conversation suivante, précédente |
-| <kbd>⌃</kbd> <kbd>d</kbd> <kbd>⌃</kbd> <kbd>u</kbd> | Une demi-page plus bas, plus haut |
-| <kbd>⌃</kbd> <kbd>j</kbd> <kbd>⌃</kbd> <kbd>k</kbd> | Message suivant, précédent de la conversation |
+| <kbd>⌃</kbd> <kbd>d</kbd><br><kbd>⌃</kbd> <kbd>u</kbd> | Une demi-page plus bas, plus haut |
+| <kbd>⌃</kbd> <kbd>j</kbd><br><kbd>⌃</kbd> <kbd>k</kbd> | Message suivant, précédent de la conversation |
 | <kbd>;</kbd> puis une lettre | Aller à un dossier : <kbd>i</kbd> Inbox, <kbd>q</kbd> Quarantaine, <kbd>t</kbd> Todo, <kbd>w</kbd> Waiting, <kbd>a</kbd> Archive, <kbd>o</kbd> Travail, <kbd>m</kbd> All Mail… |
+| <kbd>;</kbd> <kbd>T</kbd>, <kbd>;</kbd> <kbd>g</kbd> | Les tags, les groupes : <kbd>↩</kbd> ouvre leurs mails, <kbd>r</kbd> renomme, <kbd>d</kbd> supprime |
 | <kbd>@</kbd> | Choisir un compte, ou tous |
 | <kbd>Échap</kbd> | Revenir, fermer un panneau, effacer les marques |
 
@@ -58,6 +59,9 @@ Les actions s'appliquent aux conversations marquées s'il y en a, sinon à celle
 | <kbd>c</kbd> | Nouveau mail |
 | <kbd>⌘</kbd> <kbd>↩</kbd> | Envoyer. Vous avez cinq secondes pour annuler avec <kbd>z</kbd> |
 | <kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>↩</kbd> | Choisir où ranger la conversation, puis envoyer |
+| <kbd>⌥</kbd> <kbd>⌘</kbd> <kbd>B</kbd> | Afficher la ligne Cci |
+| <kbd>⌥</kbd> <kbd>⌘</kbd> <kbd>F</kbd> | Choisir l'adresse d'envoi, et donc le compte |
+| <kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>T</kbd> | Passer du texte seul au texte mis en forme, et inversement |
 | <kbd>Échap</kbd> | Fermer et garder le brouillon |
 | <kbd>⌘</kbd> <kbd>Échap</kbd> | Abandonner le brouillon |
 
@@ -73,3 +77,7 @@ Voir [Recherche et filtres](/fr/docs/search/).
 ## La souris
 
 Tout fonctionne aussi à la souris. Un clic sélectionne une conversation, <kbd>⌘</kbd>-clic la marque ou la démarque, <kbd>⇧</kbd>-clic marque une plage. Les blocs de la barre d'état, en bas de la fenêtre, ouvrent les mêmes menus que leurs touches.
+
+## Changer les touches
+
+Toutes les touches peuvent être changées, dans le fichier `~/.config/nicemailer/keymap.toml`. Chaque action y est expliquée par un commentaire : ouvrez-le, remplacez la touche, enregistrez.

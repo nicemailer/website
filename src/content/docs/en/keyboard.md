@@ -1,5 +1,5 @@
 ---
-title: Keys
+title: Keyboard shortcuts
 description: The keys you will use every day. Press ? in the app to see all of them.
 order: 5
 ---
@@ -13,9 +13,10 @@ Some keys are a **prefix**: <kbd>;</kbd>, <kbd>m</kbd>, <kbd>s</kbd> and <kbd>v<
 | Key | Action |
 | --- | --- |
 | <kbd>j</kbd> <kbd>k</kbd>, or <kbd>↓</kbd> <kbd>↑</kbd> | Next, previous conversation |
-| <kbd>⌃</kbd> <kbd>d</kbd> <kbd>⌃</kbd> <kbd>u</kbd> | Half a page down, up |
-| <kbd>⌃</kbd> <kbd>j</kbd> <kbd>⌃</kbd> <kbd>k</kbd> | Next, previous message of the conversation |
+| <kbd>⌃</kbd> <kbd>d</kbd><br><kbd>⌃</kbd> <kbd>u</kbd> | Half a page down, up |
+| <kbd>⌃</kbd> <kbd>j</kbd><br><kbd>⌃</kbd> <kbd>k</kbd> | Next, previous message of the conversation |
 | <kbd>;</kbd> then a letter | Go to a folder: <kbd>i</kbd> Inbox, <kbd>q</kbd> Quarantine, <kbd>t</kbd> Todo, <kbd>w</kbd> Waiting, <kbd>a</kbd> Archive, <kbd>o</kbd> Work, <kbd>m</kbd> All Mail… |
+| <kbd>;</kbd> <kbd>T</kbd>, <kbd>;</kbd> <kbd>g</kbd> | The tags, the groups: <kbd>↩</kbd> opens their email, <kbd>r</kbd> renames, <kbd>d</kbd> deletes |
 | <kbd>@</kbd> | Choose an account, or all of them |
 | <kbd>Esc</kbd> | Go back, close a panel, clear the marks |
 
@@ -58,6 +59,9 @@ Actions apply to the marked conversations if there are any, otherwise to the one
 | <kbd>c</kbd> | New email |
 | <kbd>⌘</kbd> <kbd>↩</kbd> | Send. You have five seconds to cancel with <kbd>z</kbd> |
 | <kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>↩</kbd> | Choose where to file the conversation, then send |
+| <kbd>⌥</kbd> <kbd>⌘</kbd> <kbd>B</kbd> | Show the Bcc line |
+| <kbd>⌥</kbd> <kbd>⌘</kbd> <kbd>F</kbd> | Choose the sending address, and so the account |
+| <kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>T</kbd> | Switch between plain and formatted text |
 | <kbd>Esc</kbd> | Close and keep the draft |
 | <kbd>⌘</kbd> <kbd>Esc</kbd> | Discard the draft |
 
@@ -73,3 +77,7 @@ See [Search and filters](/docs/search/).
 ## The mouse
 
 Everything works with the mouse too. A click selects a conversation, <kbd>⌘</kbd>-click marks or unmarks one, <kbd>⇧</kbd>-click marks a range. The blocks of the status bar, at the bottom of the window, open the same menus as their keys.
+
+## Change the keys
+
+Every key can be changed, in the file `~/.config/nicemailer/keymap.toml`. A comment explains each action in it: open it, replace the key, save.
