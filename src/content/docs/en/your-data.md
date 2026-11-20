@@ -8,11 +8,11 @@ order: 9
 
 Everything NiceMailer keeps is in one folder, `~/Library/Application Support/NiceMailer`:
 
-| In the folder | What it is | Size, for 400,000 emails |
-| --- | --- | --- |
-| `raw.noindex/` | Every email exactly as it was received, compressed, one file per message | 23 GB |
-| `nicemailer.db` | Folders, conversations, senders and your decisions, tags, groups, drafts, history | 0.5 GB |
-| `nicemailer_body.db` | The text of the emails and the search index | 12 GB |
+| In the folder        | What it is                                                                        | Size, for 400,000 emails |
+| -------------------- | --------------------------------------------------------------------------------- | ------------------------ |
+| `raw.noindex/`       | Every email exactly as it was received, compressed, one file per message          | 23 GB                    |
+| `nicemailer.db`      | Folders, conversations, senders and your decisions, tags, groups, drafts, history | 0.5 GB                   |
+| `nicemailer_body.db` | The text of the emails and the search index                                       | 12 GB                    |
 
 Your settings are in `~/.config/nicemailer/`, and your passwords in the macOS Keychain.
 
@@ -35,7 +35,7 @@ tmutil addexclusion ~/Library/Application\ Support/NiceMailer/nicemailer_body.db
 
   ```sh
   /Applications/NiceMailer.app/Contents/Helpers/nicemailer mailbox backup \
-      ~/Library/Application\ Support/NiceMailer /Volumes/Backup/nicemailer.db
+       /Volumes/Backup/nicemailer.db
   ```
 
 Copying `nicemailer.db` with the Finder while NiceMailer runs may miss its latest changes: use the command.

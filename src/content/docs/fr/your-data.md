@@ -8,11 +8,11 @@ order: 9
 
 Tout ce que garde NiceMailer est dans un seul dossier, `~/Library/Application Support/NiceMailer` :
 
-| Dans le dossier | Ce que c'est | Taille, pour 400 000 mails |
-| --- | --- | --- |
-| `raw.noindex/` | Chaque mail exactement tel qu'il a été reçu, compressé, un fichier par message | 23 Go |
-| `nicemailer.db` | Dossiers, conversations, expéditeurs et vos décisions, tags, groupes, brouillons, historique | 0,5 Go |
-| `nicemailer_body.db` | Le texte des mails et l'index de recherche | 12 Go |
+| Dans le dossier      | Ce que c'est                                                                                 | Taille, pour 400 000 mails |
+| -------------------- | -------------------------------------------------------------------------------------------- | -------------------------- |
+| `raw.noindex/`       | Chaque mail exactement tel qu'il a été reçu, compressé, un fichier par message               | 23 Go                      |
+| `nicemailer.db`      | Dossiers, conversations, expéditeurs et vos décisions, tags, groupes, brouillons, historique | 0,5 Go                     |
+| `nicemailer_body.db` | Le texte des mails et l'index de recherche                                                   | 12 Go                      |
 
 Vos réglages sont dans `~/.config/nicemailer/`, et vos mots de passe dans le trousseau de macOS.
 
@@ -35,7 +35,7 @@ tmutil addexclusion ~/Library/Application\ Support/NiceMailer/nicemailer_body.db
 
   ```sh
   /Applications/NiceMailer.app/Contents/Helpers/nicemailer mailbox backup \
-      ~/Library/Application\ Support/NiceMailer /Volumes/Sauvegarde/nicemailer.db
+       /Volumes/Sauvegarde/nicemailer.db
   ```
 
 Copier `nicemailer.db` avec le Finder pendant que NiceMailer tourne peut manquer ses derniers changements : utilisez la commande.
