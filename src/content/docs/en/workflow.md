@@ -68,6 +68,24 @@ And of course, replying to an email takes it out of the Inbox.
 
 In the list, an arrow before the name ("→ Alice") means you wrote last: the conversation is waiting on the other person.
 
+## Tags and groups
+
+Folders say where a conversation stands. Tags and groups add what folders don't: what an email is about, and who wrote it. Neither of them moves your email.
+
+**A tag** goes on a conversation: "Dupont project", "Accounts 2026", "Urgent". A conversation can have several. <kbd>t</kbd> opens the list of tags: pick one, or type a new name to create it. The conversation's own tags come first, so you can remove them. Tags are stored on the server as IMAP keywords: Thunderbird shows them, but Mail on iPhone and Gmail usually don't.
+
+**A group** gathers people: VIP, Family, Team, Club. <kbd>g</kbd> adds the sender of the conversation to a group, or removes them, and typing a new name creates the group. A person can be in several groups, and groups apply to all your accounts. Being in a group doesn't change where email goes: the decision says where an email goes, the group says who the sender is.
+
+With several conversations marked, <kbd>t</kbd> and <kbd>g</kbd> apply to all of them, and each line says how many already have it: "1 of 3".
+
+A conversation's tags show in the list and at the top of the email (`#Urgent`), and so do the sender's groups (`@VIP`). To find their email:
+
+- <kbd>;</kbd> <kbd>T</kbd> lists the tags and <kbd>;</kbd> <kbd>g</kbd> the groups. <kbd>↩</kbd> opens the email of the tag or of the group's members, in every account; <kbd>r</kbd> renames, <kbd>d</kbd> deletes.
+- The **Tag…** and **Group…** filters (<kbd>f</kbd>) narrow any list. See [Search and filters](/docs/search/).
+- In the three-column layout, groups appear below the folders: a click filters the list on their members.
+
+Deleting a tag removes it from all its emails, on the server too, and can't be undone with <kbd>z</kbd>. Deleting a group doesn't touch any email.
+
 ## Undo
 
 <kbd>z</kbd> undoes the last move or decision: the emails go back where they were, and the previous decision comes back. Press it again to go one step further back. Nothing is ever lost by going fast.

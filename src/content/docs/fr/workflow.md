@@ -68,6 +68,24 @@ Et bien sûr, répondre à un mail le sort de l'Inbox.
 
 Dans la liste, une flèche devant le nom (« → Alice ») signifie que vous avez écrit le dernier : la conversation attend l'autre personne.
 
+## Tags et groupes
+
+Les dossiers disent où en est une conversation. Les tags et les groupes ajoutent ce que les dossiers ne disent pas : de quoi parle un mail, et qui l'a écrit. Aucun des deux ne déplace le courrier.
+
+**Un tag** se pose sur une conversation : « Chantier Dupont », « Compta 2026 », « Urgent ». Une conversation peut en porter plusieurs. <kbd>t</kbd> ouvre la liste des tags : choisissez-en un, ou tapez un nouveau nom pour le créer. Les tags de la conversation y sont proposés en premier, pour les retirer. Les tags sont enregistrés sur le serveur comme mots-clés IMAP : Thunderbird les affiche, mais Mail sur iPhone et Gmail en général non.
+
+**Un groupe** réunit des personnes : VIP, Famille, Équipe, Association. <kbd>g</kbd> ajoute l'expéditeur de la conversation à un groupe, ou l'en retire, et tapez un nouveau nom pour créer le groupe. Une personne peut être dans plusieurs groupes, et les groupes valent pour tous vos comptes. Être dans un groupe ne change pas où va le courrier : la décision dit où va un mail, le groupe dit qui est l'expéditeur.
+
+Avec plusieurs conversations marquées, <kbd>t</kbd> et <kbd>g</kbd> s'appliquent à toutes, et chaque ligne dit combien l'ont déjà : « 1 sur 3 ».
+
+Les tags d'une conversation s'affichent dans la liste et en haut du mail (`#Urgent`), les groupes de l'expéditeur aussi (`@VIP`). Pour retrouver leur courrier :
+
+- <kbd>;</kbd> <kbd>T</kbd> liste les tags et <kbd>;</kbd> <kbd>g</kbd> les groupes. <kbd>↩</kbd> ouvre les mails du tag ou des membres du groupe, dans tous les comptes ; <kbd>r</kbd> renomme, <kbd>d</kbd> supprime.
+- Les filtres **Tag…** et **Groupe…** (<kbd>f</kbd>) affinent n'importe quelle liste. Voir [Recherche et filtres](/fr/docs/search/).
+- En présentation trois colonnes, les groupes apparaissent sous les dossiers : un clic filtre la liste sur leurs membres.
+
+Supprimer un tag le retire de tous ses mails, sur le serveur aussi, et ne s'annule pas avec <kbd>z</kbd>. Supprimer un groupe ne touche à aucun mail.
+
 ## Annuler
 
 <kbd>z</kbd> annule le dernier déplacement ou la dernière décision : les mails reviennent où ils étaient, et la décision précédente revient. Appuyez encore pour remonter d'un pas. Aller vite ne fait jamais rien perdre.
