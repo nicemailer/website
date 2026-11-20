@@ -170,7 +170,7 @@ export default {
       },
       {
         q: 'Is it available in my language?',
-        a: 'The app is in English and French, and follows the language of your Mac.',
+        a: 'The app is available in English, French, German, Spanish, Italian, Portuguese (Brazil and Portugal), Dutch, Swedish, Danish, Norwegian, Finnish, Polish, Ukrainian, Russian, Japanese, Simplified and Traditional Chinese, and Korean. It follows the language of your Mac.',
       },
     ],
   },

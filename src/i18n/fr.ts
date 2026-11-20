@@ -171,7 +171,7 @@ const fr: Strings = {
       },
       {
         q: 'Est-il disponible dans ma langue ?',
-        a: 'L’application est en français et en anglais, et suit la langue de votre Mac.',
+        a: 'L’application est disponible en français, anglais, allemand, espagnol, italien, portugais (Brésil et Portugal), néerlandais, suédois, danois, norvégien, finnois, polonais, ukrainien, russe, japonais, chinois simplifié et traditionnel, et coréen. Elle suit la langue de votre Mac.',
       },
     ],
   },
