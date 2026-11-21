@@ -7,31 +7,31 @@ description: Tout ce qui rend NiceMailer rapide, reposant et sécurisant.
 
 ### Instantané, quelle que soit la taille de votre boîte
 
-Ouvrir un dossier prend quelques millisecondes, même pendant le téléchargement du nouveau courrier. Filtrer 400 000 mails pour ne garder que ceux écrits par de vraies personnes prend 2 ms. NiceMailer a été construit et testé sur des boîtes de centaines de milliers de mails, dès la première ligne de code.
+Ouvrir un dossier prend quelques millisecondes, même pendant le téléchargement du nouveau mail. Filtrer 400 000 mails pour ne garder que ceux écrits par de vraies personnes prend 2 ms. NiceMailer a été construit et testé sur des boîtes de centaines de milliers de mails, dès la première ligne de code.
 
-### Le clavier d'abord. Le clavier roi.
+### Tout peut se faire au clavier, si vous le souhaitez.
 
 Vous n'utilisez jamais de raccourcis ? Aucun problème : tout fonctionne à la souris.
 
 Mais si vous aimez les raccourcis clavier, vous êtes au bon endroit. Des touches inspirées de Vim pour lire, répondre, ranger, étiqueter et chercher sans lever les mains du clavier : <kbd>j</kbd> et <kbd>k</kbd> pour avancer, <kbd>d</kbd> pour archiver, <kbd>r</kbd> pour répondre, <kbd>/</kbd> pour chercher, <kbd>z</kbd> pour annuler. <kbd>?</kbd> affiche toutes les touches, à tout moment.
 
-### Ne cherchez plus. Trouvez.
+### Ne cherchez plus : Trouvez enfin !
 
 Filtrez instantanément tous vos mails, sur tous vos comptes. Combinez tous les critères : texte intégral, date, expéditeur, destinataire, non lus, drapeau, pièces jointes, avec votre réponse, expéditeur personne ou robot, tag, groupe de contacts. Chaque filtre peut être inversé (« pas de @boutique.fr »), les dates se tapent comme on y pense (« après 1/10/2026 », « il y a plus de 6 mois »), et tout reste instantané.
 
-### Tout ce que contient un mail, à une touche
+### Tout le contenu d'un e-mail, en une seule touche
 
 Une touche, <kbd>l</kbd>, liste tout ce que contient un mail : ses liens, ses pièces jointes, les numéros de téléphone de l'expéditeur, et le code de confirmation que vous venez de recevoir. Copiez le code, ouvrez la pièce jointe ou appelez l'expéditeur avec votre iPhone, d'une seule touche.
 
-### Des liens profonds vers vos notes
+### Des liens directs vers vos mails
 
 Chaque mail a un lien permanent, du type `[Objet du mail](nicemailer://m/399955)`, copié depuis le mail en deux touches. Collez-le dans Obsidian, Notion ou n'importe quelle application de notes, et revenez au mail d'un clic, des années plus tard.
 
 ## Reposant
 
-### Les inconnus attendent en Quarantaine
+### Les inconnus patientent en quarantaine
 
-Le courrier des personnes qui ne vous ont jamais écrit reste hors de votre Inbox, en Quarantaine. Là, une touche décide où va chaque expéditeur : votre Inbox, Paperwork, Newsletter, ou banni pour de bon. Tout se passe sur votre Mac et fonctionne avec votre compte IMAP actuel, afin de retourner cela sur votre téléphone.
+Le mail des personnes qui ne vous ont jamais écrit reste hors de votre Inbox, en Quarantaine. Là, une touche décide où va chaque expéditeur : votre Inbox, Paperwork, Newsletter, ou banni pour de bon. Tout se passe sur votre Mac et fonctionne avec votre compte IMAP actuel, afin de retourner cela sur votre téléphone.
 
 Paperwork contient la paperasse (factures, etc.) qu'on ne lit pas mais qu'on doit garder. Newsletter contient les lettres d'information qu'on sera content de lire quand on aura le temps.  
 
@@ -53,9 +53,9 @@ Inbox, Todo et Waiting sont réunis dans "Work" pour avoir une vision globale. U
 
 Chaque déplacement et chaque décision s'annulent d'une touche. Chaque mail envoyé attend cinq secondes avant de partir, au cas où vous changeriez d'avis.
 
-### Essayez sans rien changer
+### Essayez sans rien changer et sans risque
 
-Pas sûr que ce workflow soit fait pour vous ? Ajoutez votre compte et choisissez « Seulement regarder pour l'instant » : NiceMailer affiche votre courrier sans modifier un seul octet sur le serveur. Avant d'aller plus loin, il vous montre exactement les dossiers qu'il va créer. Quand vous êtes prêt, un clic met le workflow en place, sans retélécharger votre courrier.
+Pas sûr que ce workflow soit fait pour vous ? Ajoutez votre compte et choisissez « Seulement regarder pour l'instant » : NiceMailer affiche votre mail sans modifier un seul octet sur le serveur. Avant d'aller plus loin, il vous montre exactement les dossiers qu'il va créer. Quand vous êtes prêt, un clic met le workflow en place, sans retélécharger votre mail.
 
 ### Distinguer les humains des robots
 
@@ -75,7 +75,7 @@ Certains clients mail finissent par ressembler à des sapins de Noël. NiceMaile
 
 N'importe qui peut écrire n'importe quel nom dans le « De » d'un mail. NiceMailer vérifie que chaque mail vient bien de qui il prétend venir (SPF, DKIM, DMARC) et ne se laisse pas tromper par des résultats falsifiés. Un mail qui se fait passer pour votre banque ne sort pas de la Quarantaine parce qu'il a emprunté un nom connu, et bannir un faussaire ne bannit jamais le vrai expéditeur.
 
-### Personne ne sait quand vous lisez ses mails
+### Personne ne sait quand vous lisez vos mails
 
 Les pixels espions, ces images invisibles qui disent à l'expéditeur quand et où vous avez ouvert son mail, sont retirés à l'arrivée. Les images distantes ne se chargent jamais sans votre accord, et NiceMailer retient votre choix pour chaque expéditeur. Se désabonner d'une newsletter prend un clic, et NiceMailer ne le propose jamais sur un spam, où cela ne ferait que confirmer votre adresse au spammeur.
 
@@ -83,9 +83,9 @@ Les pixels espions, ces images invisibles qui disent à l'expéditeur quand et o
 
 NiceMailer ne vous compte pas, ne vous profile pas et ne rend compte de rien : pas de statistiques, pas de rapport de plantage envoyé en douce, pas de compte à créer. Il en va de même pour ce site, sans cookie ni statistiques. Ce que l'application envoie, et à qui, est détaillé sur la page [Confidentialité](/fr/privacy/).
 
-### Votre courrier, sur votre Mac, pour toujours
+### Votre mail, sur votre Mac, pour toujours
 
-Votre courrier est la mémoire de toute votre vie personnelle et professionnelle. Votre fournisseur peut fermer, votre organisation peut supprimer votre compte à tout moment. NiceMailer garde chaque mail sur votre Mac, exactement tel qu'il a été reçu, dans des fichiers qui ne sont plus jamais modifiés. Sauvegardez-les avec Time Machine ou n'importe quel outil de copie : chaque sauvegarde n'ajoute que les nouveaux mails. Tout le reste de ce que stocke NiceMailer se reconstruit à partir de ces fichiers.
+Votre mail est la mémoire de toute votre vie personnelle et professionnelle. Votre fournisseur peut fermer, votre organisation peut supprimer votre compte à tout moment. NiceMailer garde chaque mail sur votre Mac, exactement tel qu'il a été reçu, dans des fichiers qui ne sont plus jamais modifiés. Sauvegardez-les avec Time Machine ou n'importe quel outil de copie : chaque sauvegarde n'ajoute que les nouveaux mails. Tout le reste de ce que stocke NiceMailer se reconstruit à partir de ces fichiers.
 
 ### Gardez votre historique
 
@@ -103,7 +103,7 @@ NiceMailer utilise votre abonnement Claude existant et ne stocke aucun identifia
 
 ### Votre assistant IA, branché sur votre boîte
 
-Grâce au serveur MCP de NiceMailer, Claude Desktop, Claude Code ou une application semblable peut chercher dans votre courrier, lire les conversations et les pièces jointes, répondre à « Quels sont les mails urgents ou importants à traiter en priorité ? » et préparer des réponses. Il ne peut rien envoyer, déplacer ni supprimer : cette règle est imposée par NiceMailer lui-même, pas laissée à l'IA. Vous relisez chaque brouillon et l'envoyez vous-même.
+Grâce au serveur MCP de NiceMailer, Claude Desktop, Claude Code ou une application semblable peut chercher dans votre mail, lire les conversations et les pièces jointes, répondre à « Quels sont les mails urgents ou importants à traiter en priorité ? » et préparer des réponses. Il ne peut rien envoyer, déplacer ni supprimer : cette règle est imposée par NiceMailer lui-même, pas laissée à l'IA. Vous relisez chaque brouillon et l'envoyez vous-même.
 
 ### Qui a fait quoi
 
@@ -111,8 +111,8 @@ Chaque changement dans votre boîte est consigné : ce que vous avez rangé aujo
 
 ### Libre, pour que vous puissiez vérifier
 
-NiceMailer est un logiciel libre, sous licence GNU AGPLv3. Vous n'avez à croire aucune affirmation de cette page sur parole : la façon dont votre courrier est stocké, ce qui est envoyé à l'IA et ce qu'un agent IA a le droit de faire sont dans le [code source](https://github.com/nicemailer/nicemailer). Vous n'êtes pas développeur ? Envoyez votre agent IA le lire à votre place : cela lui fera plaisir.
+NiceMailer est un logiciel libre, sous licence GNU AGPLv3. Vous n'avez à croire aucune affirmation de cette page sur parole : la façon dont votre mail est stocké, ce qui est envoyé à l'IA et ce qu'un agent IA a le droit de faire sont dans le [code source](https://github.com/nicemailer/nicemailer). Vous n'êtes pas développeur ? Envoyez votre agent IA le lire à votre place : cela lui fera plaisir.
 
 ### Construit pour durer
 
-Le modèle de données et les spécifications de NiceMailer ont été conçus bien avant la première ligne de code. Son cœur, écrit en Rust, continue de tourner en arrière-plan quand l'application est fermée : le courrier continue d'arriver et d'être trié, et les envois en attente partent. Chacune de vos actions survit à un plantage et parvient au serveur dès que la connexion revient. Avant chaque mise à jour, votre boîte est copiée, et remise en place automatiquement en cas de problème. Une suite de tests complète protège chaque fonctionnalité.
+Le modèle de données et les spécifications de NiceMailer ont été conçus bien avant la première ligne de code. Son cœur, écrit en Rust, continue de tourner en arrière-plan quand l'application est fermée : le mail continue d'arriver et d'être trié, et les envois en attente partent. Chacune de vos actions survit à un plantage et parvient au serveur dès que la connexion revient. Avant chaque mise à jour, votre boîte est copiée, et remise en place automatiquement en cas de problème. Une suite de tests complète protège chaque fonctionnalité.
