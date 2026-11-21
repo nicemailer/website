@@ -26,14 +26,14 @@ const fr: Strings = {
   hero: {
     title: 'Rapide. Reposant. Sécurisant.',
     lead:
-      'NiceMailer est un client mail pour Mac. Tout y est instantané, même avec des centaines de milliers de mails. Seules les personnes que vous avez choisies vont dans votre Inbox, et votre courrier reste sur votre Mac : pour des décennies, sans rien sacrifier de votre vie privée.',
+      'NiceMailer est un client mail pour Mac. Tout y est instantané, même avec des centaines de milliers de mails. Seules les personnes que vous avez choisies vont dans votre Inbox, et votre mail reste sur votre Mac : pour des décennies, sans rien sacrifier de votre vie privée.',
     shotAlt: 'La fenêtre de NiceMailer : la liste des conversations à gauche, un mail ouvert à droite.',
     caption: 'Vue d’une conversation. Les messages précédents tiennent chacun sur une ligne, et le dernier ne montre que ce qu’il apporte, sans sa signature ni ses 28 lignes citées, qu’une touche rend visibles.',
   },
   measures: {
     title: 'Mesuré, pas promis',
     items: [
-      { value: '2 ms', label: 'pour afficher un dossier, même pendant le téléchargement du courrier' },
+      { value: '2 ms', label: 'pour afficher un dossier, même pendant le téléchargement du mail' },
       { value: '2 ms', label: 'pour afficher uniquement les vraies personnes, parmi 400 000 mails' },
       { value: '36 s', label: 'pour importer une archive de 10 Go et 45 000 mails' },
     ],
@@ -95,7 +95,7 @@ const fr: Strings = {
     {
       id: 'trust',
       title: 'Sécurisant',
-      lead: 'NiceMailer vous protège, vous et votre courrier, qui est la mémoire de votre vie.',
+      lead: 'NiceMailer vous protège, vous et votre mail, qui est la mémoire de votre vie.',
       shot: 'thread',
       shotAlt: 'Une newsletter dans NiceMailer, avec son bouton de désabonnement et le nombre de pixels espions retirés.',
       caption: 'Le pixel espion de cette newsletter a été retiré à son arrivée (l’œil barré) : l’expéditeur ne sait jamais que vous l’avez lue. On se désabonne en un clic.',
@@ -122,17 +122,17 @@ const fr: Strings = {
   pillarMore: 'Toutes les fonctionnalités',
   tryIt: {
     title: 'Essayez sans risque',
-    text: 'Ajoutez votre compte et choisissez « Seulement regarder pour l’instant » : NiceMailer récupère et affiche votre courrier, mais ne modifie rien sur le serveur. Quand vous êtes prêt, il vous montre exactement les dossiers qu’il va créer, puis un clic met le workflow en place, sans retélécharger votre courrier.',
+    text: 'Ajoutez votre compte et choisissez « Seulement regarder pour l’instant » : NiceMailer récupère et affiche votre mail, mais ne modifie rien sur le serveur. Quand vous êtes prêt, il vous montre exactement les dossiers qu’il va créer, puis un clic met le workflow en place, sans retélécharger votre mail.',
     link: 'Ajouter votre compte',
   },
   migration: {
     title: 'Gardez tout votre historique',
-    text: 'Ajoutez vos comptes : NiceMailer télécharge tout leur courrier. Les archives des comptes fermés suivent aussi : un export mbox d’Apple Mail, Gmail, Thunderbird ou HEY s’importe en quelques minutes, et le relancer n’ajoute que ce qui manque.',
+    text: 'Ajoutez vos comptes : NiceMailer télécharge tout leur mail. Les archives des comptes fermés suivent aussi : un export mbox d’Apple Mail, Gmail, Thunderbird ou HEY s’importe en quelques minutes, et le relancer n’ajoute que ce qui manque.',
     link: 'Passer à NiceMailer',
   },
   openSource: {
     title: 'Libre, pour que vous puissiez vérifier',
-    text: 'NiceMailer est un logiciel libre, sous licence GNU AGPLv3. Chaque affirmation de cette page se vérifie dans le code source : comment votre courrier est stocké, ce qui est envoyé à l’IA, ce que l’agent IA a le droit de faire. Aucune télémétrie, ni dans l’application ni sur ce site.',
+    text: 'NiceMailer est un logiciel libre, sous licence GNU AGPLv3. Chaque affirmation de cette page se vérifie dans le code source : comment votre mail est stocké, ce qui est envoyé à l’IA, ce que l’agent IA a le droit de faire. Aucune télémétrie, ni dans l’application ni sur ce site.',
     link: 'Lire le code sur GitHub',
   },
   author: {
@@ -158,7 +158,7 @@ const fr: Strings = {
         a: 'Rien. NiceMailer est libre et gratuit, sous licence GNU AGPLv3.',
       },
       {
-        q: 'Mon courrier est-il envoyé quelque part ?',
+        q: 'Mon mail est-il envoyé quelque part ?',
         a: 'Non. NiceMailer parle à vos serveurs de mail, cherche les mises à jour sur GitHub, et n’envoie un mail à l’IA que quand vous le demandez. Aucune télémétrie, aucun compte à créer.',
       },
       {
@@ -167,7 +167,7 @@ const fr: Strings = {
       },
       {
         q: 'Va-t-il modifier ma boîte sur le serveur ?',
-        a: 'Seulement si vous le voulez. Si vous choisissez « Seulement regarder pour l’instant », rien ne change sur le serveur. Une fois le compte organisé, NiceMailer crée ses dossiers et y range le courrier, pour que votre téléphone voie les mêmes dossiers.',
+        a: 'Seulement si vous le voulez. Si vous choisissez « Seulement regarder pour l’instant », rien ne change sur le serveur. Une fois le compte organisé, NiceMailer crée ses dossiers et y range le mail, pour que votre téléphone voie les mêmes dossiers.',
       },
       {
         q: 'Est-il disponible dans ma langue ?',
@@ -190,7 +190,7 @@ const fr: Strings = {
     prev: 'Précédent',
     next: 'Suivant',
     contents: 'Pages du guide',
-    lead: 'Installer NiceMailer, y faire venir votre courrier et l’utiliser au quotidien.',
+    lead: 'Installer NiceMailer, y faire venir votre mail et l’utiliser au quotidien.',
   },
   changelog: {
     title: 'Nouveautés',

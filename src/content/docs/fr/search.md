@@ -18,13 +18,13 @@ Appuyez sur <kbd>f</kbd> (ou cliquez sur la loupe de la barre d'état) pour filt
 | --- | --- |
 | Non lus, Lus | Les conversations avec un mail non lu, ou aucun |
 | Drapeau, Sans drapeau | Les conversations marquées d'un drapeau, ou les autres |
-| De…, À… | Le courrier d'une personne, d'une adresse ou d'un domaine entier (`@boutique.fr`), ou vers eux |
+| De…, À… | Le mail d'une personne, d'une adresse ou d'un domaine entier (`@boutique.fr`), ou vers eux |
 | Sujet…, Texte… | Des mots de l'objet, ou de l'objet et du texte |
 | Date conversation…, Date mail… | Aujourd'hui, les 7 ou 30 derniers jours, cette année, avant ou après une date |
 | Pièce jointe | Les conversations avec un fichier |
 | Avec ma réponse | Les conversations auxquelles vous avez répondu |
 | Humain, Robot | Les conversations avec une vraie personne, ou seulement des machines |
-| Tag…, Groupe… | Le courrier portant un tag, ou d'un membre d'un groupe de contacts |
+| Tag…, Groupe… | Le mail portant un tag, ou d'un membre d'un groupe de contacts |
 
 Pas besoin de faire défiler : tapez quelques lettres d'un filtre. `no` atteint Non lus, `sd` Sans drapeau (ses initiales), `de` De….
 
@@ -44,7 +44,7 @@ Les filtres de date comprennent :
 
 ## Humain ou robot
 
-La plupart du courrier est envoyé par des machines : boutiques, services, notifications. NiceMailer les distingue d'après le contenu de chaque mail, sans en lire le texte. Le filtre **Humain** ne laisse que les conversations avec de vraies personnes, même dans des années d'archives. Si NiceMailer se trompe sur un expéditeur, corrigez-le dans l'écran **Contacts** (<kbd>;</kbd> <kbd>c</kbd>).
+La plupart du mail est envoyé par des machines : boutiques, services, notifications. NiceMailer les distingue d'après le contenu de chaque mail, sans en lire le texte. Le filtre **Humain** ne laisse que les conversations avec de vraies personnes, même dans des années d'archives. Si NiceMailer se trompe sur un expéditeur, corrigez-le dans l'écran **Contacts** (<kbd>;</kbd> <kbd>c</kbd>).
 
 ## Tous les mails d'une personne
 

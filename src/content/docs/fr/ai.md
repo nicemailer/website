@@ -68,6 +68,6 @@ Dans NiceMailer, ouvrez le menu **NiceMailer › Agents IA** :
 
 ### Ce qu'un agent peut faire
 
-Un agent peut chercher dans votre courrier, lire les conversations et les pièces jointes, et préparer des brouillons, que vous retrouvez dans Drafts pour les relire et les envoyer vous-même. Il **ne peut ni envoyer, ni déplacer, ni marquer, ni supprimer, ni se désabonner**. Ces limites sont imposées par le noyau de NiceMailer, pas par l'agent, et ne sont pas un réglage qu'un agent pourrait modifier.
+Un agent peut chercher dans votre mail, lire les conversations et les pièces jointes, et préparer des brouillons, que vous retrouvez dans Drafts pour les relire et les envoyer vous-même. Il **ne peut ni envoyer, ni déplacer, ni marquer, ni supprimer, ni se désabonner**. Ces limites sont imposées par le noyau de NiceMailer, pas par l'agent, et ne sont pas un réglage qu'un agent pourrait modifier.
 
 Gardez en tête que l'application d'IA envoie ce qu'elle lit à son propre fournisseur, selon ses conditions.

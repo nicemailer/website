@@ -209,7 +209,7 @@ def fill(Builder, now):
     for n, (sender, subject, text, name) in enumerate(papers):
         b.notice("Paperwork", sender, subject, text, b.ago(days=3 + n * 9), attachment=(name, PDF, "application/pdf"))
 
-    # --- Archive : deux ans de courrier ordinaire --------------------------
+    # --- Archive : deux ans de mail ordinaire --------------------------
 
     things = [
         "la charte graphique", "le lancement", "la planche d'ambiance", "le budget", "la facture d'avril",

@@ -1,6 +1,6 @@
 ---
 title: Passer à NiceMailer
-description: Emporter tout votre courrier, celui de vos comptes actuels et les archives de ceux que vous avez fermés.
+description: Emporter tout votre mail, celui de vos comptes actuels et les archives de ceux que vous avez fermés.
 order: 3
 ---
 
@@ -21,7 +21,7 @@ Une ancienne adresse professionnelle, un fournisseur que vous avez quitté : si 
 | Apple Mail | Sélectionnez une boîte, **Boîte aux lettres › Exporter la boîte aux lettres…** : le fichier s'appelle `mbox`, dans le dossier exporté |
 | Gmail | [Google Takeout](https://takeout.google.com), Mail seulement : vous obtenez un fichier `.mbox` |
 | Thunderbird | Chaque dossier local est un fichier mbox ; le module ImportExportTools NG exporte les autres |
-| HEY | Exportez votre courrier depuis les réglages de votre compte HEY |
+| HEY | Exportez votre mail depuis les réglages de votre compte HEY |
 
 Puis, dans le Terminal (NiceMailer doit être lancé) :
 
@@ -54,4 +54,4 @@ Les scripts sont décrits dans la documentation du code source (`docs/import-mbo
 
 ## Revenir en arrière
 
-NiceMailer n'enferme rien. Pour vos comptes IMAP, votre courrier reste sur votre serveur ; sur votre Mac, chaque message est gardé octet pour octet tel qu'il a été reçu (compressé, un fichier par message), et NiceMailer est libre : vous pourrez toujours lire vos données sans lui.
+NiceMailer n'enferme rien. Pour vos comptes IMAP, votre mail reste sur votre serveur ; sur votre Mac, chaque message est gardé octet pour octet tel qu'il a été reçu (compressé, un fichier par message), et NiceMailer est libre : vous pourrez toujours lire vos données sans lui.

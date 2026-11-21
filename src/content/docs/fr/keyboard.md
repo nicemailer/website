@@ -20,7 +20,7 @@ Certaines touches sont un **préfixe** : <kbd>;</kbd>, <kbd>m</kbd>, <kbd>s</kbd
 | <kbd>@</kbd> | Choisir un compte, ou tous |
 | <kbd>Échap</kbd> | Revenir, fermer un panneau, effacer les marques |
 
-## Agir sur le courrier
+## Agir sur le mail
 
 Les actions s'appliquent aux conversations marquées s'il y en a, sinon à celle sous le curseur.
 

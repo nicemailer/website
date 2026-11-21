@@ -20,7 +20,7 @@ L'application est signée et notarisée par Apple : macOS l'ouvre sans avertisse
 
 ## Le premier lancement
 
-NiceMailer est fait de deux parties : l'application que vous voyez, et un **noyau** qui tourne en arrière-plan. Le noyau reçoit et trie votre courrier, et envoie ce que vous avez écrit, même quand l'application est fermée.
+NiceMailer est fait de deux parties : l'application que vous voyez, et un **noyau** qui tourne en arrière-plan. Le noyau reçoit et trie votre mail, et envoie ce que vous avez écrit, même quand l'application est fermée.
 
 La première fois, macOS signale qu'un élément d'arrière-plan a été ajouté : c'est le noyau. Si macOS demande votre autorisation, autorisez NiceMailer dans **Réglages Système › Général › Ouverture**.
 
@@ -53,7 +53,7 @@ Au premier appel, macOS vous demande d'autoriser NiceMailer dans **Réglages Sys
 
 NiceMailer se met à jour tout seul. Au deuxième lancement, il vous demande s'il peut chercher les nouvelles versions ; si vous acceptez, il regarde une fois par jour. Vous pouvez aussi choisir **NiceMailer › Rechercher les mises à jour…** à tout moment.
 
-Une mise à jour remplace l'application et son noyau ensemble. Si le format de votre boîte change, NiceMailer la copie d'abord et la remet en place en cas de problème : aucune mise à jour ne peut vous faire perdre votre courrier.
+Une mise à jour remplace l'application et son noyau ensemble. Si le format de votre boîte change, NiceMailer la copie d'abord et la remet en place en cas de problème : aucune mise à jour ne peut vous faire perdre votre mail.
 
 Les changements de chaque version sont listés dans les [nouveautés](/fr/changelog/).
 
@@ -61,4 +61,4 @@ Les changements de chaque version sont listés dans les [nouveautés](/fr/change
 
 1. Choisissez **NiceMailer › Arrêter le noyau**, puis quittez l'application.
 2. Mettez NiceMailer à la corbeille depuis Applications.
-3. Votre courrier reste dans `~/Library/Application Support/NiceMailer`. Ne supprimez ce dossier que si vous n'en voulez plus : voir [Vos données et sauvegardes](/fr/docs/your-data/).
+3. Votre mail reste dans `~/Library/Application Support/NiceMailer`. Ne supprimez ce dossier que si vous n'en voulez plus : voir [Vos données et sauvegardes](/fr/docs/your-data/).

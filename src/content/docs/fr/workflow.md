@@ -1,6 +1,6 @@
 ---
 title: Le workflow
-description: Où va le courrier, et pourquoi. Quarantaine, Inbox, Archive, Todo, Waiting, et une décision par expéditeur.
+description: Où va le mail, et pourquoi. Quarantaine, Inbox, Archive, Todo, Waiting, et une décision par expéditeur.
 order: 4
 ---
 
@@ -10,12 +10,12 @@ Le workflow commence une fois votre compte [activé](/fr/docs/add-an-account/) s
 
 | Dossier         | Ce qu'il contient                                                                                                              |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| **Inbox**       | Le courrier des personnes acceptées, pas encore traité                                                                         |
+| **Inbox**       | Le mail des personnes acceptées, pas encore traité                                                                         |
 | **Todo**        | Les conversations où vous avez quelque chose à produire                                                                        |
 | **Waiting**     | Les conversations à relancer : un expéditeur qui a promis de "revenir vers vous" ; un mail que vous avez envoyé à un prospect  |
-| **Quarantaine** | Le courrier des inconnus sur lesquels vous n'avez pas encore décidé                                                            |
+| **Quarantaine** | Le mail des inconnus sur lesquels vous n'avez pas encore décidé                                                            |
 | **Archive**     | Les conversations où il n'y a plus rien à faire                                                                                |
-| **Paperwork**   | Factures, reçus, relevés : du courrier à garder, pas à lire à l'arrivée                                                        |
+| **Paperwork**   | Factures, reçus, relevés : du mail à garder, pas à lire à l'arrivée                                                        |
 | **Newsletter**  | Newsletters, promotions, notifications                                                                                         |
 | **Junk**        | Le spam                                                                                                                        |
 | **Banned**      | Les expéditeurs dont vous ne voulez plus jamais entendre parler                                                                |
@@ -70,15 +70,15 @@ Dans la liste, une flèche devant le nom (« → Alice ») signifie que vous ave
 
 ## Tags et groupes
 
-Les dossiers disent où en est une conversation. Les tags et les groupes ajoutent ce que les dossiers ne disent pas : de quoi parle un mail, et qui l'a écrit. Aucun des deux ne déplace le courrier.
+Les dossiers disent où en est une conversation. Les tags et les groupes ajoutent ce que les dossiers ne disent pas : de quoi parle un mail, et qui l'a écrit. Aucun des deux ne déplace le mail.
 
 **Un tag** se pose sur une conversation : « Chantier Dupont », « Compta 2026 », « Urgent ». Une conversation peut en porter plusieurs. <kbd>t</kbd> ouvre la liste des tags : choisissez-en un, ou tapez un nouveau nom pour le créer. Les tags de la conversation y sont proposés en premier, pour les retirer. Les tags sont enregistrés sur le serveur comme mots-clés IMAP : Thunderbird les affiche, mais Mail sur iPhone et Gmail en général non.
 
-**Un groupe** réunit des personnes : VIP, Famille, Équipe, Association. <kbd>g</kbd> ajoute l'expéditeur de la conversation à un groupe, ou l'en retire, et tapez un nouveau nom pour créer le groupe. Une personne peut être dans plusieurs groupes, et les groupes valent pour tous vos comptes. Être dans un groupe ne change pas où va le courrier : la décision dit où va un mail, le groupe dit qui est l'expéditeur.
+**Un groupe** réunit des personnes : VIP, Famille, Équipe, Association. <kbd>g</kbd> ajoute l'expéditeur de la conversation à un groupe, ou l'en retire, et tapez un nouveau nom pour créer le groupe. Une personne peut être dans plusieurs groupes, et les groupes valent pour tous vos comptes. Être dans un groupe ne change pas où va le mail : la décision dit où va un mail, le groupe dit qui est l'expéditeur.
 
 Avec plusieurs conversations marquées, <kbd>t</kbd> et <kbd>g</kbd> s'appliquent à toutes, et chaque ligne dit combien l'ont déjà : « 1 sur 3 ».
 
-Les tags d'une conversation s'affichent dans la liste et en haut du mail (`#Urgent`), les groupes de l'expéditeur aussi (`@VIP`). Pour retrouver leur courrier :
+Les tags d'une conversation s'affichent dans la liste et en haut du mail (`#Urgent`), les groupes de l'expéditeur aussi (`@VIP`). Pour retrouver leur mail :
 
 - <kbd>;</kbd> <kbd>T</kbd> liste les tags et <kbd>;</kbd> <kbd>g</kbd> les groupes. <kbd>↩</kbd> ouvre les mails du tag ou des membres du groupe, dans tous les comptes ; <kbd>r</kbd> renomme, <kbd>d</kbd> supprime.
 - Les filtres **Tag…** et **Groupe…** (<kbd>f</kbd>) affinent n'importe quelle liste. Voir [Recherche et filtres](/fr/docs/search/).

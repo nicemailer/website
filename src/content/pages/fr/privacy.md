@@ -3,7 +3,7 @@ title: Confidentialité
 description: Ce que NiceMailer envoie, à qui, et quand. En bref, rien sur vous, à personne, sauf si vous le demandez.
 ---
 
-NiceMailer n'a aucune télémétrie : pas de statistiques, pas de mesure d'usage, pas de rapport de plantage, pas de compte à créer. Votre courrier reste sur votre Mac. Cette page liste chaque connexion que fait l'application, pour que vous n'ayez pas à nous croire sur parole. Le [code source](https://github.com/nicemailer/nicemailer) permet de le vérifier.
+NiceMailer n'a aucune télémétrie : pas de statistiques, pas de mesure d'usage, pas de rapport de plantage, pas de compte à créer. Votre mail reste sur votre Mac. Cette page liste chaque connexion que fait l'application, pour que vous n'ayez pas à nous croire sur parole. Le [code source](https://github.com/nicemailer/nicemailer) permet de le vérifier.
 
 ## Les connexions de l'application
 
@@ -20,7 +20,7 @@ Les liens que vous ouvrez partent dans votre navigateur, et les numéros que vou
 
 ## Ce qui reste sur votre Mac
 
-- **Votre courrier**, son index de recherche et tout ce que NiceMailer en apprend (qui est une personne, qui est un robot, vos décisions sur chaque expéditeur) sont dans votre dossier de données, `~/Library/Application Support/NiceMailer`.
+- **Votre mail**, son index de recherche et tout ce que NiceMailer en apprend (qui est une personne, qui est un robot, vos décisions sur chaque expéditeur) sont dans votre dossier de données, `~/Library/Application Support/NiceMailer`.
 - **Vos mots de passe** sont dans le trousseau de macOS, jamais dans un fichier.
 - **Vos contacts** sont lus dans l'application Contacts quand vous cherchez un expéditeur, et ne sont jamais copiés dans NiceMailer.
 - **L'historique des appels à l'IA** (la demande, la réponse) reste sur votre Mac pendant 30 jours.
@@ -33,7 +33,7 @@ Beaucoup de mails contiennent des pixels espions : des images invisibles qui ne 
 
 L'IA est désactivée tant que vous ne l'activez pas. Même activée, rien ne part en arrière-plan : chaque appel est lancé par vous, sur ce que vous voyez. NiceMailer utilise l'outil en ligne de commande `claude`, connecté à votre propre abonnement Claude, et vérifie à chaque appel qu'il ne peut ni lancer de commande, ni naviguer sur le web, ni lire vos fichiers.
 
-Si vous branchez une application d'IA comme Claude Desktop sur NiceMailer, cette application peut lire votre courrier pour répondre à vos questions, et envoie ce qu'elle lit à son propre fournisseur d'IA, selon ses conditions. NiceMailer la laisse lire et préparer des brouillons, jamais envoyer, déplacer ni supprimer.
+Si vous branchez une application d'IA comme Claude Desktop sur NiceMailer, cette application peut lire votre mail pour répondre à vos questions, et envoie ce qu'elle lit à son propre fournisseur d'IA, selon ses conditions. NiceMailer la laisse lire et préparer des brouillons, jamais envoyer, déplacer ni supprimer.
 
 ## Ce site
 

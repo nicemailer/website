@@ -1,6 +1,6 @@
 ---
 title: Vos données et sauvegardes
-description: Où votre courrier est rangé sur votre Mac, comment le sauvegarder, et comment ouvrir une autre boîte.
+description: Où votre mail est rangé sur votre Mac, comment le sauvegarder, et comment ouvrir une autre boîte.
 order: 9
 ---
 
@@ -18,7 +18,7 @@ Vos réglages sont dans `~/.config/nicemailer/`, et vos mots de passe dans le tr
 
 ## Les mails bruts ne changent jamais
 
-Chaque mail est écrit une fois, sous un nom calculé à partir de son contenu, et n'est plus jamais modifié. Tout le reste de ce que stocke NiceMailer peut être reconstruit à partir de ces fichiers : le texte, l'index de recherche, et même ce qu'une version améliorée de NiceMailer saura y lire. Votre courrier survit à toutes les versions de l'application.
+Chaque mail est écrit une fois, sous un nom calculé à partir de son contenu, et n'est plus jamais modifié. Tout le reste de ce que stocke NiceMailer peut être reconstruit à partir de ces fichiers : le texte, l'index de recherche, et même ce qu'une version améliorée de NiceMailer saura y lire. Votre mail survit à toutes les versions de l'application.
 
 ## Sauvegarder
 
@@ -50,4 +50,4 @@ Maintenez <kbd>⌥</kbd> en ouvrant NiceMailer, ou choisissez **NiceMailer › C
 
 ## Partir
 
-Votre courrier reste le vôtre. Pour vos comptes IMAP, tout est encore sur votre serveur. Sur votre Mac, chaque mail brut est un message standard, compressé avec zstd, et le format des bases est documenté dans le [code source](https://github.com/nicemailer/nicemailer).
+Votre mail reste le vôtre. Pour vos comptes IMAP, tout est encore sur votre serveur. Sur votre Mac, chaque mail brut est un message standard, compressé avec zstd, et le format des bases est documenté dans le [code source](https://github.com/nicemailer/nicemailer).
