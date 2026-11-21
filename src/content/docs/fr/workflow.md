@@ -53,7 +53,7 @@ N'importe qui peut écrire n'importe quel nom et adresse dans le « De » d'un m
 - Si vous essayez d'accepter un expéditeur dont le mail semble falsifié, NiceMailer vous demande d'abord. Certains expéditeurs légitimes utilisent des outils mal configurés : vous pouvez alors accepter leurs mails non vérifiés à l'avenir.
 - Bannir un mail falsifié ne bannit que ce mail, jamais le vrai expéditeur dont le nom a été emprunté.
 
-## Sortir de l'Inbox
+## Vider l'Inbox
 
 | Touche                    | Destination | Quand                                       |
 | ------------------------- | ----------- | ------------------------------------------- |

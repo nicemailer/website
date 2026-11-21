@@ -1,6 +1,6 @@
 ---
 title: Search and filters
-description: Find any email in a moment, with words, filters, or both.
+description: Find any email instantly by its content, its attributes, or both.
 order: 6
 ---
 

@@ -53,7 +53,7 @@ Anyone can write any name and address in the "From" of an email. NiceMailer chec
 - If you try to accept a sender whose email looks forged, NiceMailer asks first. Some legitimate senders use badly configured tools: you can then accept their unverified email from now on.
 - Banning a forged email bans that email only, never the real sender whose name was borrowed.
 
-## Out of the Inbox
+## Emptying the Inbox
 
 | Key                       | Destination | When                                               |
 | ------------------------- | ----------- | -------------------------------------------------- |

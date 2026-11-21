@@ -1,6 +1,6 @@
 ---
 title: Reading and writing
-description: Simple conversations, everything an email holds, privacy while you read, and sending without regrets.
+description: Readable conversations, everything an email holds in one key, privacy while you read, and sending without regrets.
 order: 7
 ---
 
@@ -15,15 +15,7 @@ When you open a conversation, each message shows only what it adds. NiceMailer f
 
 Quotes inside an answer, which give the context of point-by-point replies, stay. Nothing is removed: each folded part shows a line such as "··· 24 quoted lines", and <kbd>T</kbd> shows everything at once. Older messages you have read are folded to one line; the latest one and the unread ones are open.
 
-## Text or HTML
-
-NiceMailer shows an email as clean text by default. The switch at the top of the email, **text | html | images**, or <kbd>v</kbd> <kbd>h</kbd>, shows the version designed by the sender, without its scripts, and in dark mode even if it was made for a white page. NiceMailer remembers your choice for each sender.
-
-## Images and trackers
-
-Many emails contain tracking pixels, invisible images that tell the sender when and where you opened them. NiceMailer removes them when the email arrives, and the title line of the email shows how many. Other remote images load only when you choose **images** (or <kbd>v</kbd> <kbd>i</kbd>), for this email or for this sender from now on.
-
-## Everything in one key
+## Everything an email holds, in one key
 
 <kbd>l</kbd> opens a panel with everything the email holds:
 
@@ -35,11 +27,15 @@ Many emails contain tracking pixels, invisible images that tell the sender when 
 
 ## Links to your notes
 
-The first row of <kbd>l</kbd> copies a link to the email, such as `[Invoice for October](nicemailer://m/399955)`. Paste it into Obsidian, Notion or any note: a click opens NiceMailer on that email, wherever it was filed since.
+The first row of <kbd>l</kbd> copies a link to the email, such as `[Invoice for October](nicemailer://m/3f9a0c2b7e41)`. Paste it into Obsidian, Notion or any note: a click opens NiceMailer on that email, wherever it was filed since.
 
-## Unsubscribe
+## Text or HTML
 
-When a newsletter says how to unsubscribe, a button appears on its title line (<kbd>⌘</kbd> <kbd>U</kbd>). When the list allows it, one click is enough, without opening any page. NiceMailer never offers it in Quarantine or Junk: unsubscribing from spam only confirms your address to the spammer.
+NiceMailer shows an email as clean text by default. The switch at the top of the email, **text | html | images**, or <kbd>v</kbd> <kbd>h</kbd>, shows the version designed by the sender, without its scripts, and in dark mode even if it was made for a white page. NiceMailer remembers your choice for each sender.
+
+## Images and trackers
+
+Many emails contain tracking pixels, invisible images that tell the sender when and where you opened them. NiceMailer removes them when the email arrives, and the title line of the email shows how many. Other remote images load only when you choose **images** (or <kbd>v</kbd> <kbd>i</kbd>), for this email or for this sender from now on.
 
 ## Write and send
 
@@ -48,3 +44,7 @@ When a newsletter says how to unsubscribe, a button appears on its title line (<
 <kbd>⌘</kbd> <kbd>↩</kbd> sends, after five seconds: the status bar says "Sending in 5 s", and <kbd>z</kbd> brings the reply back if you change your mind. <kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>↩</kbd> first asks where the conversation should go once sent: Archive, Waiting, Todo.
 
 <kbd>Esc</kbd> closes the reply and keeps the draft, in Drafts (<kbd>;</kbd> <kbd>r</kbd>) and on your server.
+
+## Unsubscribe
+
+When a newsletter says how to unsubscribe, a button appears on its title line (<kbd>⌘</kbd> <kbd>U</kbd>). When the list allows it, one click is enough, without opening any page. NiceMailer never offers it in Quarantine or Junk: unsubscribing from spam only confirms your address to the spammer.

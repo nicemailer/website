@@ -25,7 +25,7 @@ Une touche, <kbd>l</kbd>, liste tout ce que contient un mail : ses liens, ses pi
 
 ### Des liens directs vers vos mails
 
-Chaque mail a un lien permanent, du type `[Objet du mail](nicemailer://m/399955)`, copié depuis le mail en deux touches. Collez-le dans Obsidian, Notion ou n'importe quelle application de notes, et revenez au mail d'un clic, des années plus tard.
+Chaque mail a un lien permanent, du type `[Objet du mail](nicemailer://m/3f9a0c2b7e41)`, copié depuis le mail en deux touches. Collez-le dans Obsidian, Notion ou n'importe quelle application de notes, et revenez au mail d'un clic, des années plus tard.
 
 ## Reposant
 

@@ -25,7 +25,7 @@ One key, <kbd>l</kbd>, lists everything an email holds: its links, its attachmen
 
 ### Deep links to your notes
 
-Every email has a permanent link, such as `[Email subject](nicemailer://m/399955)`, copied from the email in two keystrokes. Paste it into Obsidian, Notion or any note-taking app, and come back to the email in one click, years later.
+Every email has a permanent link, such as `[Email subject](nicemailer://m/3f9a0c2b7e41)`, copied from the email in two keystrokes. Paste it into Obsidian, Notion or any note-taking app, and come back to the email in one click, years later.
 
 ## Calm
 

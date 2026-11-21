@@ -190,7 +190,7 @@ const fr: Strings = {
     prev: 'Précédent',
     next: 'Suivant',
     contents: 'Pages du guide',
-    lead: 'Installer NiceMailer, y faire venir votre mail et l’utiliser au quotidien.',
+    lead: 'Installer NiceMailer, connecter vos comptes de mail et l’utiliser au quotidien.',
   },
   changelog: {
     title: 'Nouveautés',

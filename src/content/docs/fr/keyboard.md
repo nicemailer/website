@@ -1,6 +1,6 @@
 ---
 title: Les raccourcis clavier
-description: Les touches de tous les jours. Appuyez sur ? dans l'application pour les voir toutes.
+description: Les raccourcis de tous les jours. Appuyez sur ? dans l'application pour les voir tous.
 order: 5
 ---
 
@@ -12,7 +12,7 @@ Certaines touches sont un **préfixe** : <kbd>;</kbd>, <kbd>m</kbd>, <kbd>s</kbd
 
 | Touche | Action |
 | --- | --- |
-| <kbd>j</kbd> <kbd>k</kbd>, ou <kbd>↓</kbd> <kbd>↑</kbd> | Conversation suivante, précédente |
+| <kbd>j</kbd> <kbd>k</kbd>, ou<br> <kbd>↓</kbd> <kbd>↑</kbd> | Conversation suivante, précédente |
 | <kbd>⌃</kbd> <kbd>d</kbd><br><kbd>⌃</kbd> <kbd>u</kbd> | Une demi-page plus bas, plus haut |
 | <kbd>⌃</kbd> <kbd>j</kbd><br><kbd>⌃</kbd> <kbd>k</kbd> | Message suivant, précédent de la conversation |
 | <kbd>;</kbd> puis une lettre | Aller à un dossier : <kbd>i</kbd> Inbox, <kbd>q</kbd> Quarantaine, <kbd>t</kbd> Todo, <kbd>w</kbd> Waiting, <kbd>a</kbd> Archive, <kbd>o</kbd> Travail, <kbd>m</kbd> All Mail… |

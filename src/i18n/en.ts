@@ -189,7 +189,7 @@ export default {
     prev: 'Previous',
     next: 'Next',
     contents: 'Pages of the guide',
-    lead: 'How to install NiceMailer, bring your mail into it, and use it every day.',
+    lead: 'How to install NiceMailer, connect your email accounts, and use it every day.',
   },
   changelog: {
     title: 'Changelog',

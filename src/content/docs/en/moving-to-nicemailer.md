@@ -1,6 +1,6 @@
 ---
 title: Moving to NiceMailer
-description: Bring every email you have, from your current accounts and from the archives of the ones you closed.
+description: Recover all your email, from your current accounts and from the archives of the ones you closed.
 order: 3
 ---
 
@@ -43,9 +43,9 @@ What to expect:
 
 ## Your whole Apple Mail library
 
-Apple Mail keeps a copy of every account it ever had, even after you removed the account or the server closed. NiceMailer can bring that whole library over, every account and every folder, including the ones whose server no longer exists (Apple Mail's own export fails on them).
+Apple Mail keeps a copy of every account it ever had, even after you removed the account or the server closed. NiceMailer can bring that whole library over in one go, every account and every folder, including the ones whose server no longer exists (whereas Apple Mail's own export fails on them).
 
-For now this is done with two scripts of the [source code](https://github.com/nicemailer/nicemailer), which need Python 3 and Terminal with Full Disk Access:
+This is done with two scripts of the [source code](https://github.com/nicemailer/nicemailer), which need Python 3 and Terminal with Full Disk Access:
 
 1. `scripts/export-apple-mail.py` reads your Apple Mail library without changing it and writes one mbox file per account and per local folder, attachments included.
 2. `scripts/import-mail-export.py` imports them all into NiceMailer, asking only what it cannot guess, such as the name of an account.

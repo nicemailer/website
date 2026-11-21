@@ -1,6 +1,6 @@
 ---
 title: Keyboard shortcuts
-description: The keys you will use every day. Press ? in the app to see all of them.
+description: The shortcuts you will use every day. Press ? in the app to see all of them.
 order: 5
 ---
 
@@ -12,7 +12,7 @@ Some keys are a **prefix**: <kbd>;</kbd>, <kbd>m</kbd>, <kbd>s</kbd> and <kbd>v<
 
 | Key | Action |
 | --- | --- |
-| <kbd>j</kbd> <kbd>k</kbd>, or <kbd>↓</kbd> <kbd>↑</kbd> | Next, previous conversation |
+| <kbd>j</kbd> <kbd>k</kbd>, or<br> <kbd>↓</kbd> <kbd>↑</kbd> | Next, previous conversation |
 | <kbd>⌃</kbd> <kbd>d</kbd><br><kbd>⌃</kbd> <kbd>u</kbd> | Half a page down, up |
 | <kbd>⌃</kbd> <kbd>j</kbd><br><kbd>⌃</kbd> <kbd>k</kbd> | Next, previous message of the conversation |
 | <kbd>;</kbd> then a letter | Go to a folder: <kbd>i</kbd> Inbox, <kbd>q</kbd> Quarantine, <kbd>t</kbd> Todo, <kbd>w</kbd> Waiting, <kbd>a</kbd> Archive, <kbd>o</kbd> Work, <kbd>m</kbd> All Mail… |

@@ -1,6 +1,6 @@
 ---
 title: Recherche et filtres
-description: Retrouver n'importe quel mail en un instant, avec des mots, des filtres, ou les deux.
+description: Retrouver n'importe quel mail immédiatement par son contenu, ses attributs, ou les deux.
 order: 6
 ---
 

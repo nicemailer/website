@@ -1,6 +1,6 @@
 ---
 title: Lire et écrire
-description: Des conversations simples, tout ce que contient un mail, votre vie privée pendant la lecture, et des envois sans regret.
+description: Des conversations lisibles, tout ce que contient un mail en une touche, votre vie privée pendant la lecture, et des envois sans regret.
 order: 7
 ---
 
@@ -15,15 +15,7 @@ Quand vous ouvrez une conversation, chaque message ne montre que ce qu'il apport
 
 Les citations au milieu d'une réponse, qui donnent le contexte d'une réponse point par point, restent. Rien n'est supprimé : chaque partie repliée affiche une ligne comme « ··· 24 lignes citées », et <kbd>T</kbd> montre tout d'un coup. Les messages plus anciens déjà lus sont repliés sur une ligne ; le dernier et les non lus sont ouverts.
 
-## Texte ou HTML
-
-Par défaut, NiceMailer affiche un mail en texte propre. Le sélecteur en haut du mail, **text | html | images**, ou <kbd>v</kbd> <kbd>h</kbd>, montre la version conçue par l'expéditeur, sans ses scripts, et en mode sombre même si elle a été faite pour une page blanche. NiceMailer retient votre choix pour chaque expéditeur.
-
-## Images et pisteurs
-
-Beaucoup de mails contiennent des pixels espions, des images invisibles qui disent à l'expéditeur quand et où vous les avez ouverts. NiceMailer les retire à l'arrivée, et la ligne de titre du mail en indique le nombre. Les autres images distantes ne se chargent que si vous choisissez **images** (ou <kbd>v</kbd> <kbd>i</kbd>), pour ce mail ou pour cet expéditeur désormais.
-
-## Tout en une touche
+## Tout ce que contient un mail en une touche
 
 <kbd>l</kbd> ouvre un panneau avec tout ce que contient le mail :
 
@@ -35,11 +27,16 @@ Beaucoup de mails contiennent des pixels espions, des images invisibles qui dise
 
 ## Des liens vers vos notes
 
-La première ligne de <kbd>l</kbd> copie un lien vers le mail, comme `[Facture d'octobre](nicemailer://m/399955)`. Collez-le dans Obsidian, Notion ou n'importe quelle note : un clic ouvre NiceMailer sur ce mail, où qu'il ait été rangé depuis.
+La première ligne de <kbd>l</kbd> copie un lien vers le mail, comme `[Facture d'octobre](nicemailer://m/3f9a0c2b7e41)`. Collez-le dans Obsidian, Notion ou n'importe quelle note : un clic ouvre NiceMailer sur ce mail, où qu'il ait été rangé depuis.
 
-## Se désabonner
 
-Quand une newsletter indique comment se désabonner, un bouton apparaît sur sa ligne de titre (<kbd>⌘</kbd> <kbd>U</kbd>). Quand la liste le permet, un clic suffit, sans ouvrir aucune page. NiceMailer ne le propose jamais en Quarantaine ni dans Junk : se désabonner d'un spam ne fait que confirmer votre adresse au spammeur.
+## Texte ou HTML
+
+Par défaut, NiceMailer affiche un mail en texte propre. Le sélecteur en haut du mail, **text | html | images**, ou <kbd>v</kbd> <kbd>h</kbd>, montre la version conçue par l'expéditeur, sans ses scripts, et en mode sombre même si elle a été faite pour une page blanche. NiceMailer retient votre choix pour chaque expéditeur.
+
+## Images et pisteurs
+
+Beaucoup de mails contiennent des pixels espions, des images invisibles qui disent à l'expéditeur quand et où vous les avez ouverts. NiceMailer les retire à l'arrivée, et la ligne de titre du mail en indique le nombre. Les autres images distantes ne se chargent que si vous choisissez **images** (ou <kbd>v</kbd> <kbd>i</kbd>), pour ce mail ou pour cet expéditeur désormais.
 
 ## Écrire et envoyer
 
@@ -48,3 +45,7 @@ Quand une newsletter indique comment se désabonner, un bouton apparaît sur sa 
 <kbd>⌘</kbd> <kbd>↩</kbd> envoie, après cinq secondes : la barre d'état affiche « Envoi dans 5 s », et <kbd>z</kbd> fait revenir la réponse si vous changez d'avis. <kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>↩</kbd> demande d'abord où ranger la conversation une fois envoyée : Archive, Waiting, Todo.
 
 <kbd>Échap</kbd> ferme la réponse et garde le brouillon, dans Drafts (<kbd>;</kbd> <kbd>r</kbd>) et sur votre serveur.
+
+## Se désabonner
+
+Quand une newsletter indique comment se désabonner, un bouton apparaît sur sa ligne de titre (<kbd>⌘</kbd> <kbd>U</kbd>). Quand la liste le permet, un clic suffit, sans ouvrir aucune page. NiceMailer ne le propose jamais en Quarantaine ni dans Junk : se désabonner d'un spam ne fait que confirmer votre adresse au spammeur.
