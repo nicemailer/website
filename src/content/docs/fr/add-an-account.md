@@ -8,7 +8,7 @@ order: 2
 
 NiceMailer fonctionne avec tout fournisseur qui propose **l'IMAP avec un mot de passe** : Gmail, iCloud, Fastmail, le serveur de votre entreprise ou de votre hébergeur, et la plupart des autres.
 
-- Quand la double authentification est active, des fournisseurs comme Gmail et iCloud demandent un **mot de passe d'application**, à créer dans les réglages de sécurité de votre compte. Utilisez-le à la place de votre mot de passe habituel.
+- **Gmail, iCloud et Fastmail** demandent un **mot de passe d'application**, à créer dans les réglages de sécurité de votre compte, à la place de votre mot de passe habituel : voir [Gmail, iCloud, Fastmail](/fr/docs/app-passwords/), pas à pas pour chacun.
 - Outlook.com et les autres fournisseurs qui n'acceptent que la connexion OAuth **ne sont pas encore pris en charge**.
 
 ## Ajouter le compte

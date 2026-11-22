@@ -8,7 +8,7 @@ order: 2
 
 NiceMailer works with any provider that offers **IMAP with a password**: Gmail, iCloud, Fastmail, your company's or your host's mail server, and most others.
 
-- When two-factor authentication is on, providers such as Gmail and iCloud ask for an **app password**, created in the security settings of your account. Use it instead of your usual password.
+- **Gmail, iCloud and Fastmail** ask for an **app password**, created in the security settings of your account, instead of your usual password: see [Gmail, iCloud, Fastmail](/docs/app-passwords/) for each, step by step.
 - Outlook.com and other providers that only allow OAuth sign-in are **not supported yet**.
 
 ## Add the account
