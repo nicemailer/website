@@ -141,17 +141,31 @@ const fr: Strings = {
       'Je cherche le client mail parfait depuis des décennies. Mais rien n’existait d’assez rapide et sobre, pilotable entièrement au clavier, et stockant mes mails en local.',
       'Alors je l’ai créé, comme je construis depuis plus de vingt ans des applications complexes et critiques. NiceMailer est un projet jeune, mais ce n’est pas une expérience d’un week-end : son modèle de données et ses spécifications ont été écrits avant la première ligne de code. Il est conçu pour durer.',
     ],
+    name: 'Achille Berès',
+    role: 'Auteur de NiceMailer',
   },
   faq: {
     title: 'Questions',
     items: [
       {
         q: 'Sur quels Mac fonctionne-t-il ?',
-        a: 'Les Mac Apple Silicon (M1 et suivants), avec macOS 14 Sonoma ou plus récent.',
+        a: 'Les Mac Apple Silicon (M1 et suivants), avec macOS 14 Sonoma ou plus récent. Les Mac Intel ne sont pas pris en charge.',
       },
       {
         q: 'Quels fournisseurs de mail sont pris en charge ?',
-        a: 'Tout fournisseur qui propose l’IMAP avec un mot de passe : les grands opérateurs français ou européens, Infomaniak, le serveur de votre entreprise, bien sûr Gmail, iCloud, Fastmail, et la plupart des autres. Certains demandent un mot de passe d’application quand la double authentification est activée (Gmail par exemple). Outlook.com, qui n’accepte que la connexion OAuth, n’est pas pris en charge.',
+        a: 'Tout fournisseur qui propose l’IMAP avec un mot de passe : les grands opérateurs français ou européens, Infomaniak, le serveur de votre entreprise, bien sûr Gmail, iCloud, Fastmail, et la plupart des autres. Certains demandent un mot de passe d’application quand la double authentification est activée (Gmail par exemple). Outlook.com et Microsoft 365, qui n’acceptent que la connexion OAuth, ne sont pas encore pris en charge.',
+      },
+      {
+        q: 'Existe-t-il une application iPhone ?',
+        a: 'Non. Mais les dossiers de NiceMailer sont des dossiers ordinaires de votre serveur de mail : l’app Mail de votre iPhone, ou une autre, voit vos mails rangés exactement comme vous les avez rangés sur votre Mac.',
+      },
+      {
+        q: 'Qui le fait, et va-t-il durer ?',
+        a: 'NiceMailer est développé par Achille Berès, développeur indépendant en France, qui le finance seul. Même si son développement s’arrêtait, vous ne perdriez rien : le code source reste public sous licence AGPLv3, vos mails restent sur votre serveur dans des dossiers ordinaires, et chaque message est gardé sur votre Mac tel qu’il a été reçu, dans un format ouvert.',
+      },
+      {
+        q: 'Puis-je revenir à mon ancienne application de mail ?',
+        a: 'Oui, à tout moment. NiceMailer ne vous enferme pas : vos comptes gardent tous leurs mails sur le serveur, et les dossiers qu’il crée sont des dossiers ordinaires, visibles dans n’importe quelle application de mail.',
       },
       {
         q: 'Combien ça coûte ?',

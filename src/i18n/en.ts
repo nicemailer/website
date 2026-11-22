@@ -140,17 +140,31 @@ export default {
       'I have been looking for the perfect email client for decades. None was fast and uncluttered, could be driven entirely from the keyboard, and kept my email on my own Mac.',
       'So I built it, as I have built complex, mission-critical software for more than twenty years. NiceMailer is a young project, but it is not a weekend experiment: its data model and specifications were written before the first line of code. It is built to last.',
     ],
+    name: 'Achille Berès',
+    role: 'Author of NiceMailer',
   },
   faq: {
     title: 'Questions',
     items: [
       {
         q: 'Which Macs does it run on?',
-        a: 'Macs with Apple Silicon (M1 and later), on macOS 14 Sonoma or later.',
+        a: 'Macs with Apple Silicon (M1 and later), on macOS 14 Sonoma or later. Intel Macs are not supported.',
       },
       {
         q: 'Which email providers work?',
-        a: 'Any provider that offers IMAP with a password: Gmail, iCloud, Fastmail, Infomaniak, most European providers, your company’s server and most others. Some ask for an app password when two-factor authentication is on (Gmail, for example). Outlook.com, which only allows OAuth sign-in, is not supported.',
+        a: 'Any provider that offers IMAP with a password: Gmail, iCloud, Fastmail, Infomaniak, most European providers, your company’s server and most others. Some ask for an app password when two-factor authentication is on (Gmail, for example). Outlook.com and Microsoft 365, which only allow OAuth sign-in, are not supported yet.',
+      },
+      {
+        q: 'Is there an iPhone app?',
+        a: 'No. But NiceMailer’s folders are ordinary folders on your mail server: the Mail app of your iPhone, or any other, sees your email filed exactly as you filed it on your Mac.',
+      },
+      {
+        q: 'Who makes it, and will it last?',
+        a: 'NiceMailer is made by Achille Berès, an independent developer in France, who funds it alone. Even if its development stopped, you would lose nothing: the source code stays public under the AGPLv3, your email stays on your server in ordinary folders, and every message is kept on your Mac exactly as it was received, in an open format.',
+      },
+      {
+        q: 'Can I go back to my previous email app?',
+        a: 'Yes, at any time. NiceMailer locks nothing in: your accounts keep all their email on the server, and the folders it creates are ordinary folders that any email app shows.',
       },
       {
         q: 'How much does it cost?',
