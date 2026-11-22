@@ -70,7 +70,7 @@ Dans la liste, une flèche devant le nom (« → Alice ») signifie que vous ave
 
 ## Tags et groupes
 
-Les dossiers disent où en est une conversation. Les tags et les groupes ajoutent ce que les dossiers ne disent pas : de quoi parle un mail, et qui l'a écrit. Aucun des deux ne déplace le mail.
+Les dossiers disent le statut et l'emplacement d'une conversation. Les tags et les groupes ajoutent ce que les dossiers ne disent pas : de quoi parle un mail, et qui l'a écrit. Aucun des deux ne déplace le mail.
 
 **Un tag** se pose sur une conversation : « Chantier Dupont », « Compta 2026 », « Urgent ». Une conversation peut en porter plusieurs. <kbd>t</kbd> ouvre la liste des tags : choisissez-en un, ou tapez un nouveau nom pour le créer. Les tags de la conversation y sont proposés en premier, pour les retirer. Les tags sont enregistrés sur le serveur comme mots-clés IMAP : Thunderbird les affiche, mais Mail sur iPhone et Gmail en général non.
 
