@@ -111,10 +111,6 @@ for lang in "${langs[@]}"; do
     echo "$lang: $(ls "$shots"/*.png | wc -l | tr -d ' ') screenshots in src/assets/screens/$lang/ (data: $dir)"
 done
 
-# The image shown when a link to the site is shared (og:image, 1200 x 630):
-# the top of the English Inbox.
-if [ -f "$SITE/src/assets/screens/en/inbox-light.png" ]; then
-    (cd "$SITE" && node -e "require('sharp')(process.argv[1]).resize(1200).extract({left: 0, top: 0, width: 1200, height: 630}).toFile(process.argv[2])" \
-        src/assets/screens/en/inbox-light.png public/og.png)
-    echo "public/og.png updated"
-fi
+# The images shown when a link to the site is shared (og:image, 1200 x 630):
+# the name and the tagline beside the Inbox, in each language.
+(cd "$SITE" && node scripts/make-og.mjs)

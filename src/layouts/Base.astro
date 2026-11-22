@@ -52,8 +52,16 @@ const current = (to: string) => path === to || (to.endsWith('/docs/') && path.st
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:image" content={new URL('/og.png', Astro.site)} />
+    <!-- The share image, in the page's language (scripts/make-og.mjs). -->
+    <meta property="og:image" content={new URL(lang === 'fr' ? '/og-fr.png' : '/og.png', Astro.site)} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={s.meta.ogAlt} />
+    <meta property="og:site_name" content="NiceMailer" />
     <meta property="og:locale" content={lang === 'fr' ? 'fr_FR' : 'en_US'} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@achilleberes" />
+    <link rel="alternate" type="application/rss+xml" title="NiceMailer releases" href="/changelog.xml" />
     {
       lang === 'en' && path === '/' && (
         <script is:inline>

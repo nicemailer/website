@@ -6,6 +6,7 @@ const fr: Strings = {
     title: 'NiceMailer : un client mail hyper rapide, reposant et sécurisant pour Mac',
     description:
       'Client mail libre pour Mac. Hyper rapide, même avec énormément de mails. Tout reste en local. Votre IA intégrée, si vous le voulez.',
+    ogAlt: 'NiceMailer, un client mail libre et gratuit pour Mac : son slogan à côté de l’Inbox.',
   },
   nav: {
     features: 'En détail',
@@ -210,6 +211,7 @@ const fr: Strings = {
     title: 'Nouveautés',
     description: 'Ce qui change dans NiceMailer, version après version.',
     lead: 'Ce qui change dans NiceMailer, version après version. « Unreleased » liste ce qui arrive dans la prochaine version.',
+    rss: 'Suivre les versions par RSS',
     englishOnly: 'Les notes de version sont rédigées en anglais.',
   },
   shot: {

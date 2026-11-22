@@ -5,6 +5,7 @@ export default {
     title: 'NiceMailer: a fast, calm and trustworthy email client for the Mac',
     description:
       'NiceMailer is a free and open-source email client for the Mac. Instant even with hundreds of thousands of emails. Everything stays on your Mac. Your own AI built in, if you want it.',
+    ogAlt: 'NiceMailer, a free and open-source email client for the Mac: its tagline beside the Inbox.',
   },
   nav: {
     features: 'Features',
@@ -210,6 +211,7 @@ export default {
     description: 'What changes in NiceMailer, release by release.',
     lead: 'What changes in NiceMailer, release by release. “Unreleased” lists what is coming in the next version.',
     englishOnly: '',
+    rss: 'Follow the releases with RSS',
   },
   shot: {
     pending: 'Screenshot coming soon',

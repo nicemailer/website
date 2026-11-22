@@ -17,6 +17,7 @@ const s = t(lang);
     <h1>{s.changelog.title}</h1>
     <p class="page-lead">{s.changelog.lead}</p>
     {s.changelog.englishOnly && <p class="note">{s.changelog.englishOnly}</p>}
+    <p class="rss"><a href="/changelog.xml">{s.changelog.rss}</a></p>
     <div class="prose changelog" lang="en">
       <Content />
     </div>
@@ -41,6 +42,9 @@ const s = t(lang);
     margin-top: 0.6rem;
     color: var(--ink-2);
     font-style: italic;
+  }
+  .rss {
+    margin-top: 0.8rem;
   }
   .changelog {
     margin-top: 2.5rem;

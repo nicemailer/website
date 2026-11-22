@@ -25,7 +25,8 @@ npm run preview      # serves dist/
 | `src/assets/screens/<lang>/` | The screenshots, made from the demo mailbox (below); Astro publishes them as WebP |
 | `src/release.ts` | Finds the disk image of the latest release, at build time |
 | `src/styles/global.css` | Colours (from the app icon), type, and the Markdown pages |
-| `public/` | The icon, `og.png` (the image shown when a link is shared), `CNAME` |
+| `public/` | The icon, `og.png` and `og-fr.png` (the images shown when a link is shared, made by `scripts/make-og.mjs`), `robots.txt`, `CNAME` |
+| `src/pages/sitemap.xml.ts`, `src/pages/changelog.xml.ts` | The sitemap for search engines, and the release notes as an RSS feed |
 
 ## After each release of the app
 
@@ -47,7 +48,9 @@ It needs the app repository next to this one (or `NICEMAILER_REPO`), its build t
 2. puts its history on a new user of the test IMAP server of the app repository (`make imap-up`, started if needed);
 3. starts a core of its own (its own data folder and throwaway keychain file, nothing sent), adds the account and lets it synchronize;
 4. delivers the new mail, which the core screens as it would real mail: Quarantine, the forged alert, known people to the Inbox;
-5. plays `demo/screens.uiscript` in the app's UI script mode (off screen, away from the keyboard, in that language) and copies the snapshots to `src/assets/screens/<lang>/`, then `public/og.png`.
+5. plays `demo/screens.uiscript` in the app's UI script mode (off screen, away from the keyboard, in that language) and copies the snapshots to `src/assets/screens/<lang>/`.
+
+It then makes the share images, `public/og.png` and `public/og-fr.png`, with `node scripts/make-og.mjs` (Google Chrome photographs a small HTML page: the icon, the name, the tagline and the Inbox). Run it alone after changing the tagline.
 
 Your own mailbox, settings and Keychain are never touched. To change what a screenshot shows, change the content files or the scenario; the scenario language is described in `apps/NiceMailer/UITests/README.md` of the app repository.
 
