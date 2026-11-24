@@ -161,6 +161,10 @@ const fr: Strings = {
         a: 'Non. Mais les dossiers de NiceMailer sont des dossiers ordinaires de votre serveur de mail : l’app Mail de votre iPhone, ou une autre, voit vos mails rangés exactement comme vous les avez rangés sur votre Mac.',
       },
       {
+        q: 'Existe-t-il une version Windows ou Linux ?',
+        a: 'Claude en est bien sûr capable avec quelques tokens. Mais ce qui rend NiceMailer unique, et donc intéressant, ce n’est pas la technique : ce sont les partis pris, les centaines d’heures de polissage itératif, bref, tout le processus créatif qui permet de ciseler une expérience utilisateur exceptionnelle.\n\nOr, je n’utilise régulièrement ni Windows ni Linux : je ne pourrais donc pas y offrir la même qualité. En revanche, si quelqu’un dans la communauté souhaite relever le défi, j’y suis évidemment ouvert !',
+      },
+      {
         q: 'Qui le fait, et va-t-il durer ?',
         a: 'NiceMailer est développé par Achille Berès, développeur indépendant en France, qui le finance seul. Même si son développement s’arrêtait, vous ne perdriez rien : le code source reste public sous licence AGPLv3, vos mails restent sur votre serveur dans des dossiers ordinaires, et chaque message est gardé sur votre Mac tel qu’il a été reçu, dans un format ouvert.',
       },

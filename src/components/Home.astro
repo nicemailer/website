@@ -116,7 +116,9 @@ const photo = Object.values(portraits)[0]?.default;
         s.faq.items.map((item) => (
           <details>
             <summary>{item.q}</summary>
-            <p>{item.a}</p>
+            {item.a.split('\n\n').map((paragraph) => (
+              <p>{paragraph}</p>
+            ))}
           </details>
         ))
       }
@@ -358,9 +360,14 @@ const photo = Object.values(portraits)[0]?.default;
     content: '−';
   }
   details p {
-    padding-bottom: 1.1rem;
     color: var(--ink-2);
     max-width: var(--measure);
+  }
+  details p + p {
+    margin-top: 0.5em;
+  }
+  details p:last-child {
+    padding-bottom: 1.1rem;
   }
 
   .final {

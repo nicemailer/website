@@ -160,6 +160,10 @@ export default {
         a: 'No. But NiceMailer’s folders are ordinary folders on your mail server: the Mail app of your iPhone, or any other, sees your email filed exactly as you filed it on your Mac.',
       },
       {
+        q: 'Is there a Windows or Linux version?',
+        a: 'Claude could certainly manage that with a few tokens. But what makes NiceMailer unique — and therefore interesting — is not the technology: it is the deliberate choices, the hundreds of hours of polishing and iterating, in short, the whole creative process that carves out an exceptional user experience.\n\nYet I do not use Windows or Linux regularly, so I could not offer the same quality there. That said, if someone in the community wants to take up the challenge, I am of course open to it!',
+      },
+      {
         q: 'Who makes it, and will it last?',
         a: 'NiceMailer is made by Achille Berès, an independent developer in France, who funds it alone. Even if its development stopped, you would lose nothing: the source code stays public under the AGPLv3, your email stays on your server in ordinary folders, and every message is kept on your Mac exactly as it was received, in an open format.',
       },
