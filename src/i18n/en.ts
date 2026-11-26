@@ -161,7 +161,7 @@ export default {
       },
       {
         q: 'Is there a Windows or Linux version?',
-        a: 'Claude could certainly manage that with a few tokens. But what makes NiceMailer unique — and therefore interesting — is not the technology: it is the deliberate choices, the hundreds of hours of polishing and iterating, in short, the whole creative process that carves out an exceptional user experience.\n\nYet I do not use Windows or Linux regularly, so I could not offer the same quality there. That said, if someone in the community wants to take up the challenge, I am of course open to it!',
+        a: 'No. Claude could certainly manage that with a few tokens. But what makes NiceMailer unique — and therefore interesting — is not the technology: it is the deliberate choices, the hundreds of hours of polishing and iterating, in short, the whole creative process that carves out an exceptional user experience.\n\nYet I do not use Windows or Linux regularly, so I could not offer the same quality there. That said, if someone in the community wants to take up the challenge, I am of course open to it!',
       },
       {
         q: 'Who makes it, and will it last?',

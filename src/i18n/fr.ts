@@ -162,7 +162,7 @@ const fr: Strings = {
       },
       {
         q: 'Existe-t-il une version Windows ou Linux ?',
-        a: 'Claude en est bien sûr capable avec quelques tokens. Mais ce qui rend NiceMailer unique, et donc intéressant, ce n’est pas la technique : ce sont les partis pris, les centaines d’heures de polissage itératif, bref, tout le processus créatif qui permet de ciseler une expérience utilisateur exceptionnelle.\n\nOr, je n’utilise régulièrement ni Windows ni Linux : je ne pourrais donc pas y offrir la même qualité. En revanche, si quelqu’un dans la communauté souhaite relever le défi, j’y suis évidemment ouvert !',
+        a: 'Non. Claude en est bien sûr capable avec quelques tokens. Mais ce qui rend NiceMailer unique, et donc intéressant, ce n’est pas la technique : ce sont les partis pris, les centaines d’heures de polissage itératif, bref, tout le processus créatif qui permet de ciseler une expérience utilisateur exceptionnelle.\n\nOr, je n’utilise régulièrement ni Windows ni Linux : je ne pourrais donc pas y offrir la même qualité. En revanche, si quelqu’un dans la communauté souhaite relever le défi, j’y suis évidemment ouvert !',
       },
       {
         q: 'Qui le fait, et va-t-il durer ?',
