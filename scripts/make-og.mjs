@@ -33,13 +33,13 @@ const font = (pkg, file) => url(`node_modules/@fontsource/${pkg}/files/${file}`)
 const images = [
   {
     out: 'public/og.png',
-    shot: 'src/assets/screens/en/inbox-light.png',
+    shot: 'src/assets/screens/en/clean/inbox-light.png',
     tagline: 'Fast to use. Calm to live with. Yours to keep.',
     what: 'A free and open-source email client for the Mac',
   },
   {
     out: 'public/og-fr.png',
-    shot: 'src/assets/screens/fr/inbox-light.png',
+    shot: 'src/assets/screens/fr/clean/inbox-light.png',
     tagline: 'Rapide. Reposant. Sécurisant.',
     what: 'Un client mail libre et gratuit pour Mac',
   },

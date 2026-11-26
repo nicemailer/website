@@ -5,6 +5,7 @@
 #
 # Usage: demo/make-screens.sh [en] [fr]        (default: both)
 #   NICEMAILER_REPO   the app repository (default: ../niceMailer)
+#   THEMES            the themes to photograph (default: "clean regular geek minimal")
 #
 # For each language:
 #  1. demo/generate.py writes the demo mailbox (demo/out/<lang>/);
@@ -13,9 +14,9 @@
 #     for sending) adds the account, organized, and synchronizes it;
 #  4. the arrivals are appended: the core screens them, as real new mail
 #     (Quarantine, the forged bank alert, the known people to the Inbox);
-#  5. the app plays demo/screens.uiscript in UI script mode, off screen and
-#     away from the keyboard, in that language, and its snapshots are
-#     copied to src/assets/screens/<lang>/.
+#  5. for each theme, the app plays demo/screens.uiscript in UI script mode,
+#     off screen and away from the keyboard, in that language, and its
+#     snapshots are copied to src/assets/screens/<lang>/<theme>/.
 #
 # Nothing touches your own mailbox, settings or Keychain. The temporary data
 # folders are left in /tmp/nmdemo.* (macOS cleans /tmp).
@@ -30,9 +31,16 @@ CORE="$REPO/target/release/nicemailer-core"
 APPBIN="$REPO/apps/NiceMailer/.build/debug/NiceMailer"
 langs=("$@")
 if [ ${#langs[@]} -eq 0 ]; then langs=(en fr); fi
+# The themes, clean first: it is the default, and the page shows it until
+# the visitor chooses another (THEMES="clean geek" for fewer).
+read -r -a themes <<<"${THEMES:-clean regular geek minimal}"
 
 echo "Building the app and its core in $REPO"
-cargo build --release --quiet --manifest-path "$REPO/Cargo.toml"
+# Since 0.3.0 the core and its clients check each other's code signature; a
+# local build has no team of its own, so it is built without that check, as
+# `make core` does (docs/app-bundle.md of the app repository).
+cargo build --release --quiet --features nm-signing/dev-unverified \
+    --bin nicemailer-core --bin nicemailer --manifest-path "$REPO/Cargo.toml"
 (cd "$REPO/apps/NiceMailer" && DEVELOPER_DIR="$XCODE" swift build --quiet)
 
 # The test IMAP server (Docker). Started if it does not answer.
@@ -90,25 +98,35 @@ for lang in "${langs[@]}"; do
     "$CLI" sync now studio >/dev/null 2>&1 || true
     wait_synced "$dir"
 
-    shots="$dir/shots"
-    mkdir -p "$shots" "$dir/exports"
+    mkdir -p "$dir/exports"
     applang=$([ "$lang" = fr ] && echo "(fr)" || echo "(en)")
     # Dates follow the locale, not the language: set both.
     applocale=$([ "$lang" = fr ] && echo "fr_FR" || echo "en_US")
-    if ! NICEMAILER_CLI="$CLI" NICEMAILER_UI_SCRIPT="$SITE/demo/screens.uiscript" NICEMAILER_UI_OUT="$shots" \
-        NICEMAILER_EXPORT_DIR="$dir/exports" perl -e 'alarm shift; exec @ARGV' 180 "$APPBIN" -AppleLanguages "$applang" -AppleLocale "$applocale" \
-        2>"$dir/app.log"; then
-        echo "The screenshot scenario failed ($lang):" >&2
-        grep -E "^FAIL" "$shots/result.txt" >&2 || tail -20 "$dir/app.log" >&2
-        exit 1
-    fi
-    mkdir -p "$SITE/src/assets/screens/$lang"
-    cp "$shots"/*.png "$SITE/src/assets/screens/$lang/"
+    # The same mailbox in each theme: the visitor chooses the one the page
+    # shows (src/components/Shot.astro). The core reads config.toml again
+    # as soon as it is written, and the app asks the core for the theme
+    # when it starts.
+    for theme in "${themes[@]}"; do
+        sed -i '' -E "s/^#? ?theme = .*/theme = \"$theme\"/" "$dir/config.toml"
+        sleep 2
+        shots="$dir/shots/$theme"
+        mkdir -p "$shots"
+        if ! NICEMAILER_CLI="$CLI" NICEMAILER_UI_SCRIPT="$SITE/demo/screens.uiscript" NICEMAILER_UI_OUT="$shots" \
+            NICEMAILER_EXPORT_DIR="$dir/exports" perl -e 'alarm shift; exec @ARGV' 180 "$APPBIN" -AppleLanguages "$applang" -AppleLocale "$applocale" \
+            2>"$dir/app-$theme.log"; then
+            echo "The screenshot scenario failed ($lang, $theme):" >&2
+            grep -E "^FAIL" "$shots/result.txt" >&2 || tail -20 "$dir/app-$theme.log" >&2
+            exit 1
+        fi
+        mkdir -p "$SITE/src/assets/screens/$lang/$theme"
+        cp "$shots"/*.png "$SITE/src/assets/screens/$lang/$theme/"
+        echo "$lang, $theme: $(ls "$shots"/*.png | wc -l | tr -d ' ') screenshots in src/assets/screens/$lang/$theme/"
+    done
     kill "$core" 2>/dev/null || true
     wait "$core" 2>/dev/null || true
     trap - EXIT
     unset NICEMAILER_DATA_DIR
-    echo "$lang: $(ls "$shots"/*.png | wc -l | tr -d ' ') screenshots in src/assets/screens/$lang/ (data: $dir)"
+    echo "$lang: done (data: $dir)"
 done
 
 # The images shown when a link to the site is shared (og:image, 1200 x 630):
