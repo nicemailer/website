@@ -19,6 +19,12 @@ if (start < 0) {
   console.error(`${source} has no "## " section.`);
   process.exit(1);
 }
-const body = text.slice(start).trimEnd() + '\n';
+// An empty "Unreleased" section (just after a release) is left out: it would
+// show as a bare heading on /changelog/.
+const body =
+  text
+    .slice(start)
+    .replace(/^## Unreleased[ \t]*\n\s*(?=^## )/m, '')
+    .trimEnd() + '\n';
 fs.writeFileSync('src/changelog.md', body);
 console.log(`src/changelog.md: ${body.split('\n').length} lines from ${source}`);

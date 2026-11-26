@@ -62,6 +62,16 @@ const current = (to: string) => path === to || (to.endsWith('/docs/') && path.st
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:creator" content="@achilleberes" />
     <link rel="alternate" type="application/rss+xml" title="NiceMailer releases" href="/changelog.xml" />
+    <!-- The theme of the screenshots chosen on an earlier page
+         (ShotThemes.astro), set before the page is drawn so that the
+         default theme does not flash first. -->
+    <script is:inline>
+      try {
+        var shotTheme = localStorage.getItem('shotTheme');
+        if (shotTheme === 'clean' || shotTheme === 'regular' || shotTheme === 'geek' || shotTheme === 'minimal')
+          document.documentElement.dataset.shotTheme = shotTheme;
+      } catch (e) {}
+    </script>
     {
       lang === 'en' && path === '/' && (
         <script is:inline>

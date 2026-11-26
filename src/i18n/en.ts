@@ -71,7 +71,7 @@ export default {
       title: 'Calm',
       lead: 'Only the people you chose reach your inbox. The rest wait in Quarantine for a decision you make only once.',
       shot: 'quarantine',
-      shotAlt: 'The Quarantine folder: emails from unknown senders, with one key per destination in the status bar.',
+      shotAlt: 'The Quarantine folder: emails from unknown senders, with a button per destination at the top of the window.',
       caption: 'Unknown senders wait in Quarantine. The icon to the left of the name shows whether the sender is a person or a robot. One key decides where a sender belongs, for every email they will ever send you.',
       points: [
         {
@@ -153,7 +153,7 @@ export default {
       },
       {
         q: 'Which email providers work?',
-        a: 'Any provider that offers IMAP with a password: Gmail, iCloud, Fastmail, Infomaniak, most European providers, your company’s server and most others. Some ask for an app password when two-factor authentication is on (Gmail, for example). Outlook.com and Microsoft 365, which only allow OAuth sign-in, are not supported yet.',
+        a: 'Any provider that offers IMAP: Gmail, iCloud, Fastmail, Outlook.com, Microsoft 365, Infomaniak, most European providers, your company’s server and most others. Some ask for an app password when two-factor authentication is on (Gmail, for example). Outlook.com and Microsoft 365 sign in through your browser, without giving NiceMailer your password.',
       },
       {
         q: 'Is there an iPhone app?',
@@ -221,5 +221,6 @@ export default {
     pending: 'Screenshot coming soon',
     zoom: 'Show this screenshot larger',
     close: 'Close (Escape)',
+    themes: 'Theme of the screenshots',
   },
 };

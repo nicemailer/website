@@ -1,3 +1,46 @@
+## 0.3.0 — 2026-11-26
+
+NiceMailer now supports themes, with four built in: Clean (the default), Regular (a Mac-style window with a toolbar, like Mail), Geek (for IDE lovers), and Minimal (Clean with a monospaced font, showing emails as plain text).
+
+We've also added a three-line message list, along with action buttons for emails and replies. Microsoft 365 and Outlook.com accounts now sign in through the browser, and the core and its clients now verify each other.
+
+### Added
+
+- **Themes:** Four built-in themes: clean (the default), regular (a Mac window with a toolbar, as in Mail), geek for IDE lovers and minimal (clean in a monospaced font, mails as text). Choose one with `v` `t` (Show, theme…) or `ui.theme` in `config.toml`; each is a file of `~/.config/nicemailer/themes/` you can change, and `nicemailer theme new` starts your own (docs/themes.md).
+- **Themes:** After an update from NiceMailer 0.2 or earlier, the app keeps geek, the look it had: `ui.theme = "geek"` is written in `config.toml`, to remove or change.
+- **Themes:** A theme also decides whether mails open in HTML or in text, how attachments are listed, the width of the text column, the buttons of the mail's title line and whether the window buttons sit in the status bar.
+- **List:** Show the list on three lines per mail, as in Mail: sender and date, subject, the beginning of the mail. `v` `l` switches between one and three lines; the app remembers the choice and the list width of each.
+- **Accounts:** Sign in to a Microsoft 365 or Outlook.com account in the browser, with no password: a "Sign in with Microsoft" button in the Preferences, `nicemailer account add` or `nicemailer account login <key>` in the CLI.
+- **Accounts:** Change the password of an account from its page in the Preferences. For Gmail, iCloud and Fastmail, the Preferences say an app password is needed and link to the guide.
+- **Reading:** Buttons on the title line of the open mail: reply to all (`r`), reply to the sender (`R`), forward (`F`) and flag; the key is in the tooltip.
+- **Reading:** Mails in HTML follow the text size (⌘+ ⌘−) entirely: a mail in 12 pt Calibri from Outlook is no longer smaller than the text around it.
+- **Writing:** The commands of a reply (send, attach, from, format…) are buttons under the subject. In Drafts, a click on the draft shown reopens it.
+- **Install:** Install with Homebrew: `brew install --cask nicemailer/tap/nicemailer`, which also links the `nicemailer` command.
+- **Keyboard:** `h` switches the open mail between text and HTML.
+- **View:** **Reset columns width** (`v` `r`) puts the list column back to its standard width when it has moved.
+
+### Changed
+
+- **Menus:** The Display menu (`v`) is now Show, and Attributes is now Filter. Show's rows are grouped in four blocks (the mail, the columns, the presentation, the sort), and the row under the pointer is highlighted.
+- **Reading:** The buttons of the title line (unsubscribe, text | html | images) look like those of a reply, show only their symbol, and come after what the line says instead of moving with it.
+- **Keyboard:** The flag key is `I` instead of `*`.
+- **AI:** Translation goes the right way by itself: a mail read into your language, a reply into the language of the mail received, a new mail into the language you choose.
+- **Writing:** `⇧⌘T` also sets the format of the next replies, until it is pressed again.
+- **Status bar:** The NiceMailer icon and the mode (NOR, PCK…) are gone: the bar starts with the account and the folder.
+- **Window:** Tooltips show after 300 ms instead of about a second and a half.
+
+### Fixed
+
+- **Security:** The core and its clients (the app, the CLI, the MCP server of AI agents) verify each other's code signature: rights come from the signature, and a stranger is refused.
+- **Security:** A client that floods the core is limited and can no longer lock the app out; an AI agent can no longer attach hidden or private files (`~/.ssh`, `.env`, `~/Library`…); a release app ignores the variables of its UI tests; a `data-dir` choice file that someone else could have written is ignored.
+- **Accounts:** A password saved by one NiceMailer build is readable by the others: installing a release over a development build, or the reverse, no longer stops the accounts with "the Keychain refused the password".
+- **Keyboard:** The main window no longer ignores every shortcut (`j`, `k`, `c`…) from launch.
+- **Screening:** A mail sent from one of your accounts to another stays in the Inbox, even if that address was banned.
+- **Menus:** A menu fits in the window: near the right edge it stays whole, in a short window it scrolls, and a second click on its block closes it.
+- **Reading:** A mail without text says "no text" instead of "only quotes earlier messages".
+- **Geek:** Secondary texts (dates, counts) have more contrast.
+- **Updates:** The notes of an update show bold, code and links instead of their Markdown.
+
 ## 0.2.1 — 2026-11-21
 
 ### Added

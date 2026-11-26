@@ -8,7 +8,7 @@ order: 1
 
 - Un Mac Apple Silicon (M1 ou plus récent).
 - macOS 14 Sonoma ou plus récent.
-- Un compte mail qui propose l'IMAP avec un mot de passe. Voir [Ajouter votre compte](/fr/docs/add-an-account/) pour les fournisseurs pris en charge.
+- Un compte mail qui propose l'IMAP : Gmail, iCloud, Outlook.com, Microsoft 365 et la plupart des autres. Voir [Ajouter votre compte](/fr/docs/add-an-account/) pour les fournisseurs pris en charge.
 
 ## Installer
 
@@ -17,6 +17,14 @@ order: 1
 3. Ouvrez NiceMailer depuis Applications.
 
 L'application est signée et notarisée par Apple : macOS l'ouvre sans avertissement.
+
+### Avec Homebrew
+
+```sh
+brew install --cask nicemailer/tap/nicemailer
+```
+
+Homebrew installe aussi la commande `nicemailer`, pour utiliser NiceMailer depuis le Terminal.
 
 ## Le premier lancement
 

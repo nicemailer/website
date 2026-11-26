@@ -72,7 +72,7 @@ const fr: Strings = {
       title: 'Reposant',
       lead: 'Seules les personnes que vous avez choisies arrivent dans votre Inbox. Les autres attendent en quarantaine une décision que vous ne prenez qu’une fois.',
       shot: 'quarantine',
-      shotAlt: 'Les mails des expéditeurs inconnus, en quarantaine, avec une touche par destination dans la barre d’état.',
+      shotAlt: 'Les mails des expéditeurs inconnus, en quarantaine, avec un bouton par destination en haut de la fenêtre.',
       caption: 'Les inconnus attendent en quarantaine. L’icône à gauche du nom indique si l’expéditeur est une personne ou un robot. Une touche décide où va un expéditeur, pour tous les mails qu’il vous enverra.',
       points: [
         {
@@ -154,7 +154,7 @@ const fr: Strings = {
       },
       {
         q: 'Quels fournisseurs de mail sont pris en charge ?',
-        a: 'Tout fournisseur qui propose l’IMAP avec un mot de passe : les grands opérateurs français ou européens, Infomaniak, le serveur de votre entreprise, bien sûr Gmail, iCloud, Fastmail, et la plupart des autres. Certains demandent un mot de passe d’application quand la double authentification est activée (Gmail par exemple). Outlook.com et Microsoft 365, qui n’acceptent que la connexion OAuth, ne sont pas encore pris en charge.',
+        a: 'Tout fournisseur qui propose l’IMAP : les grands opérateurs français ou européens, Infomaniak, le serveur de votre entreprise, bien sûr Gmail, iCloud, Fastmail, Outlook.com et Microsoft 365, et la plupart des autres. Certains demandent un mot de passe d’application quand la double authentification est activée (Gmail par exemple). Outlook.com et Microsoft 365 se connectent dans votre navigateur, sans confier votre mot de passe à NiceMailer.',
       },
       {
         q: 'Existe-t-il une application iPhone ?',
@@ -222,6 +222,7 @@ const fr: Strings = {
     pending: 'Capture d’écran à venir',
     zoom: 'Agrandir cette capture',
     close: 'Fermer (Échap)',
+    themes: 'Thème des captures d’écran',
   },
 };
 

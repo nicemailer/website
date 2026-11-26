@@ -69,6 +69,10 @@ Les longues conversations sont un mur de citations répétées, de signatures et
 
 Certains clients mail finissent par ressembler à des sapins de Noël. NiceMailer a une interface sobre et calme : sa force tient à la vitesse avec laquelle il vous laisse trouver, lire, répondre et ranger. Et un vrai mode sombre assombrit même le fond blanc de votre newsletter préférée.
 
+### À votre goût
+
+Quatre thèmes sont fournis : **Clean**, par défaut ; **Regular**, une fenêtre de Mac avec barre d'outils, comme dans Mail ; **Geek**, pour ceux qui vivent dans leur éditeur de code ; et **Minimal**, Clean en police à chasse fixe, avec les mails en texte. La liste affiche une ligne par mail, ou trois comme dans Mail : expéditeur et date, objet, début du mail. Chaque thème est un petit fichier texte que vous pouvez modifier, ou copier pour créer le vôtre. Les touches et les fonctionnalités sont les mêmes dans tous.
+
 ## Sécurisant
 
 ### Le phishing reste dehors
@@ -103,7 +107,7 @@ NiceMailer utilise votre abonnement Claude existant et ne stocke aucun identifia
 
 ### Votre assistant IA, branché sur votre boîte
 
-Grâce au serveur MCP de NiceMailer, Claude Desktop, Claude Code ou une application semblable peut chercher dans votre mail, lire les conversations et les pièces jointes, répondre à « Quels sont les mails urgents ou importants à traiter en priorité ? » et préparer des réponses. Il ne peut rien envoyer, déplacer ni supprimer : cette règle est imposée par NiceMailer lui-même, pas laissée à l'IA. Vous relisez chaque brouillon et l'envoyez vous-même.
+Grâce au serveur MCP de NiceMailer, Claude Desktop, Claude Code ou une application semblable peut chercher dans votre mail, lire les conversations et les pièces jointes, répondre à « Quels sont les mails urgents ou importants à traiter en priorité ? » et préparer des réponses. Il ne peut rien envoyer, déplacer ni supprimer : cette règle est imposée par NiceMailer lui-même, pas laissée à l'IA, et le cœur de NiceMailer ne répond qu'aux applications qui portent sa propre signature de code. Vous relisez chaque brouillon et l'envoyez vous-même.
 
 ### Qui a fait quoi
 

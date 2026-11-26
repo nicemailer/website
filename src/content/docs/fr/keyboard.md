@@ -32,7 +32,7 @@ Les actions s'appliquent aux conversations marquées s'il y en a, sinon à celle
 | <kbd>Suppr</kbd> | Mettre dans Deleted |
 | <kbd>z</kbd> | Annuler le dernier déplacement ou la dernière décision |
 | <kbd>u</kbd> | Lu ou non lu |
-| <kbd>*</kbd> | Drapeau |
+| <kbd>I</kbd> | Drapeau |
 | <kbd>t</kbd> | Ajouter ou retirer un tag |
 | <kbd>g</kbd> | Ajouter la personne à un groupe de contacts, ou l'en retirer |
 | <kbd>⌘</kbd> <kbd>U</kbd> | Se désabonner de la newsletter |
@@ -44,7 +44,7 @@ Les actions s'appliquent aux conversations marquées s'il y en a, sinon à celle
 | <kbd>l</kbd> | Liens, pièces jointes, numéros de téléphone et code de confirmation du mail |
 | <kbd>T</kbd> | Tout afficher (citations, signatures, messages repliés), ou revenir à la vue simple |
 | <kbd>S</kbd> | Sauter au texte après la prochaine citation |
-| <kbd>v</kbd> <kbd>h</kbd> | Vue texte ou HTML |
+| <kbd>h</kbd> | Vue texte ou HTML |
 | <kbd>v</kbd> <kbd>i</kbd> | Charger les images distantes |
 | <kbd>⌃</kbd> <kbd>c</kbd> | La fiche de l'expéditeur dans Contacts |
 | <kbd>⌃</kbd> <kbd>⇧</kbd> <kbd>c</kbd> | Tous les mails de l'expéditeur |
@@ -74,9 +74,20 @@ Les actions s'appliquent aux conversations marquées s'il y en a, sinon à celle
 
 Voir [Recherche et filtres](/fr/docs/search/).
 
+## Afficher
+
+| Touche | Action |
+| --- | --- |
+| <kbd>v</kbd> <kbd>t</kbd> | Choisir un thème |
+| <kbd>v</kbd> <kbd>l</kbd> | Liste sur une ligne ou trois par mail |
+| <kbd>v</kbd> <kbd>r</kbd> | Remettre la colonne de la liste à sa largeur standard |
+| <kbd>⌘</kbd> <kbd>+</kbd> <kbd>⌘</kbd> <kbd>−</kbd> <kbd>⌘</kbd> <kbd>0</kbd> | Texte plus grand, plus petit, retour à la taille de vos réglages |
+
+Voir [Thèmes](/fr/docs/themes/).
+
 ## La souris
 
-Tout fonctionne aussi à la souris. Un clic sélectionne une conversation, <kbd>⌘</kbd>-clic la marque ou la démarque, <kbd>⇧</kbd>-clic marque une plage. Les blocs de la barre d'état, en bas de la fenêtre, ouvrent les mêmes menus que leurs touches.
+Tout fonctionne aussi à la souris. Un clic sélectionne une conversation, <kbd>⌘</kbd>-clic la marque ou la démarque, <kbd>⇧</kbd>-clic marque une plage. Les blocs de la barre d'état (ou les boutons de la barre d'outils, dans le thème Regular) ouvrent les mêmes menus que leurs touches, et les boutons d'un mail ouvert et d'une réponse affichent leur touche au survol.
 
 ## Changer les touches
 

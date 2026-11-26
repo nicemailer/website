@@ -1,0 +1,114 @@
+---
+// The switch of the theme of the screenshots: four segments, one per theme
+// of the app. A click shows every screenshot of the page in that theme,
+// and the browser remembers it for the next pages (src/shots.ts).
+import { t, type Lang } from '../i18n';
+import { SHOT_THEMES, SHOT_THEME_NAMES, DEFAULT_SHOT_THEME } from '../shots';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const s = t(lang).shot;
+---
+
+<div class="shot-themes" role="radiogroup" aria-label={s.themes}>
+  {
+    SHOT_THEMES.map((theme) => (
+      <button
+        type="button"
+        role="radio"
+        data-shot-theme={theme}
+        aria-checked={theme === DEFAULT_SHOT_THEME ? 'true' : 'false'}
+        tabindex={theme === DEFAULT_SHOT_THEME ? 0 : -1}
+      >
+        {SHOT_THEME_NAMES[theme]}
+      </button>
+    ))
+  }
+</div>
+
+<script>
+  import { SHOT_THEMES, SHOT_THEME_KEY, DEFAULT_SHOT_THEME, type ShotTheme } from '../shots';
+
+  const root = document.documentElement;
+
+  // Shows every screenshot in `theme`: the CSS of Shot.astro reads the
+  // attribute on <html>. The radios follow, and the choice is kept for the
+  // next pages when the browser allows it.
+  function apply(theme: ShotTheme, remember: boolean) {
+    root.dataset.shotTheme = theme;
+    for (const radio of document.querySelectorAll<HTMLButtonElement>('.shot-themes [role="radio"]')) {
+      const on = radio.dataset.shotTheme === theme;
+      radio.setAttribute('aria-checked', on ? 'true' : 'false');
+      radio.tabIndex = on ? 0 : -1;
+    }
+    if (!remember) return;
+    try {
+      localStorage.setItem(SHOT_THEME_KEY, theme);
+    } catch {
+      // Private window or storage blocked: the choice lasts for this page.
+    }
+  }
+
+  // TypeScript note: `includes` on a readonly tuple wants a value of its
+  // type; this guard turns any string into a theme, or nothing.
+  const isTheme = (value: string | undefined): value is ShotTheme =>
+    value !== undefined && (SHOT_THEMES as readonly string[]).includes(value);
+
+  // The theme set before the page was drawn (Base.astro), on the radios.
+  apply(isTheme(root.dataset.shotTheme) ? root.dataset.shotTheme : DEFAULT_SHOT_THEME, false);
+
+  for (const group of document.querySelectorAll<HTMLElement>('.shot-themes')) {
+    const radios = [...group.querySelectorAll<HTMLButtonElement>('[role="radio"]')];
+    group.addEventListener('click', (event) => {
+      const radio = (event.target as HTMLElement).closest<HTMLButtonElement>('[role="radio"]');
+      if (radio && isTheme(radio.dataset.shotTheme)) apply(radio.dataset.shotTheme, true);
+    });
+    // The arrows move the choice, as in any group of radio buttons.
+    group.addEventListener('keydown', (event) => {
+      const step = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[event.key];
+      if (!step) return;
+      event.preventDefault();
+      const now = radios.findIndex((r) => r.getAttribute('aria-checked') === 'true');
+      const next = radios[(now + step + radios.length) % radios.length];
+      if (isTheme(next.dataset.shotTheme)) apply(next.dataset.shotTheme, true);
+      next.focus();
+    });
+  }
+</script>
+
+<style>
+  .shot-themes {
+    display: inline-flex;
+    flex: none;
+    padding: 3px;
+    gap: 2px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--bg-2);
+  }
+  button {
+    padding: 0.3rem 0.85rem;
+    border: 0;
+    border-radius: 999px;
+    background: none;
+    color: var(--ink-2);
+    font: inherit;
+    font-family: var(--font-display);
+    font-size: 0.9rem;
+    line-height: 1.2;
+    cursor: pointer;
+  }
+  button:hover {
+    color: var(--ink);
+  }
+  button[aria-checked='true'] {
+    background: var(--accent);
+    color: var(--accent-ink);
+  }
+  button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+</style>

@@ -34,7 +34,7 @@ Press <kbd>a</kbd> on an email, or <kbd>⌃</kbd> <kbd>I</kbd> while writing, to
 
 **While you write**
 
-- Proofread, improve the style, rephrase (more formal, friendlier, shorter, longer, clearer), translate.
+- Proofread, improve the style, rephrase (more formal, friendlier, shorter, longer, clearer), translate: a reply into the language of the email you received, a new email into the language you choose.
 - Write from notes: type three bullet points above the quote, and get a complete email. Facts missing from your notes are left as "[to complete]" rather than invented.
 - Suggest a subject.
 - Other wordings for a word or a passage you selected.
@@ -43,7 +43,7 @@ Press <kbd>a</kbd> on an email, or <kbd>⌃</kbd> <kbd>I</kbd> while writing, to
 
 - Summarize it, with the actions it asks of you.
 - Suggest quick replies.
-- Translate it.
+- Translate it into your language.
 - Check whether it looks like a scam, from its content and from what NiceMailer knows of its sender.
 - List its dates and appointments.
 - Gather the sender's details: name, company, phone numbers, address.
@@ -68,6 +68,6 @@ In NiceMailer, open the menu **NiceMailer › AI Agents**:
 
 ### What an agent may do
 
-An agent can search your email, read conversations and attachments, and prepare drafts, which you find in Drafts to review and send yourself. It **cannot send, move, mark, delete or unsubscribe**. These limits are enforced by NiceMailer's core, not by the agent, and are not a setting an agent could change.
+An agent can search your email, read conversations and attachments, and prepare drafts, which you find in Drafts to review and send yourself. It **cannot send, move, mark, delete or unsubscribe**. These limits are enforced by NiceMailer's core, not by the agent, and are not a setting an agent could change. The core only answers apps signed by NiceMailer, and an agent cannot attach hidden or private files to a draft (`~/.ssh`, `.env`, `~/Library`…).
 
 Keep in mind that the AI app sends what it reads to its own provider, under that provider's terms.

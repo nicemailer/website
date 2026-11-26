@@ -31,7 +31,7 @@ The first row of <kbd>l</kbd> copies a link to the email, such as `[Invoice for 
 
 ## Text or HTML
 
-NiceMailer shows an email as clean text by default. The switch at the top of the email, **text | html | images**, or <kbd>v</kbd> <kbd>h</kbd>, shows the version designed by the sender, without its scripts, and in dark mode even if it was made for a white page. NiceMailer remembers your choice for each sender.
+Whether an email first opens as clean text or as HTML depends on the [theme](/docs/themes/): HTML in Clean and Regular, text in Geek and Minimal. The switch at the top of the email, **text | html | images**, or <kbd>h</kbd>, goes from one to the other. The HTML version is the one designed by the sender, without its scripts, and in dark mode even if it was made for a white page. NiceMailer remembers your choice for each sender, whatever the theme. HTML emails follow the text size (<kbd>⌘</kbd> <kbd>+</kbd> <kbd>⌘</kbd> <kbd>−</kbd>) like the rest of the window.
 
 ## Images and trackers
 
@@ -39,7 +39,7 @@ Many emails contain tracking pixels, invisible images that tell the sender when 
 
 ## Write and send
 
-<kbd>r</kbd> replies to all, <kbd>R</kbd> to the sender only, <kbd>F</kbd> forwards, <kbd>c</kbd> writes a new email. The reply opens in place of the email, in a text field that behaves like any Mac text field, with your usual editing shortcuts. <kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>T</kbd> switches between plain and formatted text. Attach files by dropping them on the reply, by pasting files copied in the Finder, or with <kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>A</kbd>. Your text is saved as you type: a crash loses at most half a second of it.
+<kbd>r</kbd> replies to all, <kbd>R</kbd> to the sender only, <kbd>F</kbd> forwards, <kbd>c</kbd> writes a new email; the title line of the email has the same actions as buttons, with flag. The commands of a reply (send, attach, from, format…) are buttons under its subject. The reply opens in place of the email, in a text field that behaves like any Mac text field, with your usual editing shortcuts. <kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>T</kbd> switches between plain and formatted text, for this reply and the next ones, until you press it again. Attach files by dropping them on the reply, by pasting files copied in the Finder, or with <kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>A</kbd>. Your text is saved as you type: a crash loses at most half a second of it.
 
 <kbd>⌘</kbd> <kbd>↩</kbd> sends, after five seconds: the status bar says "Sending in 5 s", and <kbd>z</kbd> brings the reply back if you change your mind. <kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>↩</kbd> first asks where the conversation should go once sent: Archive, Waiting, Todo.
 

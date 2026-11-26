@@ -69,6 +69,10 @@ Long threads are a wall of repeated quotes, signatures and "Sent from my iPhone"
 
 Some email clients end up looking like Christmas trees. NiceMailer has a clean, quiet interface: its power lies in how quickly it lets you find, read, reply to and file your email. And a real dark mode darkens even the white background of your favorite newsletter.
 
+### Your look, your rules
+
+Four themes come built in: **Clean**, the default; **Regular**, a Mac window with a toolbar, as in Mail; **Geek**, for those who live in their code editor; and **Minimal**, Clean in a monospaced font, with emails as text. The list shows one line per email, or three as in Mail: sender and date, subject, the beginning of the email. Each theme is a small text file you can change, or use to start your own. The keys and features are the same in all of them.
+
 ## Trust
 
 ### Phishing stays out
@@ -103,7 +107,7 @@ NiceMailer uses your existing Claude subscription and stores no credentials. Eve
 
 ### Your AI assistant, connected to your mailbox
 
-Thanks to NiceMailer's MCP server, Claude Desktop, Claude Code or a similar app can search your email, read conversations and attachments, answer "which urgent or important emails should I deal with first?", and prepare replies. It cannot send, move or delete anything: that rule is enforced by NiceMailer itself, not left to the AI. You review every draft and send it yourself.
+Thanks to NiceMailer's MCP server, Claude Desktop, Claude Code or a similar app can search your email, read conversations and attachments, answer "which urgent or important emails should I deal with first?", and prepare replies. It cannot send, move or delete anything: that rule is enforced by NiceMailer itself, not left to the AI, and NiceMailer's core only answers apps that carry its own code signature. You review every draft and send it yourself.
 
 ### See who did what
 

@@ -32,7 +32,7 @@ Actions apply to the marked conversations if there are any, otherwise to the one
 | <kbd>Delete</kbd> | Move to Deleted |
 | <kbd>z</kbd> | Undo the last move or decision |
 | <kbd>u</kbd> | Read or unread |
-| <kbd>*</kbd> | Flag |
+| <kbd>I</kbd> | Flag |
 | <kbd>t</kbd> | Add or remove a tag |
 | <kbd>g</kbd> | Add the person to a contact group, or remove them |
 | <kbd>⌘</kbd> <kbd>U</kbd> | Unsubscribe from the newsletter |
@@ -44,7 +44,7 @@ Actions apply to the marked conversations if there are any, otherwise to the one
 | <kbd>l</kbd> | Links, attachments, phone numbers and confirmation code of the email |
 | <kbd>T</kbd> | Show everything (quotes, signatures, folded messages), or the simple view again |
 | <kbd>S</kbd> | Skip to the text after the next quote |
-| <kbd>v</kbd> <kbd>h</kbd> | Text or HTML view |
+| <kbd>h</kbd> | Text or HTML view |
 | <kbd>v</kbd> <kbd>i</kbd> | Load the remote images |
 | <kbd>⌃</kbd> <kbd>c</kbd> | The sender's card in Contacts |
 | <kbd>⌃</kbd> <kbd>⇧</kbd> <kbd>c</kbd> | Every email of the sender |
@@ -74,9 +74,20 @@ Actions apply to the marked conversations if there are any, otherwise to the one
 
 See [Search and filters](/docs/search/).
 
+## Show
+
+| Key | Action |
+| --- | --- |
+| <kbd>v</kbd> <kbd>t</kbd> | Choose a theme |
+| <kbd>v</kbd> <kbd>l</kbd> | List on one line or three per email |
+| <kbd>v</kbd> <kbd>r</kbd> | Put the list column back to its standard width |
+| <kbd>⌘</kbd> <kbd>+</kbd> <kbd>⌘</kbd> <kbd>−</kbd> <kbd>⌘</kbd> <kbd>0</kbd> | Bigger text, smaller, back to the size of your settings |
+
+See [Themes](/docs/themes/).
+
 ## The mouse
 
-Everything works with the mouse too. A click selects a conversation, <kbd>⌘</kbd>-click marks or unmarks one, <kbd>⇧</kbd>-click marks a range. The blocks of the status bar, at the bottom of the window, open the same menus as their keys.
+Everything works with the mouse too. A click selects a conversation, <kbd>⌘</kbd>-click marks or unmarks one, <kbd>⇧</kbd>-click marks a range. The blocks of the status bar (or the buttons of the toolbar, in the Regular theme) open the same menus as their keys, and the buttons of an open email and of a reply show their key when you hover them.
 
 ## Change the keys
 

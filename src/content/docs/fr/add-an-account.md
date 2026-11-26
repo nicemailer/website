@@ -6,10 +6,10 @@ order: 2
 
 ## Les fournisseurs pris en charge
 
-NiceMailer fonctionne avec tout fournisseur qui propose **l'IMAP avec un mot de passe** : Gmail, iCloud, Fastmail, le serveur de votre entreprise ou de votre hébergeur, et la plupart des autres.
+NiceMailer fonctionne avec tout fournisseur qui propose **l'IMAP** : Gmail, iCloud, Fastmail, Outlook.com, Microsoft 365, le serveur de votre entreprise ou de votre hébergeur, et la plupart des autres.
 
 - **Gmail, iCloud et Fastmail** demandent un **mot de passe d'application**, à créer dans les réglages de sécurité de votre compte, à la place de votre mot de passe habituel : voir [Gmail, iCloud, Fastmail](/fr/docs/app-passwords/), pas à pas pour chacun.
-- Outlook.com et les autres fournisseurs qui n'acceptent que la connexion OAuth **ne sont pas encore pris en charge**.
+- **Outlook.com et Microsoft 365** se connectent dans votre navigateur, sur la page de Microsoft : NiceMailer ne voit jamais votre mot de passe (voir plus bas).
 
 ## Ajouter le compte
 
@@ -18,6 +18,14 @@ NiceMailer fonctionne avec tout fournisseur qui propose **l'IMAP avec un mot de 
 3. Cliquez sur **Ajouter le compte**.
 
 NiceMailer trouve seul les serveurs de votre adresse, et ne demande davantage que s'il en a besoin : le serveur IMAP si votre domaine n'est pas connu, ou un mot de passe distinct pour l'envoi si votre fournisseur en exige un. Votre mot de passe est enregistré dans le trousseau de macOS, jamais dans un fichier.
+
+Pour le changer plus tard, par exemple après un nouveau mot de passe d'application, ouvrez la page du compte dans les Réglages.
+
+### Outlook.com et Microsoft 365
+
+Microsoft n'accepte plus les mots de passe des applications de mail. Dès que vous tapez une adresse Outlook.com, Hotmail, Live ou Microsoft 365, le champ du mot de passe est remplacé par un bouton **Se connecter avec Microsoft**. Cliquez dessus, connectez-vous sur la page de Microsoft dans votre navigateur, et l'ajout reprend où il s'était arrêté.
+
+Si Microsoft vous demande plus tard de vous reconnecter (après un changement de mot de passe, par exemple), la page du compte dans les Réglages propose un bouton **Se reconnecter**. Depuis le Terminal, `nicemailer account add` et `nicemailer account login <compte>` ouvrent la même page dans votre navigateur.
 
 ## Regarder d'abord, décider ensuite
 

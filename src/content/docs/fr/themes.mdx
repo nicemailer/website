@@ -1,0 +1,77 @@
+---
+title: Thèmes
+description: Choisir l'apparence de NiceMailer, la modifier, ou créer la vôtre.
+order: 7.5
+---
+
+import Shot from '../../../components/Shot.astro';
+
+Un thème règle l'apparence de l'application : ses couleurs, ses polices et ses proportions, une barre d'état ou une barre d'outils, et l'ouverture des mails en texte ou en HTML. Les touches, les menus et toutes les fonctionnalités sont les mêmes dans tous les thèmes.
+
+## Les quatre thèmes fournis
+
+### Clean
+
+Le thème par défaut : lignes arrondies, police proportionnelle, mails en HTML.
+
+<Shot lang="fr" name="inbox" theme="clean" alt="L'Inbox dans le thème Clean : des lignes arrondies sur trois lignes, le mail ouvert en HTML." />
+
+### Regular
+
+Une fenêtre de Mac avec une barre d'outils en haut, comme dans Mail. Le dossier en est le titre, et les autres blocs sont des boutons.
+
+<Shot lang="fr" name="inbox" theme="regular" alt="L'Inbox dans le thème Regular : une barre d'outils en haut, la colonne des dossiers, la liste et le mail ouvert." />
+
+### Geek
+
+Pour ceux qui vivent dans leur éditeur de code : police à chasse fixe, barre d'état qui rappelle la touche de chaque bloc, mails en texte.
+
+<Shot lang="fr" name="inbox" theme="geek" alt="L'Inbox dans le thème Geek : une police à chasse fixe, une ligne par mail, la touche de chaque bloc dans la barre d'état." />
+
+### Minimal
+
+Clean en police à chasse fixe, sans animations, avec les mails en texte.
+
+<Shot lang="fr" name="inbox" theme="minimal" alt="L'Inbox dans le thème Minimal : la disposition de Clean en police à chasse fixe, le mail ouvert en texte." />
+
+## En choisir un
+
+Appuyez sur <kbd>v</kbd> <kbd>t</kbd> (Afficher › Thème…), choisissez un thème et appuyez sur <kbd>Retour</kbd>. Il s'applique aussitôt, sans redémarrer.
+
+Vous pouvez aussi l'écrire dans `~/.config/nicemailer/config.toml` :
+
+```toml
+[ui]
+theme = "clean"
+```
+
+## Une ligne ou trois
+
+Dans tous les thèmes, <kbd>v</kbd> <kbd>l</kbd> affiche la liste sur une ligne par mail, ou sur trois comme dans Mail : l'expéditeur et la date, l'objet, le début du mail. NiceMailer retient votre choix, et la largeur de la liste pour chacun. <kbd>v</kbd> <kbd>r</kbd> remet la colonne de la liste à sa largeur standard.
+
+## Modifier un thème
+
+Chaque thème est un fichier texte de `~/.config/nicemailer/themes/` : `clean.toml`, `regular.toml`, `geek.toml` et `minimal.toml`. Chaque réglage y est écrit en commentaire, après une ligne qui dit à quoi il sert. Retirez le `# ` devant une ligne et changez sa valeur : l'application applique le fichier dès que vous l'enregistrez.
+
+Un fichier qui contient une erreur est refusé en entier, et le thème reste tel qu'il était ; la barre d'état dit ce qui ne va pas. Une couleur de texte trop peu contrastée sur son fond est acceptée, avec un avertissement.
+
+## Créer le vôtre
+
+```sh
+nicemailer theme new sepia --extends clean
+```
+
+Cette commande crée `themes/sepia.toml`, qui ne contient que ce qui diffère de Clean :
+
+```toml
+version = 1
+extends = "clean"
+
+[colors]
+background = { light = "#F6F0E4", dark = "#221E18" }
+text = { light = "#3B3025", dark = "#E8DFD0" }
+```
+
+Un thème ne contient que des réglages : ni code, ni image, ni adresse à charger. Un thème qu'on vous envoie peut être déposé dans le dossier sans risque.
+
+`nicemailer theme list` liste les thèmes, `nicemailer theme check sepia` vérifie un fichier, et `nicemailer theme defaults clean` affiche tous les réglages d'un thème fourni, avec leur rôle.

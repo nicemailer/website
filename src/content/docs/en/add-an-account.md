@@ -6,10 +6,10 @@ order: 2
 
 ## Providers that work
 
-NiceMailer works with any provider that offers **IMAP with a password**: Gmail, iCloud, Fastmail, your company's or your host's mail server, and most others.
+NiceMailer works with any provider that offers **IMAP**: Gmail, iCloud, Fastmail, Outlook.com, Microsoft 365, your company's or your host's mail server, and most others.
 
 - **Gmail, iCloud and Fastmail** ask for an **app password**, created in the security settings of your account, instead of your usual password: see [Gmail, iCloud, Fastmail](/docs/app-passwords/) for each, step by step.
-- Outlook.com and other providers that only allow OAuth sign-in are **not supported yet**.
+- **Outlook.com and Microsoft 365** sign in through your browser, on Microsoft's page: NiceMailer never sees your password (see below).
 
 ## Add the account
 
@@ -18,6 +18,14 @@ NiceMailer works with any provider that offers **IMAP with a password**: Gmail, 
 3. Click **Add Account**.
 
 NiceMailer finds the servers of your address by itself, and asks for more only when it needs to: the IMAP server if your domain is not a known one, or a separate password for sending if your provider wants one. Your password is saved in the macOS Keychain, never in a file.
+
+To change it later, for example after a new app password, open the account's page in the Settings.
+
+### Outlook.com and Microsoft 365
+
+Microsoft no longer accepts passwords from mail apps. As soon as you type an Outlook.com, Hotmail, Live or Microsoft 365 address, the password field is replaced by a **Sign in with Microsoft** button. Click it, sign in on Microsoft's page in your browser, and the adding resumes where it stopped.
+
+If Microsoft later asks you to sign in again (after you changed your password, say), the account's page in the Settings has a **Sign in again** button. From the Terminal, `nicemailer account add` and `nicemailer account login <account>` open the same page in your browser.
 
 ## Look first, decide later
 

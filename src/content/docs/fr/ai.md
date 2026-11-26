@@ -34,7 +34,7 @@ Appuyez sur <kbd>a</kbd> sur un mail, ou <kbd>⌃</kbd> <kbd>I</kbd> pendant que
 
 **Pendant que vous écrivez**
 
-- Corriger, améliorer le style, reformuler (plus formel, plus amical, plus court, plus long, plus clair), traduire.
+- Corriger, améliorer le style, reformuler (plus formel, plus amical, plus court, plus long, plus clair), traduire : une réponse dans la langue du mail reçu, un nouveau mail dans la langue que vous choisissez.
 - Rédiger à partir de notes : tapez trois puces au-dessus de la citation, et obtenez un mail complet. Les faits absents de vos notes sont laissés en « [à compléter] » plutôt qu'inventés.
 - Proposer un objet.
 - D'autres formulations pour un mot ou un passage sélectionné.
@@ -43,7 +43,7 @@ Appuyez sur <kbd>a</kbd> sur un mail, ou <kbd>⌃</kbd> <kbd>I</kbd> pendant que
 
 - Le résumer, avec les actions qu'il vous demande.
 - Proposer des réponses rapides.
-- Le traduire.
+- Le traduire dans votre langue.
 - Vérifier s'il ressemble à une arnaque, d'après son contenu et ce que NiceMailer sait de son expéditeur.
 - Lister ses dates et rendez-vous.
 - Rassembler les coordonnées de l'expéditeur : nom, société, téléphones, adresse.
